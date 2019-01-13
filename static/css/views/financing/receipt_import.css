@@ -1,0 +1,15 @@
+#receipt-import{padding:0 0 0 0;}
+
+#receipt-import .zl-linkable{
+    margin-left:10px;
+}
+#receipt-import .zl-toolbar>div{margin:0 10px 0 0;}
+
+#receipt-import .zl-toolbar>a.zl-btn{margin-left:10px;}
+#receipt-import table.zl-table tr>th, table.zl-table tr>td{text-overflow: ellipsis;overflow: hidden;white-space: nowrap}
+
+#receipt-import .text-right{text-align: right}
+
+#receipt-import table thead th{border-bottom-width: 1px;}
+
+#receipt-import .swiper-slide{min-width: 100%;width:auto;}

@@ -1,0 +1,9 @@
+#margin-statement-list .zl-toolbar>.zl-btn{margin-left:10px;}
+
+/* ======================================== zl-table-block ======================================== */
+#margin-statement-list .zl-table-block {
+}
+
+#margin-statement-list .zl-table-block  table tbody tr:hover{cursor:pointer;}
+
+

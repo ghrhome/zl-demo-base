@@ -1,0 +1,9 @@
+#complaint-mgt{
+
+}
+#complaint-mgt .zl-img-wrapper>ul>li+li {
+    margin-left: 15px;
+}
+#complaint-mgt .zl-img-wrapper>ul>li {
+    float: left;
+}

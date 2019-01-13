@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>审批表单样例</title>
+    <link rel="shortcut icon" href="../../static/images/favicon.ico" type="image/x-icon">
+    <!-- Bootstrap 3.3.6 -->
+    <link rel="stylesheet" href="../../static/dist/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../static/css/common/no-response.css">
+    <link rel="stylesheet" href="../../static/dist/css/animate.css">
+    <!--第三方js-->
+
+    <!--common css-->
+    <link rel="stylesheet" href="../../static/css/common/common.css">
+    <link rel="stylesheet" href="../../static/css/common/common_utils.css">
+    <link rel="stylesheet" href="../../static/css/common/icons.css">
+    <link rel="stylesheet" href="../../static/css/common/static_table.css">
+
+
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+<!--[if lt IE 9]>
+<p class="updateBrowser">您的浏览器太旧了，请更新最新浏览器，以获得最佳效果.</p>
+<![endif]-->
+<!-- Preloader -->
+<div id="preloader">
+    <div id="status"><i class="fa fa-spinner fa-spin"></i></div>
+</div>
+
+<div class="zl-page">
+
+
+
+    <div class="zl-content" style="padding-top:20px;">
+
+        <div class="zl-block-title" style="margin-bottom:10px;">
+            <h3>审批流程</h3>
+        </div>
+
+        <ul class="zl-network-process-bar-item-list" style="margin-bottom:20px;">
+            <li class="zl-network-process-done"><span>1.地产公司财务部负责人</span></li>
+            <li class="zl-network-process-done"><span>2.双签</span></li>
+            <li class="zl-network-process-done"><span>3.营运管理中心常务副总经理</span></li>
+            <li class="zl-network-process-done"><span>4.财务管理中心总经理 (+1)</span></li>
+            <li class="zl-network-process-start"><span>5.执行副总裁</span></li>
+            <li class="zl-network-process-next"><span>6.总裁</span></li>
+        </ul>
+
+        <div class="zl-block-title" style="margin-bottom:10px;">
+            <h3>审批记录</h3>
+        </div>
+
+        <div class="zl-network-approval-message-container">
+            <ul>
+                <li>
+                    <div class="zl-comment-message-status">
+                        <em class="zl-comment-message-index">1</em>
+                        <span class="zl-comment-message-responsor">王廷</span>
+                        <span class="zl-comment-message-date">(<em>08-05 12:41</em>已签批）</span>
+                        <span class="zl-comment-title">地产公司工程负责人.执行董事助理</span>
+                    </div>
+                    <div class="zl-comment-message-agreement">
+                        <span>同意发起人意见</span>
+                    </div>
+                </li><!--end li-->
+
+                <li>
+                    <div class="zl-comment-message-status">
+                        <em class="zl-comment-message-index">1</em>
+                        <span class="zl-comment-message-responsor">刘伟</span>
+                        <span class="zl-comment-message-date">(<em>08-05 15:12</em>已签批）</span>
+                        <span class="zl-comment-title">地产公司成本负责人.成本副总经理</span>
+                    </div>
+                    <div class="zl-comment-message-agreement">
+                        <span>同意发起人意见</span>
+                    </div>
+                </li><!--end li-->
+
+
+                <li>
+                    <div class="zl-comment-message-status">
+                        <em class="zl-comment-message-index">1</em>
+                        <span class="zl-comment-message-responsor">刘军</span>
+                        <span class="zl-comment-message-date">(<em>08-05 15:48</em>已签批）</span>
+                        <span class="zl-comment-title">地产公司财务部负责人.财务副总经理</span>
+                    </div>
+                    <div class="zl-comment-message-agreement">
+                        <span>同意发起人意见</span>
+                    </div>
+                </li><!--end li-->
+
+                <li>
+                    <div class="zl-comment-message-status">
+                        <em class="zl-comment-message-index">2</em>
+                        <span class="zl-comment-message-responsor">夏建兵</span>
+                        <span class="zl-comment-message-date">(<em>08-05 16:23</em>已签批）</span>
+                        <span class="zl-comment-title">地产公司总经理/双签.执行董事</span>
+                    </div>
+                    <div class="zl-comment-message-agreement">
+                        <span>同意发起人意见</span>
+                    </div>
+                </li><!--end li-->
+
+                <li>
+                    <div class="zl-comment-message-status ">
+                        <em class="zl-comment-message-index">2</em>
+                        <span class="zl-comment-message-responsor">王延</span>
+                        <span class="zl-comment-message-date">(<em>08-05 16:02</em>已签批）</span>
+                        <span class="zl-comment-title">相关双签人/双签.执行董事助理</span>
+                    </div>
+                    <div class="zl-comment-message-agreement">
+                        <span>同意发起人意见</span>
+                    </div>
+                </li><!--end li-->
+
+                <li>
+                    <div class="zl-comment-message-status ">
+                        <em class="zl-comment-message-index">3</em>
+                        <span class="zl-comment-message-responsor">刘昆仑</span>
+                        <span class="zl-comment-message-date">(<em>08-05 17:19</em>已签批）</span>
+                        <span class="zl-comment-title">营运管理中心常务副总经理.营运管理中心常务副总经理兼工程部总监</span>
+                    </div>
+                    <div class="zl-comment-message-agreement">
+                        <span>同意发起人意见</span>
+                    </div>
+                </li><!--end li-->
+
+                <li>
+                    <div class="zl-comment-message-status ">
+                        <em class="zl-comment-message-index">4</em>
+                        <span class="zl-comment-message-responsor">廖明舜</span>
+                        <span class="zl-comment-message-date">(<em>08-07 06:26</em>已签批）</span>
+                        <span class="zl-comment-title">财务管理中心总经理.副总裁兼财务管理中心总经理</span>
+                    </div>
+                    <div class="zl-comment-message-agreement">
+                        <span>同意发起人意见</span>
+                    </div>
+
+                    <ul class="zl-comment-message-sub">
+                        <li>
+                            <div class="zl-comment-message-status">
+                                <em class="zl-comment-message-index">4.1</em>
+                                <span class="zl-comment-message-responsor">唐建友</span>
+                                <span class="zl-comment-message-date">(<em>16-08-06 09:02</em>已签批）</span>
+                                <span class="zl-comment-title">财务管理中心财务部地产负责人.副总监</span>
+                            </div>
+                            <div class="zl-comment-message-agreement">
+                                <span>同意发起人意见</span>
+                            </div>
+                        </li><!--end li-->
+                    </ul>
+                </li><!--end li-->
+
+                <li>
+                    <div class="zl-comment-message-status ">
+                        <em class="zl-comment-message-index">5</em>
+                        <span class="zl-comment-message-responsor">张洪峰</span>
+                        <span class="zl-comment-message-date">(<em>08-07 07:25</em>已签批）</span>
+                        <span class="zl-comment-title">执行副总裁.执行副总裁兼营运管理中心总经理</span>
+                    </div>
+                    <div class="zl-comment-message-agreement">
+                        <span>同意发起人意见</span>
+                    </div>
+                </li><!--end li-->
+
+                <li>
+                    <div class="zl-comment-message-status ">
+                        <em class="zl-comment-message-index">6</em>
+                        <span class="zl-comment-message-responsor">王新</span>
+                        <span class="zl-comment-message-date">(<em>08-07 16:19</em>已签批）</span>
+                        <span class="zl-comment-title">总裁.总裁</span>
+                    </div>
+                    <div class="zl-comment-message-agreement">
+                        <span>同意发起人意见</span>
+                    </div>
+                </li><!--end li-->
+            </ul>
+        </div><!-- network-approval-message-container -->
+
+    </div><!-- zl-content -->
+
+
+
+
+</div><!-- zl-page -->
+
+<script src="../../static/dist/js/jQuery/jquery-2.2.3.min.js"></script>
+<script src="../../static/dist/bootstrap/js/bootstrap.min.js"></script>
+<script>
+    $("#preloader").fadeOut("fast");
+</script>
+</body>
+</html>

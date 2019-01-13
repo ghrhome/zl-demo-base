@@ -1,0 +1,55 @@
+#contract_fee_detail .zl-block-head .zl-block-head-title {
+    padding: 0 0 15px;
+    font-size: 24px;
+    line-height: 24px;
+}
+#contract_fee_detail .zl-block-head .zl-block-head-content span em {
+    padding: 0 5px;
+}
+#contract_fee_detail {
+	padding-top:44px;
+} 
+#contract_fee_detail .zl-clearfix-pad {
+    padding: 32px 0 10px 0;
+}
+#contract_fee_detail .span-block {
+    height: 32px;
+    line-height: 32px;
+    padding-left: 10px;
+}
+#contract_fee_detail .span-block em.zl-checkbox {
+    vertical-align: middle;
+}
+#contract_fee_detail .color_blue td{
+	color:blue!important;
+}
+#contract_fee_detail .color_red td{
+	color:red!important;
+}
+#contract_fee_detail .color_grey td{
+	color:grey!important;
+}
+#contract_fee_detail .floor_btn {
+	position: absolute;
+    right: 18px;
+    top: 1px;
+    bottom: 0;
+    padding: 12px 0 0 0;
+}
+#contract_fee_detail .floor_btn a {
+	display: block;
+    height: 16px;
+    line-height: 16px;
+    background: no-repeat left center;
+    padding-left: 20px;
+    background-image: url(../../../images/common/btn_pic.png);
+    background-size: 16px 16px;
+    color: #757575;
+}
+#contract_fee_detail .floor_btn a:hover {
+	color: #E64E4D;
+    background-image: url(../../../images/common/btn_pic_hover.png);
+    cursor: pointer;
+    text-decoration: none;
+}
+

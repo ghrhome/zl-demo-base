@@ -1,0 +1,10 @@
+#multiple_contract_ledger_detail {
+	padding-top:44px;
+}
+#multiple_contract_ledger_detail .zl-head-content {
+    /*line-height:32px;*/
+    margin-bottom:20px;
+}
+#multiple_contract_ledger_detail .zl-head-content span {
+    color:#999;
+}

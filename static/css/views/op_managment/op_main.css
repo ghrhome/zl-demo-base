@@ -1,0 +1,315 @@
+#op-main{
+
+}
+
+.zl-project-icon {
+    display: block;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 16px;
+    left: 30px;
+    background-image: url(../../../images/main/project_bg.png);
+    border-radius: 50px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+/*zl-projects-lists*/
+#op-main .zl-projects-lists{}
+
+#op-main .zl-projects-lists>.zl-project{
+    position: relative;
+    margin-bottom:20px;
+    padding:15px;
+    padding-right:0;
+    padding-left:98px;
+    padding-bottom:35px;
+    width:50%;
+    min-height: 135px;
+    float:left;
+    background-color:#f4f4f4;
+    border-right:solid 20px #fff;
+
+    cursor:pointer;
+}
+#op-main .zl-project .zl-project-info{}
+#op-main .zl-project .zl-project-info .zl-project-ul{
+    color:#757575;
+}
+#op-main .zl-projects-lists>.zl-project:hover {
+    background-color: #eaeaea;
+}
+
+#op-main .zl-projects-lists>.zl-project h5{
+    padding:0;
+    margin:0;
+    padding-bottom:10px;
+    font-size:20px;
+    line-height: 1.2;
+}
+
+#op-main .zl-projects-lists .zl-project-ul{}
+
+#op-main .zl-projects-lists .zl-project-ul>li{padding-right:46px;width:50%;float:left;}
+#op-main .zl-projects-lists .zl-project-ul>li>label{float:left;}
+#op-main .zl-projects-lists .zl-project-ul>li>span{float:right;}
+#op-main .zl-projects-lists .zl-project-ul>li>label,
+#op-main .zl-projects-lists .zl-project-ul>li>span{
+    font-weight:normal;
+    line-height: 1.4;
+    font-size:14px;
+    color:#757575;
+}
+
+#op-main .page-num{}
+#op-main .zl-section-cards em.em-unit{
+    margin-left:5px;
+    font-size:14px;
+    color:#333;
+}
+#op-main .zl-table-card tbody tr>td ul.ul-info label{
+    color:#8a97a8;
+    font-weight:normal;
+}
+#op-main .zl-table-card tbody tr>td ul.ul-info span{
+    color:#333;
+}
+/*zl-info-list*/
+.zl-info-list{
+
+}
+
+.zl-info-list .zl-info-item{
+    float:left;
+    padding-left:8px;
+    padding-right:25px;
+
+    min-width:60px;
+    text-align: left;
+    color:#8a97a8;
+
+}
+.zl-info-list .zl-info-item:hover{
+
+}
+.zl-info-list .zl-info-item span{
+    font-size:12.8px;
+}
+.zl-info-list .zl-info-item:hover span{color:#333;}
+.zl-info-list .zl-info-item:hover h3{color: #333;}
+
+.zl-info-list .zl-info-item+.zl-info-item{
+    min-width:88px;
+    padding-left:25px;
+    border-left:solid 1px #dce0e3;
+}
+
+.zl-info-list .zl-info-item h3{color:#333;margin-top:6px;font-size:22px;}
+.zl-info-list .zl-info-item h3>.em-unit{
+    font-size: 12px;
+    color: #757575;
+    margin-left: 5px;
+}
+
+/*.zl-section*/
+.zl-section.zl-section-cards{
+    margin-left:-20px;
+    margin-right:-20px;
+    margin-bottom:0;
+    padding:20px;
+    padding-right:0;
+    padding-bottom:0;
+    background-color:#f4f4f4;
+}
+.zl-section.zl-section-cards .zl-section-title{
+    padding:0;
+    padding-bottom:20px;
+}
+.zl-section.zl-section-cards .zl-section-title h3{
+    position: relative;
+    height: 18px;
+    border-left:solid 4px #4fadff;
+    padding-left: 8px;
+    font-size: 18px;
+
+    line-height:18px;
+}
+.zl-section.zl-section-cards.zl-section-cards-reverse{
+    background-color:#fff;
+}
+/*zl-table-card*/
+.zl-table-card {margin-bottom:0;}
+.zl-table-card tbody{
+    cursor:pointer;
+    background-color:#fff;
+    border:solid 20px #fff;
+}
+.zl-table-card tbody+tbody{
+ /* border-top:solid 20px #f4f4f4;*/
+}
+.zl-table-card tbody tr>td{position: relative;}
+
+.zl-table-card+.zl-table-card{
+    margin-top:20px;
+}
+
+.zl-table-card>tbody>tr>td,
+.zl-table-card>tbody>tr>th,
+.zl-table-card>tfoot>tr>td,
+.zl-table-card>tfoot>tr>th,
+.zl-table-card>thead>tr>td,
+.zl-table-card>thead>tr>th{
+    border-top:0;
+}
+.zl-table-card tbody tr>td{padding-bottom:0;vertical-align: top;border-left:solid 1px #dce0e3;}
+.zl-table-card tbody tr>td:nth-child(1){border-left:0;}
+
+
+.zl-table-card tbody tr:nth-child(1) td{vertical-align: bottom;padding-top:20px;padding-bottom:0;}
+.zl-table-card tbody tr>td h5{color:#333;font-size:16px;}
+#op-main .zl-table-card tbody tr>td h5{font-size:14px;color:#229ffb;}
+#op-main .zl-table-card tbody tr>td .sub-title{font-weight:normal;margin-left:5px;}
+.table tbody tr>td p{padding: 15px 0;line-height: 1.6;white-space:normal;}
+.zl-table-card tbody tr>td span{color:#8a97a8;font-weight: normal;}
+.zl-table-card tbody tr>td span.td-title{color:#333;}
+.zl-table-card .page-td-info{
+    padding-left:50px;
+    position:relative;;
+}
+
+.zl-table-card .page-td-info .td-info{}
+.zl-table-card .page-td-info .td-info h6,
+.zl-table-card .page-td-info .td-info span{
+    font-size:14px;
+    display: block;
+    color:#333;
+}
+
+/*update*/
+.zl-section .zl-section-content table tr:first-child th, .zl-section .zl-section-content table tr:first-child td{
+    padding-top:0;
+}
+#op-main .zl-table-card .zl-glyphicon{
+    font-size:14px;
+}
+
+/*zl-panel*/
+.zl-projects-panels{}
+
+.zl-projects-panels .zl-panel{
+    margin-bottom:10px;
+    padding-right:20px;
+}
+
+.zl-projects-panels .zl-panel .zl-panel-title{
+    position: relative;
+    height: 40px;
+    line-height: 40px;
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+    padding: 0px 20px;
+}
+.zl-projects-panels .zl-panel .zl-panel-title h5{
+    font-size:15px;
+    line-height: 40px;
+}
+
+.zl-panel-title-red{
+    background-color:#e64e4d;
+}
+.zl-panel-title-blue{
+    background-color:#17b1e2;
+}
+
+
+.zl-projects-panels .zl-panel .zl-panel-title:after{
+    position: absolute;
+    display: block;
+    content: " ";
+    top: 0;
+    right: 0;
+    border-top: 20px solid rgb(255, 255, 255);
+    border-left: 20px solid transparent;
+}
+.zl-projects-panels .zl-panel .zl-panel-content{
+    border-bottom:solid 10px #f4f4f4;
+    background-color:#f4f4f4;
+}
+
+.zl-projects-panels .zl-panel table.zl-table tr>th{background-color:transparent;}
+.zl-projects-panels .zl-panel table.zl-table tbody>tr>th{color:#333;}
+.zl-projects-panels .zl-panel table.zl-table tbody>tr:hover{background-color:#eaeaea;}
+
+/*patch*/
+#project-info-name{
+    padding-left:3px;
+    padding-right:30px;
+    min-width: 100px;
+    font-size: 18px;
+    line-height: 50px;
+}
+.project-info-date{font-size:16px;line-height: 16px;}
+.project-info-date>em.zl-glyphicon{float:left;margin-right:3px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

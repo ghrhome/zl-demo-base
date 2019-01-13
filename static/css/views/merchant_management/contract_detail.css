@@ -1,0 +1,658 @@
+#zl-contract-detail{
+
+}
+
+#zl-contract-detail .zl-contract-block{
+
+}
+
+#zl-contract-detail .zl-dist-links{
+    height:44px;
+    line-height: 44px;
+}
+
+
+/* zl-contract-block-title */
+#zl-contract-detail .zl-contract-block-title{
+    padding:20px 0;
+    border-bottom: 1px solid #e4e5ea;
+}
+#zl-contract-detail .zl-contract-block-title button{
+    float:left;
+    margin-right:10px;
+}
+
+#zl-contract-detail .zl-contract-block-title>div{
+
+    height:32px;
+
+    line-height: 32px;
+    float:right;
+}
+
+/* zl-contract-block-content */
+#zl-contract-detail .zl-contract-block-content{
+    padding:20px 0;
+}
+
+/* zl-contract-block-content zl-contract-basic-info */
+#zl-contract-detail .zl-contract-block-content .zl-contract-basic-info{
+    padding-bottom:40px;
+}
+#zl-contract-detail .zl-contract-block-content .zl-contract-basic-info h2{
+    font-weight:normal;
+    margin:0;
+}
+
+#zl-contract-detail .zl-contract-block-content .zl-contract-basic-info dl{
+    margin:0;
+    padding-top:20px;
+}
+
+#zl-contract-detail .zl-contract-block-content .zl-contract-basic-info dt{
+    float:left;
+    color:#757575;
+}
+
+#zl-contract-detail .zl-contract-block-content .zl-contract-basic-info dt:after{
+    content:" ";
+    white-space: pre;
+}
+
+#zl-contract-detail .zl-contract-block-content .zl-contract-basic-info dd{
+    float:left;
+    color:#222222;
+}
+
+#zl-contract-detail .zl-contract-block-content .zl-contract-basic-info dd.zl-text-outstanding{
+    color:#18B0E2;
+}
+
+#zl-contract-detail .zl-contract-block-content .zl-contract-basic-info em{
+    padding:0 10px;
+}
+
+/* zl-contract-block-content zl-contract-attachment */
+#zl-contract-detail .zl-contract-block-content .zl-contract-attachment{
+    font-size:14px;
+    color:#757575;
+    border-top: 8px solid #e4e5ea;
+    padding-bottom:40px;
+}
+
+#zl-contract-detail .zl-contract-block-content .zl-contract-attachment>div{
+    position:relative;
+    width:50%;
+    float:left;
+}
+
+/* zl-contract-block-content zl-contract-attachment zl-contact-attachment-mgt */
+#zl-contract-detail .zl-contract-block-content .zl-contract-attachment>.zl-contact-attachment-mgt>div{
+    height:120px;
+    border-right:1px solid #e4e5ea;
+    border-bottom:1px solid #e4e5ea;
+}
+
+#zl-contract-detail .zl-contract-block-content .zl-contract-attachment>.zl-contact-attachment-mgt>div:first-child{
+    position:absolute;
+    width:120px;
+    border-left:1px solid #e4e5ea;
+    padding-top: 35px;
+    padding-left: 25px;
+}
+
+#zl-contract-detail .zl-contract-block-content .zl-contract-attachment>.zl-contact-attachment-mgt>div:first-child em{
+    display:inline-block;
+    width:10px;
+    height:16px;
+    background-repeat: no-repeat;
+    background-image:url(../images/contract/attachment-icon.png);
+    margin-left:2px;
+    vertical-align: -2px;
+}
+
+#zl-contract-detail .zl-contract-block-content .zl-contract-attachment>.zl-contact-attachment-mgt>div:last-child{
+    width:100%;
+    padding-left:120px;
+}
+
+#zl-contract-detail .zl-contract-block-content .zl-contract-attachment>.zl-contact-attachment-mgt ul{
+    padding:0;
+    margin:0;
+}
+#zl-contract-detail .zl-contract-block-content .zl-contract-attachment>.zl-contact-attachment-mgt ul li{
+
+    padding:10px;
+}
+#zl-contract-detail .zl-contract-block-content .zl-contract-attachment>.zl-contact-attachment-mgt ul li>div{
+    float:left;
+}
+
+#zl-contract-detail .zl-contract-block-content .zl-contract-attachment>.zl-contact-attachment-mgt ul li>div.col-55{
+    width:55%;
+}
+
+#zl-contract-detail .zl-contract-block-content .zl-contract-attachment>.zl-contact-attachment-mgt ul li>div.col-15{
+    width:15%;
+}
+
+#zl-contract-detail .zl-contract-block-content .zl-contract-attachment>.zl-contact-attachment-mgt ul li>div:first-child{
+    color:#222222;
+}
+
+#zl-contract-detail .zl-contract-block-content .zl-contract-attachment>.zl-contact-attachment-mgt ul li>div a{
+    color:#32aaff
+}
+
+#zl-contract-detail .zl-contract-block-content .zl-contract-attachment>.zl-contact-attachment-mgt ul li>div:first-child a{
+    color:#222222;
+}
+
+#zl-contract-detail .zl-contract-block-content .zl-contract-attachment>.zl-contact-attachment-mgt ul li>div:first-child a:hover{
+    color:#e64e4d;
+    text-decoration:underline;
+}
+
+#zl-contract-detail .zl-contract-block-content .zl-contract-attachment>.zl-contact-attachment-mgt ul li>div:last-child{
+    text-align: right;
+}
+
+
+/* zl-contract-block-content zl-contract-attachment zl-contract-list */
+#zl-contract-detail .zl-contract-block-content .zl-contract-attachment>.zl-contract-list>div{
+    height:120px;
+    border-right:1px solid #e4e5ea;
+    border-bottom:1px solid #e4e5ea;
+}
+#zl-contract-detail .zl-contract-block-content .zl-contract-attachment>.zl-contract-list>div:first-child{
+    position:absolute;
+    width:120px;
+    padding-left: 30px;
+    padding-top: 48px;
+}
+
+#zl-contract-detail .zl-contract-block-content .zl-contract-attachment>.zl-contract-list>div:last-child{
+    width:100%;
+    padding-left:120px;
+}
+
+#zl-contract-detail .zl-contract-block-content .zl-contract-attachment>.zl-contract-list>div:last-child ul{
+    padding:0;
+}
+
+#zl-contract-detail .zl-contract-block-content .zl-contract-attachment>.zl-contract-list>div:last-child li{
+    height:40px;
+    line-height:40px;
+    border-bottom:1px solid #e4e5ea;
+}
+
+#zl-contract-detail .zl-contract-block-content .zl-contract-attachment>.zl-contract-list>div:last-child li>div.zl-form-item{
+    position:relative;
+    height:40px;
+    line-height: 39px;
+    border-bottom:1px solid #e4e5ea;
+    padding-left:170px;
+    background-color:#f8fafa;
+}
+
+#zl-contract-detail .zl-contract-block-content .zl-contract-attachment>.zl-contract-list>div:last-child li>div.zl-form-item label{
+    position:absolute;
+    left:0;
+    top:0;
+    bottom:0;
+    display:block;
+    width:150px;
+    margin:0;
+    padding-left:20px;
+    font-weight: normal;
+
+}
+
+#zl-contract-detail .zl-contract-block-content .zl-contract-attachment>.zl-contract-list>div:last-child li>div.zl-form-item input{
+    width:100%;
+    height:100%;
+    padding-left:10px;
+
+    border:none;
+    border-left:1px solid #e4e5ea;
+    color:#222;
+}
+
+
+/* ======================================== zl-contract-block-content zl-contract-attachment ======================================== */
+/* zl-contract-block-content zl-contract-attachment .zl-contract-text */
+#zl-contract-detail .zl-contract-block-content .zl-contract-text{
+    border-top: 8px solid #e4e5ea;
+    border-left:1px solid #e4e5ea;
+    border-bottom:1px solid #e4e5ea;
+    border-right:1px solid #e4e5ea;
+}
+
+/* zl-contract-block-content zl-contract-attachment .zl-contract-text zl-contract-text-content */
+#zl-contract-detail .zl-contract-block-content .zl-contract-text .zl-contract-text-content{
+    position:relative;
+}
+
+#zl-contract-detail .zl-contract-block-content .zl-contract-text .zl-contract-text-content .zl-annotation-btn{
+    position:absolute;
+    top:20px;
+    right:100px;
+    width:40px;
+    height:40px;
+    border-radius:20px;
+    background-color:#b0b0b0;
+    cursor:pointer;
+    line-height: 40px;
+    text-align: center;
+
+    background-repeat: no-repeat;
+    background-image: url(../../../images/contract/zl-annotation-btn-icon.png);
+    background-position: center center;
+}
+
+#zl-contract-detail .zl-contract-block-content .zl-contract-text .zl-contract-text-content .zl-annotation-tooltip-btn{
+    position:absolute;
+    top:20px;
+    right:40px;
+    width:40px;
+    height:40px;
+    border-radius:20px;
+    background-color:#b0b0b0;
+    cursor:pointer;
+    line-height: 40px;
+    text-align: center;
+
+    background-repeat: no-repeat;
+    background-image: url(../../../images/contract/zl-annotation-tooltip-btn-icon.png);
+    background-position: center center;
+
+}
+#zl-contract-detail .zl-contract-block-content .zl-contract-text .zl-contract-text-content .zl-annotation-btn:hover,
+#zl-contract-detail .zl-contract-block-content .zl-contract-text .zl-contract-text-content .zl-annotation-tooltip-btn:hover{
+    background-color:#4c4c4c;
+    color:#ffffff;
+}
+
+/* zl-contract-block-content zl-contract-attachment .zl-contract-text zl-contract-text-toolbar */
+#zl-contract-detail .zl-contract-block-content .zl-contract-text .zl-contract-text-toolbar{
+    margin-left:0;
+    padding:20px 10px;
+    border-bottom:1px solid #e4e5ea;
+}
+
+#zl-contract-detail .zl-contract-block-content .zl-contract-text .zl-contract-text-toolbar>div{
+    border:1px solid #e4e5ea;
+}
+
+#zl-contract-detail .zl-contract-block-content .zl-contract-text .zl-contract-text-toolbar a{
+    display:inline-block;
+    height:32px;
+    line-height:32px;
+    color:#757575;
+    padding:0 20px;
+    font-size:14px;
+}
+
+#zl-contract-detail .zl-contract-block-content .zl-contract-text .zl-contract-text-toolbar a.active{
+    color:#fff;
+    background-color:#808c92;
+}
+
+/* zl-contract-block-content zl-contract-attachment .zl-contract-text zl-contract-text-input-list */
+#zl-contract-detail .zl-contract-block-content .zl-contract-text .zl-contract-text-input-list {
+    margin-left:0;
+    overflow-y: auto;
+    height:586px;
+}
+
+#zl-contract-detail .zl-contract-block-content .zl-contract-text .zl-contract-text-input-list ul{
+    padding-left:0;
+    margin-bottom:0;
+}
+
+#zl-contract-detail .zl-contract-block-content .zl-contract-text .zl-contract-text-input-list ul li{
+    border-bottom:1px solid #e4e5ea;
+    height:40px;
+    line-height:40px;
+    padding:0 15px;
+    cursor:pointer;
+}
+
+#zl-contract-detail .zl-contract-block-content .zl-contract-text .zl-contract-text-input-list ul li:hover{
+    background-color:#eaeaea;
+}
+
+#zl-contract-detail .zl-contract-block-content .zl-contract-text .zl-contract-text-input-list ul li.active{
+    background-color:#eaeaea;
+    border-left: 4px solid #18b0e2;
+}
+
+#zl-contract-detail .zl-contract-block-content .zl-contract-text .zl-contract-text-input-list ul li span{
+    float:left;
+}
+
+#zl-contract-detail .zl-contract-block-content .zl-contract-text .zl-contract-text-input-list ul li em{
+    float:right;
+
+}
+
+#zl-contract-detail .zl-contract-block-content .zl-contract-text .zl-contract-text-input-list ul li em:hover{
+    color:#E64E4D;
+}
+
+/* zl-contract-block-content zl-contract-attachment .zl-contract-text zl-contract-text-annotation-content */
+#zl-contract-detail .zl-contract-block-content .zl-contract-text .zl-contract-text-annotation-content {
+    display:none;
+    margin-left:-30px;
+}
+
+#zl-contract-detail .zl-contract-block-content .zl-contract-text .zl-contract-text-annotation-content ul{
+    padding-left:0;
+}
+
+#zl-contract-detail .zl-contract-block-content .zl-contract-text .zl-contract-text-annotation-content ul li{
+    border-bottom:1px solid #cccccc;
+    padding:0 15px;
+    cursor:pointer;
+}
+
+#zl-contract-detail .zl-contract-block-content .zl-contract-text .zl-contract-text-annotation-content ul li:hover{
+    background-color:#eaeaea;
+}
+
+#zl-contract-detail .zl-contract-block-content .zl-contract-text .zl-contract-text-annotation-content ul li.active{
+    background-color:#eaeaea;
+    border-left: 4px solid #18b0e2;
+}
+
+#zl-contract-detail .zl-contract-block-content .zl-contract-text .zl-contract-text-annotation-content ul li>div:first-child{
+    height:40px;
+    line-height:40px;
+}
+
+#zl-contract-detail .zl-contract-block-content .zl-contract-text .zl-contract-text-annotation-content ul li>div:first-child span{
+    float:left;
+}
+#zl-contract-detail .zl-contract-block-content .zl-contract-text .zl-contract-text-annotation-content ul li>div:first-child em{
+    cursor:pointer;
+    float:right;
+    margin-left:10px;
+}
+
+#zl-contract-detail .zl-contract-block-content .zl-contract-text .zl-contract-text-annotation-content ul li>div:first-child em:hover{
+    color:#E64E4D;
+}
+
+#zl-contract-detail .zl-contract-block-content .zl-contract-text .zl-contract-text-annotation-content ul li>div:last-child{
+    padding-bottom:20px;
+    line-height:25px;
+}
+
+
+/* ======================================== zl-annotation-dialog start ======================================== */
+.zl-annotation-dialog .modal-dialog{
+    width:780px;
+}
+
+.zl-annotation-dialog .modal-header{
+    border-bottom-width:0;
+}
+
+.zl-annotation-dialog .modal-header .modal-title{
+    height:32px;
+    line-height:32px;
+    margin-right:10px;
+    float:left;
+}
+
+.zl-annotation-dialog .modal-body{
+    padding:0;
+}
+
+.zl-annotation-dialog .modal-footer{
+    border-top:1px solid #cccccc;
+}
+
+/* ======================================== zl-annotation-dialog end ======================================== */
+
+/* ======================================== zl-input-edit-dialog start ======================================== */
+.zl-input-edit-dialog input{
+    height:32px;
+    padding-left:8px;
+    font-size:14px;
+    border:1px solid #cccccc;
+}
+/* ======================================== zl-input-edit-dialog end ======================================== */
+
+
+/* ======================================== zl-annotation-tooltip-dialog start ======================================== */
+.zl-annotation-tooltip-dialog .modal-dialog,
+.zl-annotation-tooltip-dialog .modal-content{
+     width:800px;
+ }
+
+.zl-annotation-tooltip-dialog .modal-body{
+    height:400px;
+    overflow: auto;
+}
+
+.zl-annotation-tooltip-dialog .div_title font{ margin-right:5px;}
+.zl-annotation-tooltip-dialog .tab tr{ border-bottom: 1px solid #DDDBDC;}
+.zl-annotation-tooltip-dialog .tab tr td:hover{border-bottom: 1px solid #DDDBDC;background:#DDDBDC;color:#40a4be; }
+.zl-annotation-tooltip-dialog .div_ul li{list-style:outside none;}
+/* ======================================== zl-annotation-tooltip-dialog end ... ======================================== */
+
+
+/* ======================================== zl-history-version-dialog start ======================================== */
+.zl-history-version-dialog .modal-dialog{
+    width:600px;
+
+}
+
+.zl-history-version-dialog .modal-body{
+    max-height:500px;
+    height:500px;
+    overflow: auto;
+    padding:0;
+}
+.zl-history-version-dialog .zl-history-title{
+    padding:20px 0;
+}
+.zl-history-version-dialog .zl-history-title h3{
+    height: 18px;
+    border-left: 4px solid #e64e4d;
+    line-height: 20px;
+    padding-left:4px;
+    font-size:18px;
+}
+
+.zl-history-version-dialog .zl-print-history{
+    padding:20px 40px 0 40px;
+}
+.zl-history-version-dialog .zl-print-history .zl-table-cell{
+    width:33.33%;
+}
+
+.zl-history-version-dialog .zl-contract-operation-history{
+    padding:20px 40px 0 40px;
+}
+.zl-history-version-dialog .zl-contract-operation-history .zl-table-cell{
+    width:33.33%;
+}
+
+.zl-history-version-dialog .zl-his-version{
+    padding:20px 40px 0 40px;
+}
+.zl-history-version-dialog .zl-his-version .zl-table-cell{
+    width:33.33%;
+}
+/* ======================================== zl-history-version-dialog end======================================== */
+
+
+/* ======================================== zl-contract-template-dialog start ======================================== */
+.zl-contract-template-dialog{
+
+}
+
+
+.zl-contract-template-dialog .modal-dialog{
+    width:1000px;
+}
+.zl-contract-template-dialog .modal-content{
+    overflow: hidden;
+}
+.zl-contract-template-dialog .modal-body{
+    height:450px;
+    overflow: hidden;
+}
+
+/*template-container*/
+.zl-contract-template-dialog .template-container{
+    position:relative;
+    height:100%;
+    padding-left:300px;
+}
+
+.zl-contract-template-dialog .template-container .template-container-left{
+    position:absolute;
+    top:0;
+    left:0;
+    display:block;
+    width:300px;
+    height:100%;
+    border-right:1px solid #ccc;
+    overflow-y:auto;
+    padding-bottom:20px;
+}
+
+.zl-contract-template-dialog .template-container .template-container-right{
+    height:100%;
+}
+
+.zl-contract-template-dialog .template-container .template-container-right .template-bar{
+    position:relative;
+    height: 64px;
+    line-height: 64px;
+    background-color: #fdeadf;
+    padding-left: 60px;
+}
+
+.zl-contract-template-dialog .template-container .template-container-right .template-bar a{
+    position:absolute;
+    top:0;
+    left:0;
+    bottom:0;
+    display:none;
+    width:36px;
+    height:36px;
+    margin:auto;
+    cursor:pointer;
+    background:url(../images/contract/collapse-btn.png) no-repeat;
+    background-size:contain;
+}
+
+/*.zl-contract-template-dialog .template-container .template-container-right .template-bar a{*/
+    /*position:absolute;*/
+    /*top:0;*/
+    /*left:0;*/
+    /*bottom:0;*/
+    /*display:none;*/
+    /*width:0;*/
+    /*height:0;*/
+    /*margin:auto;*/
+    /*border-top:20px solid transparent;*/
+    /*border-bottom:20px solid transparent;*/
+    /*border-left:30px solid #ccc;*/
+    /*cursor:pointer;*/
+/*}*/
+
+
+/* static-tree */
+.static-tree{
+    border-bottom:1px solid #ccc;
+}
+.static-tree>div{
+    position:relative;
+    height:32px;
+    line-height: 32px;
+    cursor:pointer;
+    padding-left:32px;
+
+}
+
+.static-tree>div:hover{
+    background-color:#eaeaea;
+}
+
+.static-tree>div:before{
+    content:"";
+    position:absolute;
+    left:10px;
+    top:0;
+    bottom:0;
+    display:block;
+    width:16px;
+    height:16px;
+    background:url(../images/ys_tree_close.png) no-repeat;
+    background-size:contain;
+    margin:auto;
+}
+.static-tree.open>div{
+    background-color:#f3f3f3;
+}
+.static-tree.open>div:before{
+    background-image:url(../images/ys_tree_open.png);
+}
+
+.static-tree>ul{
+    display:none;
+    padding:0 0 0 0;
+    margin:0;
+    list-style-type: none;
+    background-color:#fff;
+}
+
+.static-tree.open>ul{
+    display:block;
+}
+.static-tree>ul>li{
+    position:relative;
+    padding-left:40px;
+    height:32px;
+    line-height: 32px;
+    cursor:pointer;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.static-tree>ul>li.checked{
+    background-color:#f3f3f3;
+    border-left:4px solid #18B0E2;
+    padding-left:36px;
+}
+
+.static-tree>ul>li:hover{
+    background-color:#eaeaea;
+}
+
+.static-tree>ul>li:before{
+    content:"";
+    position:absolute;
+    left:30px;
+    top:0;
+    bottom:0;
+    display:block;
+    width:4px;
+    height:4px;
+    border-radius: 2px;
+    margin:auto;
+    background-color:#ccc;
+}
+
+.static-tree>ul>li.checked:before{
+    left:26px;
+}
+
+
+/* ======================================== zl-contract-template-dialog end ======================================== */

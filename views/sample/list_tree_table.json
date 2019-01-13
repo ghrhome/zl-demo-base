@@ -1,0 +1,198 @@
+{
+  "preload":"preload data",
+  "list_tree":[
+    {
+      "nodeId":0,
+      "nodeName":"万科地产",
+      "expanded":true,
+      "data":{
+        "orgUnit":"A000",
+        "subCode":"1503",
+        "subName":"可供出售金融资产",
+        "assisAccount":"06",
+        "updateTime":"2018-03-19  14:22:53",
+        "status":" 正常"
+
+      },
+      "children":[
+        {
+          "nodeId":1,
+          "nodeName":"万科地产",
+          "expanded":true,
+          "data":{
+            "orgUnit":"A000",
+            "subCode":"1503",
+            "subName":"可供出售金融资产",
+            "assisAccount":"06",
+            "updateTime":"2018-03-19  14:22:53",
+            "status":" 正常"
+
+          },
+          "children":[
+            {
+              "nodeId":11,
+              "nodeName":"管理部",
+              "data":{
+                "orgUnit":"A000",
+                "subCode":"1503",
+                "subName":"可供出售金融资产",
+                "assisAccount":"06",
+                "updateTime":"2018-03-19  14:22:53",
+                "status":" 正常"
+
+              }z
+            },{
+              "nodeId":12,
+              "nodeName":"财务部",
+              "data":{
+                "orgUnit":"A000",
+                "subCode":"1503",
+                "subName":"可供出售金融资产",
+                "assisAccount":"06",
+                "updateTime":"2018-03-19  14:22:53",
+                "status":" 正常"
+
+              }
+            },{
+              "nodeId":13,
+              "nodeName":"投资部",
+              "data":{
+                "orgUnit":"A000",
+                "subCode":"1503",
+                "subName":"可供出售金融资产",
+                "assisAccount":"06",
+                "updateTime":"2018-03-19  14:22:53",
+                "status":" 正常"
+
+              }
+            },{
+              "nodeId":14,
+              "nodeName":"万信体系",
+              "data":{
+                "orgUnit":"A000",
+                "subCode":"1503",
+                "subName":"可供出售金融资产",
+                "assisAccount":"06",
+                "updateTime":"2018-03-19  14:22:53",
+                "status":" 正常"
+
+              },
+              "children":[
+                {
+                  "nodeId":141,
+                  "nodeName":"耗材公司",
+                  "data":{
+                    "orgUnit":"A000",
+                    "subCode":"1503",
+                    "subName":"可供出售金融资产",
+                    "assisAccount":"06",
+                    "updateTime":"2018-03-19  14:22:53",
+                    "status":" 正常"
+
+                  }
+                },{
+                  "nodeId":142,
+                  "nodeName":"万科信息",
+                  "data":{
+                    "orgUnit":"A000",
+                    "subCode":"1503",
+                    "subName":"可供出售金融资产",
+                    "assisAccount":"06",
+                    "updateTime":"2018-03-19  14:22:53",
+                    "status":" 正常"
+
+                  },
+                  "children":[
+                    {
+                      "nodeId":1421,
+                      "nodeName":"资财管理中心",
+                      "data":{
+                        "orgUnit":"A000",
+                        "subCode":"1503",
+                        "subName":"可供出售金融资产",
+                        "assisAccount":"06",
+                        "updateTime":"2018-03-19  14:22:53",
+                        "status":" 正常"
+
+                      }
+                    }
+                  ]
+                }
+              ]
+            },{
+              "nodeId":15,
+              "nodeName":"游乐体系",
+              "data":{
+                "orgUnit":"A000",
+                "subCode":"1503",
+                "subName":"可供出售金融资产",
+                "assisAccount":"06",
+                "updateTime":"2018-03-19  14:22:53",
+                "status":" 正常"
+
+              },
+              "children":[
+                {
+                  "nodeId":151,
+                  "nodeName":"工程咨询有限公司",
+                  "data":{
+                    "orgUnit":"A000",
+                    "subCode":"1503",
+                    "subName":"可供出售金融资产",
+                    "assisAccount":"06",
+                    "updateTime":"2018-03-19  14:22:53",
+                    "status":" 正常"
+
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "nodeId":2,
+          "nodeName":"万科地产",
+          "data":{
+            "orgUnit":"A000",
+            "subCode":"1503",
+            "subName":"可供出售金融资产",
+            "assisAccount":"06",
+            "updateTime":"2018-03-19  14:22:53",
+            "status":" 正常"
+
+          },
+          "children":[
+            {
+              "nodeId":21,
+              "nodeName":"地产",
+              "data":{
+                "orgUnit":"A000",
+                "subCode":"1503",
+                "subName":"可供出售金融资产",
+                "assisAccount":"06",
+                "updateTime":"2018-03-19  14:22:53",
+                "status":" 正常"
+
+              },
+              "children":[
+                {
+                  "nodeId":211,
+                  "nodeName":"决策层",
+                  "data":{
+                    "orgUnit":"A000",
+                    "subCode":"1503",
+                    "subName":"可供出售金融资产",
+                    "assisAccount":"06",
+                    "updateTime":"2018-03-19  14:22:53",
+                    "status":" 正常"
+
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

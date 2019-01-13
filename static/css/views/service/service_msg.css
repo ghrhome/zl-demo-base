@@ -1,0 +1,47 @@
+#page-service-msg{}
+#page-service-msg .form-horizontal{}
+#page-service-msg .form-horizontal{}
+
+#page-service-msg .form-horizontal .form-group{
+    position: relative;
+    padding-left:88px;
+}
+#page-service-msg .form-horizontal .control-label{
+    position:absolute;
+    top:0;
+    left:0;
+    width:88px;
+    text-align: left;
+    color:#8b97a7;
+    font-weight:normal;
+}
+
+#page-service-msg .input-group>span{display: inline-block;padding-top:7px;line-height: 20px;}
+#page-service-msg .input-group>.raido-wrapper{padding-top:7px;}
+#page-service-msg .input-group>textarea{
+    float:left;
+    border:1px solid #ccc
+}
+
+
+#page-service-msg .input-group .zl-glyphicon{
+    float: left;
+    font-size:18px;
+    margin-top: 8px;
+    margin-left: 12px;
+    cursor:pointer;
+}
+
+input.user_select{
+    padding-right: 30px;
+    background-image: url(../../../images/icons/icon_user.png);
+    background-repeat: no-repeat;
+    background-position: 196px center;
+}
+input.user_select[readonly]{
+    background-color:#fff;
+}
+
+.modal-header h4{line-height: 32px;}
+.modal-body{padding:0 15px;}
+

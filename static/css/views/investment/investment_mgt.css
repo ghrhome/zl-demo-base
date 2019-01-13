@@ -1,0 +1,18 @@
+#investment-mgt .zl-toolbar .zl-search-wrapper{margin:0 10px;}
+#investment-mgt .zl-toolbar .zl-span-block .zl-checkbox{
+    margin-right:4px;
+    vertical-align: -2px;
+}
+/* ======================================== zl-table-block ======================================== */
+
+#investment-mgt .zl-table-block tr th:nth-child(2),
+#investment-mgt .zl-table-block tr td:nth-child(2),
+#investment-mgt .zl-table-block tr th:nth-child(3),
+#investment-mgt .zl-table-block tr td:nth-child(3){
+    text-align: right;
+    padding-right:80px;
+}
+
+#investment-mgt .zl-pagination-wrapper{
+    padding:20px 0;
+}

@@ -1,0 +1,39 @@
+#project-info{padding:64px 0 0 0;}
+#project-info .zl-content{padding-bottom:20px;}
+#project-info .zl-dropdown-inline{
+    height:100%;
+}
+#project-info .zl-dropdown-inline .zl-dropdown-btn{
+    border:none;
+    height: 32px;
+}
+
+#project-info .zl-col{
+
+}
+#project-info .zl-col .zl-col-title {
+
+    background-color: #f8fafa;
+    padding-left:15px;
+    padding-right:15px;
+}
+
+#project-info .zl-col .zl-col-title a{
+    height:35px;
+    line-height: 35px;
+}
+#project-info .zl-col .zl-col-title{
+    border-left:solid 1px #eff1f4;
+    border-bottom:solid 1px #eff1f4;
+}
+#project-info .zl-col:nth-child(1) .zl-col-title{
+    bordr-left:0;
+}
+#project-info .zl-col .zl-col-title h3{
+    margin:0;
+    height: 36px;
+    line-height: 36px;
+    font-size:14px;
+    color:#333;
+
+}

@@ -1,0 +1,23 @@
+#energy_consumption_enrolment .required-input {
+	width: 100%;
+    /*border: 1px solid #ccc;*/
+    height: 26px;
+    padding: 0 4px;
+    font-size: 12px;
+    /*border-left: 2px solid #E64E4D;*/
+}
+#energy_consumption_enrolment .zl-table-block a {
+    color: #2696dd;
+    cursor: pointer;
+}
+
+#energy_consumption_enrolment table.zl-table tr>th,
+#energy_consumption_enrolment table.zl-table tr>td{
+    padding-left:8px;
+    padding-right:8px;
+}
+
+#energy_consumption_enrolment  .zl-datetimepicker>input.form-control{
+    padding-left:8px;
+    padding-right:32px;
+}

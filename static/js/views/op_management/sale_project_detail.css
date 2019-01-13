@@ -1,0 +1,12 @@
+#sale-project-detail {
+	padding-top:44px;
+}
+#sale-project-detail table thead th,#sale-project-detail table tbody td {
+	text-align:right;
+}
+#sale-project-detail table thead th:first-child,#sale-project-detail table thead th:nth-child(2){
+	text-align:left;
+}
+#sale-project-detail table tbody td:first-child,#sale-project-detail table tbody td:nth-child(2){
+	text-align:left;
+}

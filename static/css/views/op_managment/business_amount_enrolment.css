@@ -1,0 +1,512 @@
+#business-amount-enrolment {}
+
+
+
+/* ======================================== zl-table-block ======================================== */
+
+
+
+#business-amount-enrolment .zl-table-block  .zl-table-row {
+	padding: 0;
+}
+
+#business-amount-enrolment .zl-table-block  .zl-table-row .zl-table-cell {
+	height:36px;
+	line-height: 36px;
+	padding: 0 10px;
+	width: 11%;
+}
+/*
+#business-amount-enrolment .zl-table-block  .zl-table-row .zl-table-cell {
+	text-align:left;
+}
+*/
+
+
+/*#business-amount-enrolment .zl-table-block  .zl-table-row .zl-table-cell:nth-child(1),
+#business-amount-enrolment .zl-table-block  .zl-table-row .zl-table-cell:nth-child(3),
+#business-amount-enrolment .zl-table-block  .zl-table-row .zl-table-cell:nth-child(4),
+#business-amount-enrolment .zl-table-block  .zl-table-row .zl-table-cell:nth-child(8){
+	width:10%;
+}
+#business-amount-enrolment .zl-table-block  .zl-table-row .zl-table-cell:nth-child(5),
+#business-amount-enrolment .zl-table-block  .zl-table-row .zl-table-cell:nth-child(6){
+	width:9%;
+}
+
+#business-amount-enrolment .zl-table-block  .zl-table-row .zl-table-cell:nth-child(2),
+#business-amount-enrolment .zl-table-block  .zl-table-row .zl-table-cell:nth-child(7){
+	width:15.5%;
+}
+
+#business-amount-enrolment .zl-table-block  .zl-table-row .zl-table-cell:nth-child(8){
+}
+!*#business-amount-enrolment .zl-table-block  .zl-table-row .zl-table-cell:nth-child(6),*!
+!*#business-amount-enrolment .zl-table-block  .zl-table-row .zl-table-cell:nth-child(7) {*!
+	!*width: 12%;*!
+!*}*!
+
+#business-amount-enrolment .zl-table-block  .zl-table-row .zl-table-cell:nth-child(5),
+#business-amount-enrolment .zl-table-block  .zl-table-row .zl-table-cell:nth-child(6),
+#business-amount-enrolment .zl-table-block  .zl-table-row .zl-table-cell:nth-child(7),
+#business-amount-enrolment .zl-table-block  .zl-table-row .zl-table-cell:nth-child(8) {
+	text-align: right;
+}*/
+#business-amount-enrolment .zl-table-block .zl-table-row .col-index-1 {width:15%;}
+#business-amount-enrolment .zl-table-block .zl-table-row .col-index-3{width:8%;}
+
+#business-amount-enrolment .zl-table-block .zl-collapse-wrapper .panel-body {
+	position: relative;
+	padding: 0 0 0 40%;
+}
+
+
+/* ---------------------------------------- content-left ---------------------------------------- */
+
+#business-amount-enrolment .zl-table-block .zl-collapse-wrapper .content-left {
+	position: absolute;
+	left: 0;
+	top: 0;
+	padding: 20px;
+	width: 50%;
+}
+
+#business-amount-enrolment .zl-table-block .zl-collapse-wrapper .content-left .info-item {
+	width:50%;
+	padding-bottom: 15px;
+	float:left;
+}
+
+#business-amount-enrolment .zl-table-block .zl-collapse-wrapper .content-left .info-item em {
+	display: block;
+	height: 18px;
+	line-height: 18px;
+	color: #2696dd;
+}
+
+#business-amount-enrolment .zl-table-block .zl-collapse-wrapper .content-left .info-item>div {
+	height: 24px;
+	line-height: 24px;
+	font-size: 16px;
+}
+
+
+/* ---------------------------------------- content-middle ---------------------------------------- */
+
+#business-amount-enrolment .zl-table-block .zl-collapse-wrapper .content-middle {
+	position: relative;
+	min-height: 200px;
+	padding: 20px 0 40px 0;
+	border-left: 1px solid #ccc;
+	z-index: 9;
+	background-color: #fff;
+}
+
+#business-amount-enrolment .zl-table-block .zl-collapse-wrapper .content-middle .table-top {
+	max-width: 600px;
+	margin:10px 20px 0 0;
+}
+
+#business-amount-enrolment .zl-table-block .zl-collapse-wrapper .content-middle .table-top tr td {
+	height: 32px;
+	padding: 0 20px;
+}
+
+#business-amount-enrolment .zl-table-block .zl-collapse-wrapper .content-middle .table-top tr td:first-child {
+	color: #2696dd;
+	font-size: 16px;
+}
+
+#business-amount-enrolment .zl-table-block .zl-collapse-wrapper .content-middle .table-top tr td:nth-child(2),
+#business-amount-enrolment .zl-table-block .zl-collapse-wrapper .content-middle .table-top tr td:nth-child(3),
+#business-amount-enrolment .zl-table-block .zl-collapse-wrapper .content-middle .table-top tr td:nth-child(4),
+#business-amount-enrolment .zl-table-block .zl-collapse-wrapper .content-middle .table-top tr td:nth-child(5){
+	text-align: right;
+}
+
+#business-amount-enrolment .zl-table-block .zl-collapse-wrapper .content-middle .table-bottom {
+	width: 100%;
+}
+
+#business-amount-enrolment .zl-table-block .zl-collapse-wrapper .content-middle .table-bottom tr:nth-child(odd) {
+	background-color: #f3f3f3;
+	border-bottom: 1px solid #ccc;
+}
+
+#business-amount-enrolment .zl-table-block .zl-collapse-wrapper .content-middle .table-bottom tr td {
+	height: 32px;
+	padding: 0 20px;
+}
+
+#business-amount-enrolment .zl-table-block .zl-collapse-wrapper .content-middle .table-bottom tr td:nth-child(2),
+#business-amount-enrolment .zl-table-block .zl-collapse-wrapper .content-middle .table-bottom tr td:nth-child(3),
+#business-amount-enrolment .zl-table-block .zl-collapse-wrapper .content-middle .table-bottom tr td:nth-child(4) {
+	text-align: right;
+}
+
+
+/* ---------------------------------------- content-right ---------------------------------------- */
+
+#business-amount-enrolment .zl-table-block .zl-collapse-wrapper .content-right {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	width: 30%;
+	z-index: 1;
+}
+
+#business-amount-enrolment .zl-table-block .zl-collapse-wrapper .content-right .operation-section {
+	padding: 20px;
+}
+
+#business-amount-enrolment .zl-table-block .zl-collapse-wrapper .content-right .operation-section .section-content {
+	padding-top: 10px;
+}
+
+#business-amount-enrolment .zl-table-block .zl-collapse-wrapper .content-right .operation-section .section-content>div.sale-date {
+	height: 32px;
+	line-height: 32px;
+	margin-right: 10px;
+}
+
+#business-amount-enrolment .zl-table-block .zl-collapse-wrapper .content-right .operation-section .section-content>input {
+	width: 120px;
+	height: 32px;
+	margin-right: 10px;
+	padding: 0 10px;
+	font-size: 12px;
+	border: 1px solid #ccc;
+}
+
+
+/*communication-section*/
+
+#business-amount-enrolment .zl-table-block .zl-collapse-wrapper .content-right .communication-section {
+	padding: 0 20px;
+}
+
+#business-amount-enrolment .zl-table-block .zl-collapse-wrapper .content-right .communication-section .communication-title {
+	position: relative;
+	height: 40px;
+	line-height: 40px;
+	font-size: 18px;
+	padding-left: 12px;
+}
+
+#business-amount-enrolment .zl-table-block .zl-collapse-wrapper .content-right .communication-section .communication-title:before {
+	content: "";
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	height: 18px;
+	width: 4px;
+	background-color: #e64e4d;
+	margin: auto;
+}
+
+#business-amount-enrolment .zl-table-block .zl-collapse-wrapper .content-right .communication-section .communication-item-list {
+	height: 120px;
+	overflow: auto;
+	margin-bottom: 10px;
+}
+
+#business-amount-enrolment .zl-table-block .zl-collapse-wrapper .content-right .communication-section .communication-item-list li {
+	position: relative;
+	min-height: 24px;
+	line-height: 24px;
+	padding-left: 60px;
+}
+
+#business-amount-enrolment .zl-table-block .zl-collapse-wrapper .content-right .communication-section .communication-item-list li em {
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 32px;
+	line-height: 32px;
+	width: 60px;
+}
+
+#business-amount-enrolment .zl-table-block .zl-collapse-wrapper .content-right .communication-section .communication-item-list li span {
+	color: #757575;
+}
+
+#business-amount-enrolment .zl-table-block .zl-collapse-wrapper .content-right .communication-section .communication-type {
+	position: relative;
+	height: 42px;
+	padding-left: 80px;
+	padding-bottom: 10px;
+}
+
+#business-amount-enrolment .zl-table-block .zl-collapse-wrapper .content-right .communication-section .communication-type>em {
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 32px;
+	line-height: 32px;
+}
+
+#business-amount-enrolment .zl-table-block .zl-collapse-wrapper .content-right .communication-section .message-leave-group {
+	position: relative;
+	height: 50px;
+	padding-right: 50px;
+}
+
+#business-amount-enrolment .zl-table-block .zl-collapse-wrapper .content-right .communication-section .message-leave-group textarea {
+	display: block;
+	height: 100%;
+	width: 100%;
+	resize: none;
+	padding: 10px;
+	border-left: 1px solid #ccc;
+	border-top: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+	border-right: none;
+}
+
+#business-amount-enrolment .zl-table-block .zl-collapse-wrapper .content-right .communication-section .message-leave-group a {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	display: block;
+	width: 50px;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	background-color: #32aaff;
+	color: #fff;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+
+/* ======================================== zl-pagination-toolbar ======================================== */
+
+#business-amount-enrolment .zl-pagination-toolbar-wrapper {
+	padding: 20px 0;
+}
+
+#business-amount-enrolment .sale-dialog {
+	position: fixed;
+	top: 0px;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	display: none;
+	background-color: rgba(0, 0, 0, 0.4);
+	display: none;
+	z-index: 1000;
+}
+
+#business-amount-enrolment .sale-dialog .sale-dialog-body {
+	position: absolute;
+	left: 40%;
+	top: 200px;
+	margin-top: 0px;
+	margin-left: -350px;
+	width: 700px;
+	height: 580px;
+	background-color: rgb(255, 255, 255);
+}
+
+#business-amount-enrolment .sale-dialog .sale-dialog-operation-toolbar {
+	position: relative;
+	padding: 20px 40px;
+}
+
+#business-amount-enrolment .sale-dialog .calendar-container {
+	padding: 0 40px 0 40px;
+}
+
+#business-amount-enrolment .sale-dialog .calendar-container table {
+	width: 100%;
+}
+
+#business-amount-enrolment .sale-dialog .calendar-container table td {
+	border: 1px solid #ccc;
+}
+
+#business-amount-enrolment .sale-dialog .calendar-container table thead td {
+	height: 40px;
+	text-align: center;
+	color: #757575;
+	background-color: #f3f3f3;
+}
+
+#business-amount-enrolment .sale-dialog .calendar-container table tbody td {
+	position: relative;
+	height: 70px;
+}
+
+#business-amount-enrolment .sale-dialog .calendar-container table tbody td .calendar-index {
+	position: absolute;
+	right: 10px;
+	top: 10px;
+	font-size: 12px;
+	color: #757575;
+}
+
+#business-amount-enrolment .sale-dialog .calendar-container table tbody td .calendar-value {
+	position: absolute;
+	right: 10px;
+	bottom: 20px;
+	font-size: 12px;
+	color: #757575;
+}
+
+#business-amount-enrolment .sale-dialog .calendar-container table tbody td .calendar-value.calendar-value-red {
+	color: #e64e4d;
+}
+
+#business-amount-enrolment #salenum {
+	cursor: pointer;
+}
+
+#business-amount-enrolment .form-control {
+	background-color: #fff;
+}
+#business-amount-enrolment .sale-dialog .sale-dialog-operation-toolbar .sale-dialog-close-btn {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    display: block;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    background: url(../../images/common/dialog-close-icon.png) no-repeat center center;
+}
+
+#business-amount-enrolment .sale-dialog .sale-dialog-operation-toolbar .sale-dialog-close-btn:hover{
+	 background: url(../../images/common/dialog-close-hover-icon.png) no-repeat center center;
+}
+#business-amount-enrolment .sale-dialog .sale-dialog-operation-toolbar .sale-dialog-text {
+    height: 32px;
+    line-height: 32px;
+    font-size: 18px;
+    padding-right: 20px;
+}
+#business-amount-enrolment .charger-group{
+	padding:0 0 20px 20px;
+	border-bottom:1px solid #ccc;
+}
+#business-amount-enrolment .charger-group .span-block{
+	height:32px;
+	line-height: 32px;
+	float:left;
+	margin-right:10px;
+}
+#business-amount-enrolment .charger-group input{
+	display:block;
+	width:140px;
+	height:32px;
+	border:1px solid #ccc;
+	float:left;
+	margin-right:10px;
+	padding:0 10px;
+	background-color:#f3f4f8;
+}
+
+#business-amount-enrolment .charger-group input.editing{
+	background-color:#fff;
+}
+
+#business-amount-enrolment .charger-group .zl-btn-group{
+	display:block;
+	height:32px;
+	line-height: 32px;
+}
+
+#business-amount-enrolment .charger-group .zl-btn-group>a{
+	color:#2696dd;
+}
+
+#business-amount-enrolment .charger-group .zl-btn-group>a:hover{
+	cursor:pointer;
+	text-decoration: underline;
+}
+
+#business-amount-enrolment .charger-group .zl-btn-group>a.zl-save-btn,
+#business-amount-enrolment .charger-group .zl-btn-group>a.zl-cancel-btn{
+	display:none;
+}
+
+#business-amount-enrolment .span-block{
+	height:32px;
+	line-height: 32px;
+}
+
+#business-amount-enrolment .span-block .zl-linkable{
+	color:#2696dd;
+}
+
+#business-amount-enrolment .span-block .zl-linkable:hover{
+	cursor:pointer;
+	text-decoration: underline;
+}
+
+/* ======================================== opening-date-confirmation ======================================== */
+#business-amount-enrolment .opening-date-confirmation .modal-dialog {
+	width:440px;
+}
+
+#business-amount-enrolment .opening-date-confirmation .zl-form-group-container{padding-right:50px;}
+
+.zl-glyphicon{
+				font-size:14px;
+			}
+.zl-glyphicon-warn{
+	color:#fab416!important;
+	/*background-color: #fff;*/
+	border-radius: 14px;
+	margin-left:6px;
+	top:-1px;
+}
+#business-amount-enrolment .zl-table-block .zl-collapse-wrapper .content-left{width:40%;}
+#business-amount-enrolment .zl-table-block .zl-collapse-wrapper .content-left .info-item{
+	padding-bottom:10px;
+}
+#business-amount-enrolment .zl-table-block .zl-collapse-wrapper .content-left .info-item em,
+#business-amount-enrolment .zl-table-block .zl-collapse-wrapper .content-left .info-item>div{display: inline-block;font-size:14px;}
+#business-amount-enrolment .zl-table-block .zl-collapse-wrapper .content-left .info-item em{color:#7e8c9e;}
+#business-amount-enrolment .charger-group{border-bottom:0;}
+.text-red{
+	color:#f00!important;
+}
+#business-amount-enrolment .zl-table thead{
+	background-color:#f8fafa;
+}
+#business-amount-enrolment .table > thead > tr > th{
+	border-bottom:0;
+	color:#7e8c9e;
+	font-weight:normal;
+}
+#business-amount-enrolment .table > tbody > tr > td{
+	border-top:0;
+}
+#business-amount-enrolment .table > thead > tr > th,
+#business-amount-enrolment .table > tbody > tr > td{
+	padding-left:20px;
+	padding-right:20px;
+}
+#business-amount-enrolment .zl-table-block .zl-collapse-wrapper .content-middle {
+	position: relative;
+	min-height: 200px;
+	padding: 20px 0 20px 0;
+	border-left: 1px solid #ccc;
+	z-index: 9;
+	background-color: #fff;
+}
+.zl-form-group-container>ul>li>em {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 150px;
+    height: 32px;
+    line-height: 32px;
+    text-align: right;
+    color: #757575;
+    padding-right: 10px;
+}

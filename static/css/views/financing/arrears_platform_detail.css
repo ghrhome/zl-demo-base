@@ -1,0 +1,142 @@
+#arrears-platform-detail{ padding-top: 164px;}
+#arrears-platform-detail .zl-toolbar{top:40px;background-color:#fff;}
+#arrears-platform-detail .zl-toolbar-top>div{margin:0;}
+#arrears-platform-detail .zl-toolbar-top>.zl-search-wrapper{margin-right:10px;}
+#arrears-platform-detail .zl-toolbar-top>.zl-date-select{margin:0 10px;}
+#arrears-platform-detail .zl-toolbar-top>.zl-datetime-range .form-control{
+    font-size:12px;
+    padding:0;
+    text-align: center;
+    background-color:#fff;
+    cursor:pointer;
+}
+
+#arrears-platform-detail .zl-toolbar-bottom{padding-top:20px;margin:0;}
+
+#arrears-platform-detail .zl-checkbox-group>li{
+    height:32px;
+    line-height: 32px;
+    float:left;
+    padding-right:10px;
+}
+
+#arrears-platform-detail .zl-checkbox-group>li em.zl-checkbox{
+    vertical-align: -2px;
+    margin-right:2px;
+}
+
+/* ======================================== zl-table-block ======================================== */
+#arrears-platform-detail .zl-table-block {
+}
+
+#arrears-platform-detail .zl-table-block .zl-table-cell:first-child{width:20%;}
+#arrears-platform-detail .zl-table-block .zl-ar-status{
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    background-color: #0088cc;
+    border-radius: 14px;
+    margin-left: 15px;
+    vertical-align: sub;
+}
+
+#arrears-platform-detail .zl-table-block  .zl-ar-status-red {
+    background-color: #e64e4d;
+}
+#arrears-platform-detail .zl-table-block  .zl-ar-status-yellow {
+    background-color: #f6d36b;
+}
+
+
+#arrears-platform-detail .panel-default:not(.zl-panel-thead) .panel-heading:hover{cursor:pointer;}
+#arrears-platform-detail .zl-collapse-content{padding:0;}
+/* ======================================== zl-edit-panel ======================================== */
+#arrears-platform-detail .zl-edit-panel{
+    position:relative;
+    padding-right:320px;
+    min-height: 250px;
+}
+
+#arrears-platform-detail .zl-edit-panel-left{
+    padding:20px 40px 20px 20px;
+}
+#arrears-platform-detail .zl-edit-panel-left li{
+    position:relative;
+    width:50%;
+    height:28px;
+    line-height: 28px;
+    float:left;
+    padding-left:90px;
+}
+
+#arrears-platform-detail .zl-edit-panel-left li em{
+    position:absolute;
+    left:0;
+    top:0;
+    bottom:0;
+    color:#7e8c9e;
+    width:80px;
+    text-align: right;
+}
+
+/*zl-edit-panel-right*/
+#arrears-platform-detail .zl-edit-panel-right{
+    position:absolute;
+    top:0;
+    right:0;
+    bottom:0;
+    width:320px;
+    border-left:1px solid #ddd;
+}
+#arrears-platform-detail .zl-edit-panel-right .msg-item-list{
+    position:absolute;
+    left:0;
+    top:0;
+    right:0;
+    bottom:51px;
+    padding:20px 10px;
+    overflow: auto;
+}
+#arrears-platform-detail .zl-edit-panel-right .msg-item-list li{
+    line-height: 28px;
+    word-break: break-all;
+}
+#arrears-platform-detail .zl-edit-panel-right .msg-item-list em{margin-right:10px;}
+#arrears-platform-detail .zl-edit-panel-right .msg-item-list span{color:#7e8c9e;}
+#arrears-platform-detail .zl-edit-panel-right .send-message-container{
+    position:absolute;
+    left:0;
+    right:0;
+    bottom:0;
+    height:51px;
+    border-top:1px solid #ddd;
+    padding-right:50px;
+}
+
+#arrears-platform-detail .zl-edit-panel-right .send-message-container input{
+    display:block;
+    width:100%;
+    height:100%;
+    padding:0 10px;
+    border:none;
+    resize: none;
+}
+
+#arrears-platform-detail .zl-edit-panel-right .send-message-container a{
+    position:absolute;
+    right:0;
+    top:0;
+    bottom:0;
+    width:51px;
+    height:50px;
+    line-height: 50px;
+    text-align: center;
+    border-left:1px solid #ddd;
+    color:#333;
+}
+
+#arrears-platform-detail .zl-edit-panel-right .send-message-container a:hover{
+    text-decoration: none;
+    cursor:pointer;
+    background-color:#f8fafa;
+}

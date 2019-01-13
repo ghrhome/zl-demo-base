@@ -1,0 +1,15 @@
+#passenger-flow-project {
+	padding-top:44px;
+}
+#passenger-flow-project .chart-block .chart-content {
+    position: relative;
+    height: 300px;
+    width: 600px;
+    padding-bottom:20px;
+}
+#passenger-flow-project .zl-table-block thead th,#passenger-flow-project .zl-table-block tbody td {
+	text-align:right;
+}
+#passenger-flow-project .zl-table-block thead th:first-child,#passenger-flow-project .zl-table-block tbody td:first-child{
+	text-align: left;
+}

@@ -1,0 +1,16 @@
+#activity-enrolment .zl-toolbar>div{margin:0;}
+#activity-enrolment .zl-toolbar>.zl-datetimepicker{margin:0 10px;}
+
+/* ======================================== zl-table-block ======================================== */
+#activity-enrolment .zl-table-block {
+}
+
+#activity-enrolment .zl-pagination-wrapper{
+    padding:20px 0;
+}
+
+#activity-enrolment  .zl-edit-input{padding-right:20px;}
+#activity-enrolment  .zl-edit-input>input{
+    border:1px solid #eff1f4;
+}
+

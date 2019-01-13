@@ -1,0 +1,25 @@
+#margin-statement-add{padding:44px 0 0 0;}
+
+#margin-statement-add .zl-linkable{
+    margin-left:10px;
+}
+
+#margin-statement-add .zl-toolbar>a.btn{
+    margin-left:10px;
+}
+
+#margin-statement-add .zl-dropdown-inline{
+    height:100%;
+}
+#margin-statement-add .zl-dropdown-inline .zl-dropdown-btn{
+    height:100%;
+    border:none;
+}
+
+#margin-statement-add  .zl-datetimepicker {border:none;}
+
+#margin-statement-add .zl-edit{}
+
+#margin-statement-add .zl-dropdown-inline>button.btn{
+    height:32px;
+}

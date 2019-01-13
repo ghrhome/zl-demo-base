@@ -1,0 +1,47 @@
+#lessee-detail{padding:44px 0 0 0;}
+#lessee-detail .zl-info-group-list{
+    padding:20px 0;
+}
+#lessee-detail .zl-info-group-list li{
+    height:20px;
+    line-height: 20px;
+    float:left;
+    padding-right:40px;
+}
+
+#lessee-detail .zl-info-group-list li em{
+    color:#757575;
+    margin-right:10px;
+}
+
+
+#lessee-detail .zl-pagination-wrapper{
+    padding:20px 0;
+}
+
+/* ======================================== zl-toolbar ======================================== */
+#lessee-detail .zl-toolbar{
+    padding:0 0 20px 0;
+}
+
+#lessee-detail .zl-toolbar>div{
+    margin:0 10px 0  0;
+}
+
+/* ======================================== zl-table-block ======================================== */
+#lessee-detail .zl-table-block tbody tr:hover{
+    cursor:pointer;
+}
+/* ======================================== zl-authorization-dialog ======================================== */
+#lessee-detail .zl-authorization-dialog .modal-dialog{
+    width:400px;
+}
+#lessee-detail .zl-authorization-dialog .modal-dialog{
+    width:360px;
+}
+
+#lessee-detail .zl-authorization-dialog .modal-body{
+    height:400px;
+    overflow: auto;
+}
+

@@ -1,0 +1,21 @@
+#rent-predict-online .zl-toolbar em {
+	vertical-align:-2px;
+}
+#rent-predict-online .zl-toolbar .checkbox-wrapper label {
+	margin-right:0;
+}
+#rent-predict-online th,#rent-predict-online td {
+	text-align:right;
+}
+#rent-predict-online .text-left {
+	text-align: left;
+}
+#rent-predict-online .text-center {
+	text-align: center;
+}
+#rent-predict-online .font-red {
+	color:red;
+}
+#rent-predict-online .vertical-bottom {
+	vertical-align: bottom;
+}

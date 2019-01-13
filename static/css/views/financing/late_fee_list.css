@@ -1,0 +1,11 @@
+#late-fee-list{
+    width:700px;
+}
+#late-fee-list .zl-toolbar>.zl-search-wrapper{margin-right:10px;}
+
+/* ======================================== zl-table-block ======================================== */
+#late-fee-list .zl-table-block {
+
+}
+
+#late-fee-list .zl-pagination-wrapper{padding-top:20px;}

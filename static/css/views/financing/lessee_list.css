@@ -1,0 +1,9 @@
+#lessee-list .zl-toolbar>*{margin-right:10px;}
+
+/* ======================================== zl-table-block ======================================== */
+#lessee-list .zl-table-block {
+}
+
+#lessee-list .zl-table-block table tbody tr:hover{cursor:pointer;}
+
+

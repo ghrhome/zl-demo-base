@@ -1,0 +1,43 @@
+#lessee-member-mgt .zl-toolbar>*{margin:0;}
+#lessee-member-mgt .zl-search{width:320px;}
+#lessee-member-mgt .zl-toolbar .zl-dropdown-group{margin:0 10px;}
+#lessee-member-mgt .zl-pagination-wrapper{
+    padding:20px 0;
+}
+
+/* ======================================== zl-switch-account ======================================== */
+#lessee-member-mgt .zl-switch-account .modal-dialog{
+    width:360px;
+}
+#lessee-member-mgt .zl-switch-account .origin-account>li{
+    position:relative;
+    height:32px;
+    line-height: 32px;
+    padding-left:70px;
+}
+
+#lessee-member-mgt .zl-switch-account .origin-account>li>em{
+    position:absolute;
+    left:0;
+    top:0;
+    bottom:0;
+    color:#7e8c9e;
+}
+#lessee-member-mgt .zl-switch-account .current-account{margin-top:10px;}
+#lessee-member-mgt .zl-switch-account .current-account>li{
+    position:relative;
+    height:32px;
+    line-height: 32px;
+    padding-left:70px;
+}
+
+#lessee-member-mgt .zl-switch-account .current-account>li>em{
+    position:absolute;
+    left:0;
+    top:0;
+    bottom:0;
+    color:#7e8c9e;
+}
+/* ======================================== zl-table-block ======================================== */
+
+

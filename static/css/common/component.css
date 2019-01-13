@@ -1,0 +1,1194 @@
+.zl-display-none{display:none!important;}
+
+/* ======================================== zl-form-group-container ======================================== */
+.zl-form-group-container>ul>li{
+    position:relative;
+    width:50%;
+    height:32px;
+    line-height: 32px;
+    float:left;
+    padding-left:150px;
+    margin-bottom:10px;
+}
+
+.zl-form-group-container>ul>li.long{width:100%;}
+
+.zl-form-group-container>ul>li>em{
+    position:absolute;
+    left:0;
+    top:0;
+    bottom:0;
+    width:150px;
+    height:32px;
+    line-height: 32px;
+    text-align: right;
+    color:#757575;
+    padding-right:10px;
+}
+
+
+.zl-form-group-container>ul>li>input{
+    display:block;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #ccc;
+    padding: 0 10px;
+}
+
+
+/* ======================================== bread-crumb ======================================== */
+.zl-breadcrumb {
+    margin: 0 20px 0 0;
+    padding: 0;
+    height: 80px;
+    line-height: 80px;
+    border: 0;
+    background-color: inherit;
+}
+.zl-breadcrumb > li{
+    float:left;
+}
+.zl-breadcrumb > li + li:before{
+    padding-left:12px;
+    padding-right:12px;
+    color:#757575;
+    font-family: 'Glyphicons Halflings';
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    content:"\e258";
+    vertical-align: middle;
+}
+
+.zl-breadcrumb > li > a {
+    display: inline-block;
+    height: 32px;
+    line-height: 30px;
+    padding-left: 15px;
+    padding-right: 15px;
+    color: #222;
+    font-size: 14px;
+    border: solid 1px #ccc;
+    text-align: center;
+    text-decoration: none;
+
+}
+
+.zl-breadcrumb > li:not(.zl-breadcrumb-header) > a:hover{
+    border:1px solid #e64e4d;
+    color:#e64e4d;
+}
+.zl-breadcrumb > li:not(.zl-breadcrumb-header):last-child > a:hover{
+    border: solid 1px #ccc;
+    color: #222;
+    cursor:default;
+}
+
+.zl-breadcrumb > li.zl-breadcrumb-header>a{
+    font-weight: bold;
+    font-size:24px;
+    border:none;
+    padding:0;
+    vertical-align: middle;
+}
+
+/* ======================================== zl-select-default ======================================== */
+.zl-select-default{
+    position:relative;
+    cursor:pointer;
+
+}
+
+.zl-select-default:after{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    margin-top: -1px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 5px 5px 0 5px;
+    border-color: #333333 transparent transparent transparent;
+    border-radius: 4px;
+}
+
+.zl-select-default.open:after{
+    border-width: 0 5px 5px 5px;
+    border-color:  transparent transparent #333333 transparent;
+}
+
+
+.zl-select-default>input{
+    width:100%;
+    height:32px;
+    padding-left:10px;
+    padding-right:32px;
+    line-height: 32px;
+    cursor:pointer;
+    border: 1px solid #ccc;
+}
+
+
+.zl-select-default>ul{
+    display:none;
+    position:absolute;
+    left:0;
+    right:0;
+    top:100%;
+    background-color: #fff;
+    z-index: 999;
+    padding-left:0;
+    border:1px solid #ccc;
+    margin-top:-1px;
+    max-height: 256px;
+    overflow: auto;
+}
+
+.zl-select-default.open>ul{
+    display:block;
+    background-color:#f3f3f3;
+
+}
+
+.zl-select-default>ul>li{
+    height:32px;
+    line-height: 32px;
+    /*border-right:1px solid #ccc;*/
+    /*border-bottom:1px solid #ccc;*/
+    padding-left:10px;
+
+}
+
+.zl-select-default>ul>li:hover{
+    background-color:#eaeaea;
+}
+
+/* ======================================== zl-dropdown-group ======================================== */
+.zl-dropdown-group{
+}
+
+.zl-dropdown-group:after{content:"";display:block;height:0;clear:both;visibility:hidden;}
+
+.zl-dropdown-group .zl-dropdown{
+    position:relative;
+    float:left;
+}
+
+.zl-dropdown-group .zl-dropdown .zl-dropdown-btn{
+    position:relative;
+    display:block;
+    height:32px;
+    line-height: 30px;
+    border-top:1px solid #ccc;
+    border-right:1px solid #ccc;
+    border-bottom:1px solid #ccc;
+    padding:0 20px;
+    color:#222;
+    text-decoration: none;
+    outline-style: none;
+}
+
+.zl-dropdown-group .zl-dropdown:first-child .zl-dropdown-btn{border-left:1px solid #ccc;}
+
+.zl-dropdown-group .zl-dropdown .zl-dropdown-btn:after{
+    content:"";
+    position: absolute;
+    right: 2px;
+    bottom: 2px;
+    display: inline-block;
+    height: 5px;
+    width: 5px;
+    border-right: 2px solid #999;
+    border-bottom: 2px solid #999;
+}
+
+.zl-dropdown-group .zl-dropdown .zl-dropdown-btn:hover,
+.zl-dropdown-group .zl-dropdown.zl-open .zl-dropdown-btn{
+    background-color:#32aaff;
+    color:#fff;
+    border-color:#32aaff;
+    cursor: pointer;
+}
+
+.zl-dropdown-group .zl-dropdown .zl-dropdown-btn:hover:after,
+.zl-dropdown-group .zl-dropdown.zl-open .zl-dropdown-btn:after{
+   border-color:#fff;
+}
+
+.zl-dropdown-group .zl-dropdown.zl-open .zl-dropdown-menu{
+    display:block;
+    min-width:100%;
+    background-color:#fff;
+}
+
+.zl-dropdown-group .zl-dropdown .zl-dropdown-menu{
+    position:absolute;
+    left:0;
+    top: 100%;
+    padding:0;
+    margin:0;
+    display:none;
+    border:1px solid #ccc;
+    z-index: 99;
+    max-height: 256px;
+    overflow: auto;
+
+}
+
+.zl-dropdown-group .zl-dropdown .zl-dropdown-menu li a{
+    display:block;
+    height:32px;
+    line-height: 32px;
+    color:#222;
+    padding:0 20px;
+    text-decoration: none;
+    white-space: nowrap;
+    text-align: left;
+    cursor: pointer;
+}
+
+.zl-dropdown-group .zl-dropdown .zl-dropdown-menu li a:hover{
+    background-color:#f3f3f3;
+}
+
+/* ======================================== zl-check-btn-group ======================================== */
+.zl-check-btn-group{
+
+}
+
+.zl-check-btn-group:after{content:"";display:block;height:0;clear:both;visibility:hidden;}
+
+.zl-check-btn-group .zl-check-btn{
+    display:block;
+    height:32px;
+    line-height: 30px;
+    color:#757575;
+    text-decoration: none;
+    float:left;
+    padding:0 20px;
+    border-top:1px solid #ccc;
+    border-right:1px solid #ccc;
+    border-bottom:1px solid #ccc;
+    cursor: pointer;
+}
+
+.zl-check-btn-group .zl-check-btn:hover{
+    background-color:#eaeaea;
+}
+
+.zl-check-btn-group .zl-check-btn.active{
+    background-color:#808c92;
+    color:#fff;
+    border-color:#808c92;
+}
+
+.zl-check-btn-group .zl-check-btn:first-child{
+    border-left:1px solid #ccc;
+}
+
+/* ======================================== zl-date-selector ======================================== */
+.zl-date-selector {
+    height: 32px;
+    border: 1px solid #cccccc;
+}
+
+.zl-date-selector > em {
+    position: relative;
+    display: block;
+    height: 32px;
+    width: 32px;
+    float: left;
+    cursor: pointer;
+}
+
+.zl-date-selector > em > span {
+    position: relative;
+    left: 9px;
+    top: 7px;
+}
+.zl-date-selector > input.form-control,
+.zl-date-selector > input {
+    width: 110px;
+    height: 30px;
+    float: left;
+    border-top: none;
+    border-bottom: none;
+    border-left: 1px solid #cccccc;
+    border-right: 1px solid #cccccc;
+    text-align: center;
+    cursor: pointer;
+    background-color:#fff;
+    border-radius: 0;
+    box-shadow: none;
+}
+
+/* ======================================== zl-datetimepicker ======================================== */
+.zl-datetimepicker{
+    position:relative;
+    width:100%;
+    cursor:pointer;
+}
+
+.zl-datetimepicker>input.form-control{
+    width:100%;
+    height:32px;
+    background-color:#fff;
+    border-radius: 0;
+    cursor:pointer;
+    border:1px solid #ccc;
+    padding-left:10px;
+
+}
+.zl-datetimepicker:after{
+    content:"";
+    position:absolute;
+    top:0;
+    right:0;
+    display:block;
+    width:32px;
+    height:32px;
+    background: url(../../images/common/zl-datetime-icon.png) no-repeat center center;
+    background-size:20px 20px;
+    border:1px solid #ccc;
+}
+
+.datetimepicker.datetimepicker-dropdown-bottom-right.dropdown-menu .datetimepicker-minutes .minute.active,
+.datetimepicker.datetimepicker-dropdown-bottom-right.dropdown-menu .datetimepicker-hours .hour.active,
+.datetimepicker.datetimepicker-dropdown-bottom-right.dropdown-menu .datetimepicker-days .day.active,
+.datetimepicker.datetimepicker-dropdown-bottom-right.dropdown-menu .datetimepicker-months .month.active,
+.datetimepicker.datetimepicker-dropdown-bottom-right.dropdown-menu .datetimepicker-years .year.active{
+    background-image:none;
+    background-color:#e64e4d;
+}
+
+/* ======================================== zl-table-default ======================================== */
+.zl-table-default{
+    width:100%;
+}
+
+.zl-table-default th{
+    height:40px;
+    color:#757575;
+    background-color:#f3f3f3;
+    font-weight: normal;
+    padding-left:10px;
+}
+.zl-table-default td{
+    height:40px;
+    color:#222;
+    padding-left:10px;
+}
+
+.zl-table-default tr:hover{
+    background-color:#eaeaea;
+    cursor: pointer;
+}
+
+/* ======================================== zl-table-default-2 ======================================== */
+.zl-table-default-2{
+    width:100%;
+}
+
+.zl-table-default-2 td{
+    height:40px;
+    color:#222;
+    padding-left:20px;
+}
+
+.zl-table-default-2 tr:nth-child(odd){background-color:#f3f3f3;}
+
+.zl-table-default-2 tr:hover{
+    background-color:#eaeaea;
+    cursor: pointer;
+}
+
+/* ======================================== zl-table-default-3 ======================================== */
+.zl-table-default-3{
+    width:100%;
+}
+
+.zl-table-default-3 th{
+    height:32px;
+    background-color:#f3f3f3;
+    font-weight: normal;
+    padding:0 10px;
+    border:1px solid #ccc;
+}
+
+.zl-table-default-3 td{
+    height:40px;
+    color:#222;
+    padding:0 10px;
+    border:1px solid #ccc;
+}
+
+
+.zl-table-default-3 tr:hover{
+    background-color:#eaeaea;
+    cursor: pointer;
+}
+
+
+/* ================================================== zl-table (added by xiaominzh 2015-11-25) ======================================== */
+.zl-table-collapse{
+    font-size:14px;
+    color:#222222;
+}
+.zl-table-collapse ul{
+
+    list-style-type: none;
+    margin-bottom:0;
+}
+
+/* zl-table-collapse */
+.zl-table-collapse .zl-thead{
+    background-color:#F3F3F3;
+}
+.zl-table-collapse .zl-thead ul.zl-table-row li.zl-table-cell{color:#757575;}
+/* zl-table-row */
+.zl-table-collapse .zl-table-row{
+    padding-left:20px;
+    padding-right:20px;
+}
+
+.zl-table-collapse .zl-table-row:after{
+    content:".";display:block;height:0;clear:both;visibility:hidden
+}
+
+.zl-table-collapse .zl-table-row:hover{
+    background-color:#EAEAEA;
+    cursor:pointer;
+}
+
+
+.zl-table-collapse .zl-table-row.zl-table-row-selected{
+    background-color:#808C92;
+    color:#FFFFFF;
+}
+
+
+.zl-table-collapse .zl-table-row.zl-table-row-selected:hover li.zl-table-cell.zl-table-cell-outstanding{
+    background-color:#808C92;
+    color:#FFFFFF;
+}
+
+.zl-table-collapse .zl-table-row.zl-table-row-selected li.zl-table-cell span.zl-icon-more-info{
+    border-color:#FFFFFF;
+}
+
+.zl-table-collapse .zl-table-row.zl-table-row-selected:hover li.zl-table-cell span.zl-icon-more-info{
+    border-color:#FFFFFF;
+}
+
+/* zl-table-cell */
+.zl-table-collapse ul.zl-table-row li.zl-table-cell{
+    height:40px;
+    line-height:40px;
+    float:left;
+
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+
+.zl-table-collapse .zl-table-row:hover li.zl-table-cell.zl-table-cell-outstanding{
+    color:#18B0E2;
+}
+
+.zl-table-collapse .zl-table-row li.zl-table-cell.zl-table-cell-outstanding:hover{
+    text-decoration: underline;
+}
+
+.zl-table-collapse .zl-table-row:hover li.zl-table-cell.zl-table-cell-outstanding span.zl-icon-more-info{
+    border-color:#18B0E2;
+}
+
+/* zl-row-collapse */
+.zl-table-collapse .zl-table-collapse-row .zl-row-collapse{
+    display:none;
+    border-left:4px solid #808C92;
+    border-right:4px solid #808C92;
+    border-bottom:4px solid #808C92;
+}
+.zl-table-collapse .zl-table-collapse-row .zl-row-collapse .zl-edit-detail-header{
+    padding:20px;
+    background-color:#fff;
+}
+
+.zl-table-collapse .zl-table-collapse-row .zl-row-collapse .zl-edit-detail-content{
+    padding:20px;
+    border-top:1px solid #ccc;
+    background-color:#fff;
+}
+
+.zl-table-collapse .zl-add-collapse{
+    display:none;
+    border:4px solid #808C92;
+}
+
+.zl-table-collapse .zl-add-collapse .zl-add-detail-header{
+    padding:20px;
+    background-color:#fff;
+}
+
+.zl-table-collapse .zl-add-collapse .zl-add-detail-content{
+    padding:20px;
+    border-top:1px solid #ccc;
+    background-color:#fff;
+}
+
+/* ================================================== zl-search-bar-grey (added by xiaominzh 2015-11-24) ======================================== */
+.zl-search-bar-default{
+    position:relative;
+    display:block;
+    border:1px solid #ccc;
+    height:32px;
+    padding-right:32px;
+}
+
+.zl-search-bar-default input{
+    display:block;
+    width:100%;
+    height:100%;
+    border:none;
+    padding-left:5px;
+}
+
+.zl-search-bar-default span{
+    position:absolute;
+    top:0;
+    bottom:0;
+    right:0;
+    display:block;
+    width:32px;
+    height:100%;
+    border-left:1px solid #ccc;
+    background: url(../../images/common/search-icon.png) no-repeat 8px 7px;
+}
+
+.zl-search-bar-default span:hover{
+    cursor:pointer;
+    background-color:#eaeaea;
+}
+
+
+
+/* ================================================== zl-dist-links ======================================== */
+div.zl-dist-links{
+    height:80px;
+    line-height: 80px;
+    font-size:0;
+}
+
+div.zl-dist-links a{
+    font-size:14px;
+    color:#757575;
+    margin-left:20px;
+}
+
+div.zl-dist-links a:hover{
+    color:#E64E4D;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+div.zl-dist-links a:before{
+    content:"";
+    height:16px;
+    width:16px;
+    display:inline-block;
+    vertical-align: sub;
+    margin-right:6px;
+}
+
+div.zl-dist-links a.zl-source-maintain:before{
+    width:14px;
+    background-image: url(../../images/common/zl-floor-source.png);
+}
+
+div.zl-dist-links a.zl-source-maintain:hover:before{
+    background-image: url(../../images/common/zl-floor-source-hover.png);
+}
+
+
+div.zl-dist-links a.zl-export:before{
+    background-image: url(../../images/common/zl-icon-export.png);
+}
+
+div.zl-dist-links a.zl-export:hover:before{
+    background-image: url(../../images/common/zl-icon-export-hover.png);
+}
+
+div.zl-dist-links a.zl-add:before{background-image: url(../../images/common/zl-add-icon.png);}
+div.zl-dist-links a.zl-add:hover:before{background-image: url(../../images/common/zl-add-hover-icon.png);}
+
+div.zl-dist-links a.zl-key:before{background-image: url(../../images/common/ys_icon_key.png);}
+div.zl-dist-links a.zl-key:hover:before{background-image: url(../../images/common/ys_icon_key_red.png);}
+
+div.zl-dist-links a.zl-kpi:before{background-image: url(../../images/common/zl-floor-shop.png);}
+div.zl-dist-links a.zl-kpi:hover:before{background-image: url(../../images/common/zl-floor-shop-hover.png);}
+
+
+div.zl-dist-links a.zl-progress:before{background-image: url(../../images/common/icon_progress.png);}
+div.zl-dist-links a.zl-progress:hover:before{background-image: url(../../images/common/icon_progress_hover.png);}
+
+
+/* ======================================== zl-icons ======================================== */
+.zl-icon{
+    display:inline-block;
+    background-repeat: no-repeat;
+    vertical-align: sub;
+    background-size:contain;
+}
+
+.zl-icon-arrow-up{
+    height: 14px;
+    width:8px;
+    margin:0 2px;
+    background-image: url(../../images/common/ys_pic_up.png);
+}
+
+.zl-icon-arrow-down{
+    height: 14px;
+    width:8px;
+    background-image: url(../../images/common/ys_pic_down.png);
+}
+
+.zl-ok-icon {
+    height: 16px;
+    width: 16px;
+    background-image: url(../../images/common/ys_pic_finish.png);
+    vertical-align: sub;
+}
+
+
+/* ======================================== zl-btn ======================================== */
+.zl-btn{
+    display:inline-block;
+
+    height:32px;
+    line-height: 30px;
+    border:1px solid #ccc;
+    font-size:14px;
+    border-radius:0;
+    padding:0 20px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.zl-btn:hover,.zl-btn:focus,.zl-btn:active{
+    text-decoration: none!important;
+}
+
+.zl-btn-default{
+    color:#222;
+    background-color:#fff;
+}
+.zl-btn-default:hover{
+    color:#222;
+    background-color:#eaeaea;
+}
+
+.zl-btn-grey{
+    color:#fff;
+    background-color:#808c92;
+    border-color:#808c92;
+}
+.zl-btn-grey:hover{
+    color:#fff;
+    background-color:#818384;
+}
+
+.zl-btn-red{
+    background-color:#32aaff;
+    color:#fff;
+    border-color:#32aaff;
+}
+
+.zl-btn-red:hover,.zl-btn-red:focus,.zl-btn-red:active{
+    background-color:#0f96ff;
+    border-color:#0f96ff;
+    color:#fff;
+}
+
+
+
+
+
+/* ======================================== zl-form-group ======================================== */
+.zl-form-group{
+}
+.zl-form-group>label{
+    min-width:120px;
+    text-align: right;
+    font-weight: normal;
+    font-size:14px;
+    color:#757575;
+    margin-bottom:0;
+    margin-right:4px;
+}
+
+.zl-form-group>input{
+    width:200px;
+    height:32px;
+    border:1px solid #ccc;
+    padding:0 8px;
+}
+
+.zl-form-group>input.zl-input-mandatory{
+    border-left:2px solid #e64e4d;
+}
+
+.zl-form-group>input.zl-input-disabled{
+    background-color:#eaeaea;
+}
+
+/* div.zl-select-default */
+.zl-form-group div.zl-select-default{
+    display:inline-block;
+    width:200px;
+    height:32px;
+}
+
+.zl-form-group div.zl-select-default.zl-input-mandatory{
+    border-left:2px solid #e64e4d!important;
+}
+
+.zl-btn-blue{
+    background-color:#1fafff;
+    border:solid 1px #1fafff;
+    color:#fff;
+}
+
+.zl-btn-blue:hover{
+    color:#fff;
+}
+
+/* ======================================== zl-checkbox ======================================== */
+.zl-checkbox{
+    display:inline-block;
+    width:20px;
+    height:20px;
+    background: url(../../images/common/checkboxes.png) no-repeat 0 0;
+    cursor:pointer;
+}
+
+.zl-checkbox:hover{
+    background-position: -20px 0;
+}
+
+.zl-checkbox.checked{
+    background-position: -40px 0;
+}
+
+.zl-checkbox.half-checked{
+    background-position: 0 0;
+    background-image: url(../../images/common/zl-tree-checkbox-half-checked.png);
+}
+
+/* ======================================== zl-radiobox ======================================== */
+.zl-radio{
+    display:inline-block;
+    width:20px;
+    height:20px;
+    background: url(../../images/common/checkboxes.png) no-repeat -100px 0;
+    cursor:pointer;
+}
+
+.zl-radio:hover{
+    background-position: -120px 0;
+}
+
+.zl-radio.checked{
+    background-position: -140px 0;
+}
+
+/* ======================================== zl-block-head ======================================== */
+.zl-block-head{padding-top:10px;}
+.zl-block-head .zl-block-head-title{
+    padding:15px 0;
+    font-size:24px;
+    line-height: 24px;
+}
+
+.zl-block-head .zl-block-head-content span{line-height:24px;color:#999;}
+.zl-block-head .zl-block-head-content span em{color:#222;padding:0 5px;}
+
+/* ======================================== zl-section-block ======================================== */
+.zl-section-block{
+}
+.zl-section-block .zl-section-block-head{
+    position:relative;
+    height: 36px;
+    line-height: 34px;
+    border: 1px solid #eff1f4;
+    border-left:2px solid #32aaff;
+    font-size:15px;
+    padding-left:20px;
+    background-color:#f8fafa;
+}
+
+.zl-section-block .zl-section-block-head a.zl-section-collapse-btn{
+    position:absolute;
+    right:20px;
+    top:0;
+    bottom:0;
+    display:block;
+    width: 15px;
+    height: 15px;
+    background:url(../../../scp_demo/static/images/common/icons.png) no-repeat -75px -54px;
+    margin:auto;
+    cursor:pointer;
+    outline: none;
+    transition:rotate 0.3s;
+    -webkit-transition:rotate 0.3s;
+    -ms-transition:rotate 0.3s;
+}
+.zl-section-block .zl-section-block-head a.zl-section-collapse-btn.collapsed{
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+}
+.zl-section-block .zl-section-block-head a.zl-section-collapse-btn:hover{
+    background-position:-151px -54px;
+}
+
+.zl-section-block .zl-section-block-body table{
+    width:100%;
+}
+
+.zl-section-block .zl-section-block-body table td{
+    height:36px;
+    border:1px solid #eff1f4;
+    padding-left:20px;
+    font-size:14px;
+}
+
+.zl-section-block .zl-section-block-body table th{
+    background-color:#f8fafa;
+    font-weight: normal;
+    height:36px;
+    border:1px solid #eff1f4;
+    padding-left:20px;
+    font-size:14px;
+    color:#7e8c9e;
+}
+.zl-section-block .zl-section-block-body table tr:first-child th,
+.zl-section-block .zl-section-block-body table tr:first-child td{border-top:none;}
+
+.zl-section-block .zl-section-block-body .zl-edit{padding:0;}
+.zl-section-block .zl-section-block-body .zl-edit>input{
+    display:block;
+    width:100%;
+    height:100%;
+    border:none;
+    padding:0 10px;
+}
+
+.zl-section-block .zl-section-block-body .zl-edit>.zl-select-default>input{
+    border:none;
+}
+.zl-section-block .zl-section-block-body .zl-edit>.zl-datetimepicker{height:100%;}
+.zl-section-block .zl-section-block-body .zl-edit>.zl-datetimepicker>input{
+    height:100%;
+    border:none;
+    padding-right:50px;
+    box-shadow: none;
+}
+.zl-section-block .zl-section-block-body .zl-edit>.zl-datetimepicker:after{
+    width:40px;
+    bottom:0;
+
+    height:auto;
+    border:none;
+    border-left:1px solid #eff1f4;
+}
+.zl-section-block .zl-section-block-body .zl-edit-mandatory{border-left:2px solid #E64E4D;}
+
+/* ======================================== zl-nav-menu-list ======================================== */
+ul.zl-nav-menu-list{
+    padding:0;
+    margin:0;
+}
+
+ul.zl-nav-menu-list li{
+    width:50%;
+    height:50px;
+    padding-bottom:10px;
+    float:left;
+}
+
+ul.zl-nav-menu-list li:nth-child(odd){
+    padding-right:5px;
+}
+ul.zl-nav-menu-list li:nth-child(even){
+    padding-left:5px;
+}
+ul.zl-nav-menu-list li>a{
+    position:relative;
+    display:block;
+    height:40px;
+    line-height:40px;
+    padding-left:10px;
+    background-color:#f3f3f3;
+    cursor:pointer;
+    text-decoration: none;
+    color:#222;
+}
+
+ul.zl-nav-menu-list li>a:hover{
+    background-color:#eaeaea;
+}
+
+ul.zl-nav-menu-list li.has-message>a:after{
+    content:"";
+    position:absolute;
+    top:0;
+    bottom:0;
+    right:10px;
+    display:block;
+    width:8px;
+    height:8px;
+    border-radius: 4px;
+    background-color:#e64e4d;
+    margin:auto;
+}
+
+/* ======================================== 审批状态进度 ======================================== */
+.network-process-bar-item-list{background-color:inherit;border-radius: 0;padding-left:0;padding-right:0;}
+.network-process-bar-item-list li{display:inline-block;}
+.network-process-bar-item-list li>span{display:inline-block;padding:6px 8px;border:solid 1px #ddd;border-radius: 4px;}
+.network-process-bar-item-list li.network-process-done>span{background-color: #eaeaea;}
+.network-process-bar-item-list li.network-process-start>span{background-color:#18b0e2;color:#fff;border:solid 1px #18b0e2; }
+.network-process-bar-item-list li.network-process-next>span{}
+.network-process-bar-item-list > li + li:before{content: ">";padding: 0 5px;color: #ccc;}
+
+/* ======================================== 审批审批记录 ======================================== */
+.network-approval-message-container ul{list-style: none;padding-left:0;}
+.network-approval-message-container ul li{margin-top:10px;}
+.network-approval-message-container ul li .zl-comment-message-status{padding-left:20px;padding-right:20px;height:38px;line-height: 38px;background-color: #f3f3f3;}
+.network-approval-message-container ul li .zl-status-current{border-left:solid 4px #17b1e3; }
+.network-approval-message-container ul li .zl-comment-message-status>span{display: inline-block;width:30%;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;}
+.network-approval-message-container ul li .zl-comment-message-status>em{display: inline-block;width:3%;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;}
+.network-approval-message-container ul li .zl-comment-message-agreement{padding:15px 65px;color:#757575;}
+.network-approval-message-container ul.zl-comment-message-sub{padding-left:30px;}
+
+/* ======================================== 审批尾部内容发送 ======================================== */
+.zl-comment-opt{margin-bottom:-8px;padding:35px 0;background-color: #eaeaea;}
+.zl-commnet-opt-share {height:30px;line-height: 30px;margin-top:8px;margin-bottom:8px;}
+.zl-commnet-opt-share>span{color:#18b0e2;}
+
+.zl-comment-opt-comment{position:relative;padding-right:90px;}
+.zl-comment-opt-comment textarea{padding:8px;width:100%;height:90px;resize:none;}
+.zl-comment-opt-comment button{position: absolute;height:92px;width:95px;right:0;top:-2px;background-color:#818c92;color:#fff; }
+
+/* ======================================== 对话框标准样式 ======================================== */
+.zl-dialog{}
+.zl-dialog .modal-header{position:relative;height:50px;padding:0 20px;}
+.zl-dialog .modal-header h3.modal-title{height:50px;line-height: 50px;font-size:18px;}
+.zl-dialog .modal-header button.close{
+    position:absolute;
+    right:20px;
+    top:0;
+    bottom:0;
+    display:block;
+    width:16px;
+    height:16px;
+    background:url(../../images/common/dialog-close-icon.png) no-repeat;
+    background-size: contain;
+    margin:auto;
+    cursor:pointer;
+    opacity:1;
+}
+
+.zl-dialog .modal-header button.close:hover{
+    background-image:url(../../images/common/dialog-close-hover-icon.png);
+}
+.zl-dialog .modal-footer{
+    height:62px;
+    padding:15px 20px;
+}
+.zl-dialog .modal-footer .zl-dialog-btn-close{
+    height:32px;
+    line-height: 28px;
+    border:2px solid #808c92;
+    padding:0 20px;
+    background-color:#fff;
+    margin-left:6px;
+    color:#687176;
+}
+
+.zl-dialog .modal-footer .zl-dialog-btn-ok{
+    height:32px;
+    line-height: 32px;
+    border:none;
+    padding:0 40px;
+    background-color:#808c92;
+    color:#fff;
+    margin-left:6px;
+    font-size:14px;
+}
+
+
+/* ======================================== zl-pagination-toolbar ======================================== */
+.zl-pagination-toolbar{height:32px;line-height: 32px;}
+.zl-pagination-toolbar:after{
+    content:"";display:block;height:0;clear:both;visibility:hidden;
+}
+.zl-pagination-toolbar span{float:left;color:#999;}
+
+.zl-pagination-toolbar .pagination-nav-group:after{content:"";display:block;height:0;clear:both;visibility:hidden;}
+
+.zl-pagination-toolbar .pagination-nav-group{
+    display:inline-block;
+    height:100%;
+    margin:0 10px;
+    border:1px solid #ccc;
+    float:left;
+}
+
+.zl-pagination-toolbar .pagination-nav-group>a{
+    display:block;
+    width:50px;
+    height:100%;
+    text-align: center;
+    border-right:1px solid #ccc;
+    float:left;
+    color:#999;
+    cursor:pointer;
+    text-decoration: none;
+}
+.zl-pagination-toolbar .pagination-nav-group>a:hover{
+    background-color:#eaeaea;
+}
+.zl-pagination-toolbar .pagination-nav-group>input{
+    display:block;
+    width:50px;
+    height:100%;
+    border:none;
+    float:left;
+    padding:0 5px;
+    text-align: center;
+    color:#757575;
+}
+
+/* ======================================== zl-simple-breadcrumb ======================================== */
+.zl-simple-breadcrumb{background-color:#f3f4f8;padding:0 18px;border-top:1px solid #ccc;}
+.zl-simple-breadcrumb:after{content:"";display:block;height:0;clear:both;visibility:hidden;}
+.zl-simple-breadcrumb li{float:left;}
+.zl-simple-breadcrumb li a{
+    position:relative;
+    display:block;
+    height:44px;
+    line-height: 44px;
+    color: #737e8c;
+    font-size:14px;
+    padding-right:16px;
+    background:url(../../images/common/nav-right-icon.png) right center no-repeat;
+    background-size:16px 16px;
+    text-decoration: none;
+    cursor:pointer;
+}
+.zl-simple-breadcrumb li:first-child a{}
+.zl-simple-breadcrumb li:first-child a.amp-nav-back{
+    width:30px;
+    background:url(../../images/common/nav-back-icon.png) left center no-repeat;
+    background-size:20px 20px;
+    padding-right:0;
+}
+.zl-simple-breadcrumb li:last-child a{color:#373c42;padding-right:0;background:none;cursor: default;}
+
+/* ======================================== zl-page-navigation ======================================== */
+.zl-page-navigation{background-color:#f3f4f8;padding:0 20px;border-top:1px solid #ccc;}
+.zl-page-navigation:after{content:"";display:block;height:0;clear:both;visibility:hidden;}
+.zl-page-navigation li{float:left;}
+.zl-page-navigation li a{
+    position:relative;
+    display:block;
+    height:44px;
+    line-height: 44px;
+    color: #737e8c;
+    font-size:14px;
+    padding-right:16px;
+    text-decoration: none;
+    cursor:pointer;
+}
+.zl-page-navigation li a.active{color:#2696dd;}
+
+
+.zl-table-inline .zl-table {
+    table-layout: fixed;
+    width:100%;
+    border: 0;
+    margin-bottom: 0;
+}
+
+
+.zl-glyphicon{
+    font-size:18px;
+    cursor:pointer;
+    margin-left:12px;
+}
+
+.zl-glyphicon-remove,
+.zl-glyphicon-add{
+    color:#17b1e3;
+}
+.zl-glyphicon-remove:hover,
+.zl-glyphicon-add:hover{
+    color: #179ccb;
+}
+
+/*update all------------*/
+
+.zl-table-collapse .zl-thead {
+    background-color: #f8fafa;
+    color: #7e8c9e;
+}
+.zl-dropdown-group .zl-dropdown .zl-dropdown-btn{
+    border: solid 1px #eff1f4;
+}
+.zl-btn{
+    border: solid 1px #eff1f4;
+}
+.zl-search-wrapper .zl-search>input.form-control{
+    border: solid 1px #eff1f4;
+}
+.zl-datetimepicker>input.form-control{
+    border: solid 1px #eff1f4;
+    box-shadow: none;
+}
+.zl-datetimepicker:after{
+    border: solid 1px #eff1f4;
+}
+
+.zl-dropdown-group .zl-dropdown:first-child .zl-dropdown-btn{
+    border-left: solid 1px #eff1f4;
+}
+.zl-table-default-2 tr:nth-child(odd){ background-color: #f8fafa;}
+.zl-date-selector,
+.zl-date-selector > input.form-control, .zl-date-selector > input{
+    border: solid 1px #eff1f4;
+}
+.zl-search-bar-default{
+    border: solid 1px #eff1f4;
+}
+.zl-search-bar-default span{
+    border-left: 1px solid #eff1f4;
+}
+
+.zl-datepicker .form-control{
+    border: solid 1px #eff1f4;
+}
+.input-group-addon{
+    border: solid 1px #eff1f4;
+}
+
+.zl-table-default th{
+    background-color: #f8fafa;
+    color: #7e8c9e;
+}

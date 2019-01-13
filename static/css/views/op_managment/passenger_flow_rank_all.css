@@ -1,0 +1,6 @@
+#passenger_flow_rank_all tbody td {
+	text-align:right;
+}
+#passenger_flow_rank_all tbody td:first-child,#passenger_flow_rank_all tbody td:nth-child(2) {
+	text-align: left;
+}

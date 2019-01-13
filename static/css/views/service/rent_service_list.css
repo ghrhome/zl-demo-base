@@ -1,0 +1,26 @@
+.page-info-history{
+
+}
+.page-info-history h5{height:32px;line-height: 32px;font-size:14px;color:#757575;}
+.page-info-history ul.page-info-status{}
+ul.page-info-status>li{
+    height:32px;
+    line-height: 32px;
+
+}
+
+.text-left{
+    text-align: left!important;
+}
+
+#service-leaser-punish .panel-default .zl-table-cell{
+    width:10%;
+}
+#service-leaser-punish .panel-default .zl-table-cell:nth-child(1){width:20%;}
+#service-leaser-punish .panel-default .zl-table-cell:nth-child(2),
+#service-leaser-punish .panel-default .zl-table-cell:nth-child(3),
+#service-leaser-punish .panel-default .zl-table-cell:nth-child(4),
+#service-leaser-punish .panel-default .zl-table-cell:nth-child(5),
+#service-leaser-punish .panel-default .zl-table-cell:nth-child(6){
+    width:8%;
+}

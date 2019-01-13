@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>商业系统</title>
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <link rel="shortcut icon" href="../../static/images/favicon.ico" type="image/x-icon">
+    <!-- Bootstrap 3.3.6 -->
+    <link rel="stylesheet" href="../../static/dist/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../static/css/common/no-response.css">
+    <link rel="stylesheet" href="../../static/dist/css/font-awesome/font-awesome.min.css">
+    <link rel="stylesheet" href="../../static/dist/css/animate.css">
+    <!--第三方js-->
+
+    <!--common css-->
+    <link rel="stylesheet" href="../../static/css/common/common.css">
+    <link rel="stylesheet" href="../../static/css/common/common_utils.css">
+    <link rel="stylesheet" href="../../static/css/common/icons.css">
+    <!--page css-->
+    <link rel="stylesheet" href="../../static/css/views/sample/sample.css">
+
+    <style>
+        .badge-warn{
+           background-color:rgb(230, 78, 77);
+        }
+        .zl-glyphicon-warn {
+            color: #fab416!important;
+            background-color: #fff;
+            border-radius: 14px;
+            margin-left: 6px;
+        }
+    </style>
+    <!--[if lt IE 9]>
+    <!--<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]&ndash;&gt;-->
+</head>
+
+<body>
+<!--[if lt IE 9]>
+<p class="updateBrowser">您的浏览器太旧了，请更新最新浏览器，以获得最佳效果.</p>
+<![endif]-->
+<!-- Preloader -->
+<div id="preloader">
+    <div id="status"><i class="fa fa-spinner fa-spin"></i></div>
+</div>
+
+<section class="zl-page" id="page-sample" style="padding-top:44px;">
+
+    <div class="zl-content-header clearfix">
+        <ol class="breadcrumb">
+            <li class="zl-main-system-nav"><span>首页</span></li>
+            <li class="bread-nav"><span>样例页面</span></li>
+        </ol>
+
+        <div class="zl-head-function pull-right">
+            <div class="zl-dist-links pull-right ">
+                <a href="javascript:void(0)" id="js-add-doc"><em class="zl-icon zl-icon-add"></em>新增</a>
+                <a href="javascript:void(0)" id="js-merchant-tables"><em class="zl-icon zl-icon-export"></em>批量打印</a>
+            </div><!--end zl-dist-links-->
+        </div><!--end zl-head-function-->
+    </div><!--zl-content-header-->
+
+    <div class="zl-block" style="padding:15px;">
+        <div class="zl-section">
+            <div class="zl-section-title">
+                <h3>Pagination</h3>
+            </div>
+            <div class="zl-pagination-wrapper clearfix">
+
+                <div class="zl-pagination pull-right">
+                    <span class="zl-page-limit">每页显示</span>
+                    <div class="btn-group zl-dropdown pull-left"  data-id="page-limit">
+                        <button type="button" class="btn btn-default dropdown-toggle zl-dropdown-btn" data-toggle="dropdown">50</button>
+                        <ul class="dropdown-menu">
+                            <li><a data-value="50">50</a></li>
+                            <li><a data-value="100">100</a></li>
+                            <li><a data-value="200">200</a></li>
+                        </ul>
+                        <input type="hidden" name="js_dropdown_test" value="">
+                    </div>
+                    <span class="zl-page-limit">条数据,</span>
+                    <span><em class="zl-page-index">共<i class="page-records">122</i>条记录，当前第<i class="page-index">1</i>/<i class="page-all">7</i>页</em></span>
+                    <div class="btn-group zl-page-opt">
+                        <button type="button" class="btn btn-default zl-btn zl-btn-disable" id="btn-pre-bottom">&lt;</button>
+                        <input type="text" value="1" class="zl-page-num-input">
+                        <button type="button" class="btn btn-default zl-btn" id="btn-next-bottom">&gt;</button>
+
+                    </div>
+
+                    <button type="button" class="btn btn-default zl-btn zl-btn-blue" id="btn-save">确定</button>
+                </div>
+            </div>
+        </div>
+    </div><!--zl-block-->
+</section>
+
+<!--<script src="../../static/dist/js/require.js" data-main="../../static/js/views/sample/sample_main"></script>-->
+<script src="../../static/dist/js/jQuery/jquery-2.2.3.min.js"></script>
+<script src="../../static/dist/bootstrap/js/bootstrap.min.js"></script>
+<script src="../../static/dist/js/datetimepicker/bootstrap-datetimepicker.js"></script>
+<script src="../../static/dist/js/datetimepicker/locales/bootstrap-datetimepicker.zh-CN.js"></script>
+<script src="../../static/dist/js/swiper.jquery.min.js"></script>
+<script>
+    $(document).ready(function(){
+       $("#preloader").fadeOut();
+    });
+</script>
+</body>
+</html>

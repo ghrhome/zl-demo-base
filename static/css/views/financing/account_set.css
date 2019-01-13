@@ -1,0 +1,16 @@
+#account-set .zl-toolbar>.zl-search-wrapper{margin-right:10px;}
+
+/* ======================================== zl-table-block ======================================== */
+#account-set .zl-table-block {
+}
+
+#account-set .zl-pagination-wrapper{
+    padding:20px 0;
+}
+
+#account-set a.zl-text-btn{
+    display: inline-block;
+    /*margin-left:15px;*/
+
+}
+

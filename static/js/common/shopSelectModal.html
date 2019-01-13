@@ -1,0 +1,80 @@
+<!--base Modal -->
+<script id="shop-select-template" type="text/x-handlebars-template">
+
+    <div class="modal fade" id="shopSelectModal" tabindex="-1" data-backdrop="static">
+        <style>
+            #shopSelectModall{}
+        </style>
+        <div class="modal-dialog" role="document" style="width:660px; ">
+            <div class="modal-content">
+                <div class="modal-header clearfix">
+                    <button type="button" class="close js-cancel" ><span aria-hidden="true">&times;</span>
+                    </button>
+                    <h4 class="modal-title" id="myModalLabel" style="width:100px;float:left;">选择商家</h4>
+                    <div class="zl-search-wrapper pull-left">
+                        <div class="zl-search">
+                            <input type="text" class="form-control" placeholder="搜索商家" id="js-shop-select-modal-search">
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-body"  style="padding-top:0;padding-bottom:0;">
+
+                    <div class="col-split-wrapper col-2 clearfix">
+                        <div class="col-left col-panel">
+
+                            <div class="col-panel-title">
+                                <span>商家列表</span>
+                            </div>
+
+                            <!-- zl-select-wrapper -->
+                            <div class="zl-select-wrapper js-multi-select">
+                                <ul  class="js-modal-shop-list">
+                                    {{#each shopList}}
+                                    <li data-index="{{@index}}" data-id="{{id}}" data-name="{{name}}"
+                                        class="zl-select-item"><span>{{name}}</span>
+                                    </li>
+                                    {{/each}}
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-right col-panel" style="padding-left:15px;">
+                          <!--  <div class="col-title-info" style="left:300px;">
+                                <span>账期列表:款项/权责年月/应收金额/实收金额</span>
+                            </div>-->
+                            <div class="col-panel-title">
+                                <span>已选商家</span>
+                               <!-- <span>已选账期</span>-->
+                            </div>
+                            <div class="col-content">
+                                <!-- zl-select-wrapper -->
+                                <div class="zl-select-wrapper selected" >
+                                    <ul  class="js-modal-shop-selected" >
+
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="modal-footer">
+                    <!--<button type="button" class="btn btn-default zl-btn" data-dismiss="modal">Close</button>-->
+                    <button type="button" class="btn btn-default zl-btn zl-btn-blue js-submit">确定</button>
+                    <button type="button" class="btn btn-default zl-btn js-cancel">取消</button>
+                    <button type="button" class="btn btn-default zl-btn js-reset">重置</button>
+                </div>
+            </div>
+        </div>
+    </div><!--baseModal-->
+
+</script>
+
+<script id="shop-item-template" type="text/x-handlebars-template">
+
+    {{#each shopList}}
+        <li data-index="{{@index}}" data-id="{{id}}" data-name="{{name}}"
+            class="zl-select-item"><span>{{name}}</span>
+        </li>
+    {{/each}}
+
+</script>

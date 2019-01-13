@@ -1,0 +1,15 @@
+#average-rent-project {
+	padding-top:44px;
+}
+#average-rent-project .chart-block .chart-content {
+    position: relative;
+    height: 300px;
+    width: 600px;
+    padding-bottom:20px;
+}
+#average-rent-project .zl-table-block thead th,#average-rent-project .zl-table-block tbody td {
+	text-align:right;
+}
+#average-rent-project .zl-table-block thead th:first-child,#average-rent-project .zl-table-block tbody td:first-child{
+	text-align: left;
+}

@@ -1,0 +1,208 @@
+#sale-detail{padding-top:44px;}
+/* ======================================== zl-table-block ======================================== */
+#sale-detail .zl-table-block {
+
+}
+#sale-detail .zl-block-title{
+    padding-bottom:0;
+}
+
+#sale-detail.zl-fixed-toolbar .zl-toolbar{}
+#sale-detail .zl-toolbar label{line-height: 24px;}
+
+#sale-detail .zl-block-title h5{
+    padding-bottom:0;
+
+    line-height:24px;
+    color:#333;
+    font-size:22px;
+}
+
+
+#sale-detail .zl-block-title .zl-title-info{
+    display: block;
+    margin-left:30px;
+    line-height: 24px;
+    color:#333;
+}
+#sale-detail .zl-block-title .zl-title-info label{
+    margin-bottom:0;
+    color:#7e8c9e;
+    font-weight:normal;
+}
+#sale-detail .zl-block-title .form-group{margin-left:30px;}
+#sale-detail .zl-block-title .form-group label{
+    line-height: 24px;
+    margin-bottom:0;
+    color:#7e8c9e;
+    font-weight:normal;
+    margin-right:6px;
+}
+#sale-detail .zl-block-title>span{
+    line-height: 24px;
+}
+
+#sale-detail .zl-block-title input.form-control{
+    float: left;
+    width: 128px;
+    height:24px;
+}
+
+
+#sale-detail .zl-btn.active{
+    background-color:#32aaff;
+    border-color:#32aaff;
+}
+
+#sale-detail .zl-table-block .zl-edit input{
+    width:100%;
+    height:24px;
+    padding:0 6px;
+    border:1px solid #dae1e7;
+    /*border-left:2px solid #E64E4D;*/
+    text-align: right;
+    background-color:#f3f4f9;
+}
+#sale-detail .zl-table-block .zl-edit input:focus{
+    background-color:#fff;
+}
+
+#sale-detail .zl-table-block .zl-edit.editing  input{background-color:#fff;}
+#sale-detail .zl-table-block .zl-edit.editing  input:focus{border:solid 1px #32aaff; }
+
+#sale-detail .zl-toolbar .zl-datepicker .form-control{background-color:#fff;text-align: center;}
+#sale-detail .zl-toolbar .zl-datepicker .form-control.disabled{background-color:#ddd;}
+
+#sale-detail .zl-edit{
+    padding-left:15px;
+}
+#sale-detail .zl-edit .zl-input-wrapper{
+    float:left;
+    width:100%;
+}
+
+
+#sale-detail .zl-linkable{
+    display: block;
+    height:24px;
+    line-height: 24px;
+    width:48px;
+    font-size:12px;
+    text-align: center;
+    border:0;
+    background-color:#32aaff;
+    color:#fff;
+}
+#sale-detail .zl-linkable:hover{
+    background-color: #0f96ff;
+}
+#sale-detail .zl-block-title h5{
+    max-width:260px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+#sale-detail .zl-block-title .zl-linkable{
+    float:right;
+    margin-left:6px;
+    display: block!important;
+    text-decoration: none;
+}
+#sale-detail .zl-block-title .zl-linkable[disabled]{
+    background-color: #dae1e7;
+    color:#fff;
+}
+
+
+#sale-detail .badge{
+   /* position: relative;
+    top: -2px;
+    margin-right:0;
+    background-color:#E64E4D;
+    cursor:pointer;
+    transform-origin: center center;
+    -webkit-transform: scale(.86);
+    -moz-transform: scale(.86);
+    -ms-transform: scale(.86);
+    -o-transform: scale(.86);
+    transform: scale(.86);*/
+    
+}
+
+#sale-detail table tr.tr-sum{}
+#sale-detail table tr.tr-sum td{font-weight: bold;}
+
+#js-table-edit{}
+#js-table-edit .zl-edit{position: relative;}
+#js-table-edit .zl-edit .zl-btn-wrapper{
+
+}
+
+#js-table-edit .zl-edit.zl-edit-opt{padding-left:6px;}
+
+
+#sale-detail .zl-table-block .zl-save-btn,
+#sale-detail .zl-table-block .zl-cancel-btn{display:none;text-decoration:none;}
+
+#js-table-edit .zl-edit.editing .zl-btn-wrapper>a.zl-linkable{display: inline-block;}
+
+#sale-detail .zl-table-block .zl-cancel-btn{
+    background-color: #fff;
+    border:solid 1px #dae1e7;
+    line-height: 22px;
+    color:#666;
+    text-align: center;
+    text-decoration: none;
+
+}
+#sale-detail .zl-table-block .zl-cancel-btn:hover{
+    border:solid 1px #32aaff;
+    background-color: #fff;
+}
+
+
+#sale-detail .js-edit-turnover-count{padding-left:22px;}
+#sale-detail .js-edit-turnover-count:before{
+    position:absolute;
+    display: block;
+    top:0;
+    left:0;
+    height:36px;
+    width:22px;
+    color:#dae1e7;
+    text-align: center;
+    line-height: 36px;
+    content:"-"
+}
+
+#sale-detail .tooltip.in{opacity:1;}
+#sale-detail .tooltip-inner{padding:6px 8px;}
+#sale-detail .tooltip ul>li{line-height:15px;}
+#sale-detail .tooltip ul>li+li{margin-top:3px;}
+#sale-detail .tooltip em.tooltip-index{
+    float:left;
+    display: block;
+    margin-right:5px;
+    width:13px;
+    height:13px;
+    border-radius: 100%;
+    border:solid 1px #fff;
+    line-height: 13px;
+    text-align: center;
+}
+
+
+#js-contract-category-dialog{}
+#js-contract-category-dialog table>tbody>tr>td{
+    background-color:#f8fafa;
+}
+#js-contract-category-dialog table>tbody>tr>td.zl-edit{background-color: #fff;}
+
+#sale-detail .zl-block-footer{
+    margin-top:15px;
+    border-top:solid 1px #dae1e7;
+    padding:10px;
+    text-align: center;
+    line-height:20px;
+    color:#7e8c9e;
+}

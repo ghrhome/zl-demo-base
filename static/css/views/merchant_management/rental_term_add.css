@@ -1,0 +1,29 @@
+#rental-term-add{
+
+}
+#rental-term-add .zl-table-wrapper-swiper .zl-table-main .swiper-slide{padding-bottom:8px;}
+#rental-term-add .swiper-scrollbar{/*display: none;*/}
+
+#rental-term-add .zl-edit .zl-select-range{}
+#rental-term-add .zl-edit .zl-select-range input{
+    border:0;
+}
+#rental-term-add .zl-edit .zl-select-range .input-group-addon{
+    height:35px;
+    border:0;
+    border-left:solid 1px #eff1f4;
+    border-right:solid 1px #eff1f4;
+
+}
+
+#rental-term-add .zl-edit .zl-datepicker.zl-datetime-range .input-group-addon{
+    height:35px;
+}
+
+#rental-term-add .swiper-wrapper{}
+#rental-term-add .swiper-wrapper .zl-table{}
+#rental-term-add .swiper-wrapper .zl-table tr>th.hover,
+#rental-term-add .swiper-wrapper .zl-table tr>td.hover{
+    background-color: #f5f7f7;
+
+}

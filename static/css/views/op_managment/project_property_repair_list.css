@@ -1,0 +1,19 @@
+#project-property-repair-list .zl-toolbar>.zl-search-wrapper{margin-right:10px;}
+#project-property-repair-list .zl-toolbar>.zl-search-wrapper .zl-search{width:280px;}
+/* ======================================== zl-table-block ======================================== */
+#project-property-repair-list .zl-table-block {
+}
+#project-property-repair-list .panel-heading .zl-table-row .zl-table-cell{width:9%;}
+#project-property-repair-list .panel-heading .zl-table-row .zl-table-cell:nth-child(1),
+#project-property-repair-list .panel-heading .zl-table-row .zl-table-cell:nth-child(2),
+#project-property-repair-list .panel-heading .zl-table-row .zl-table-cell:nth-child(5),
+#project-property-repair-list .panel-heading .zl-table-row .zl-table-cell:nth-child(6),
+#project-property-repair-list .panel-heading .zl-table-row .zl-table-cell:nth-child(9),
+#project-property-repair-list .panel-heading .zl-table-row .zl-table-cell:nth-child(10){
+    width:7%;
+}
+
+#project-property-repair-list .panel-heading .zl-table-row .zl-table-cell:nth-child(11){
+    width:14%;
+}
+

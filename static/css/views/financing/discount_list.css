@@ -1,0 +1,11 @@
+#discount_list .zl-toolbar .zl-search-wrapper .zl-search+.zl-search{margin-left:10px;}
+#discount_list .zl-toolbar .zl-search-wrapper .zl-search+.zl-search{margin-left:10px;}
+#discount_list .zl-toolbar .zl-btn-red{margin-left:10px;}
+#discount_list .padding-right{margin-left: 10px}
+#discount_list .text-right{text-align: right}
+
+#discount_list table tbody tr:hover{cursor:pointer;}
+#discount_list .zl-pagination-wrapper{
+    padding:20px 0;
+}
+

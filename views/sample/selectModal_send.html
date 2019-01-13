@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>商业系统</title>
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <link rel="shortcut icon" href="../../static/images/favicon.ico" type="image/x-icon">
+    <!-- Bootstrap 3.3.6 -->
+    <link rel="stylesheet" href="../../static/dist/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../static/css/common/no-response.css">
+    <link rel="stylesheet" href="../../static/dist/css/font-awesome/font-awesome.min.css">
+    <link rel="stylesheet" href="../../static/dist/css/ionicons/ionicons.min.css">
+    <link rel="stylesheet" href="../../static/dist/jui/jquery-ui.css">
+    <link rel="stylesheet" href="../../static/dist/css/animate.css">
+
+    <!--第三方css-->
+    <link rel="stylesheet" href="../../static/dist/css/swiper.min.css">
+    <link rel="stylesheet" href="../../static/dist/css/bootstrap-datetimepicker.min.css">
+    <link rel="stylesheet" href="../../static/dist/css/magnific-popup.css">
+
+    <!--common css-->
+    <link rel="stylesheet" href="../../static/css/common/common.css">
+    <link rel="stylesheet" href="../../static/css/common/common_utils.css">
+    <link rel="stylesheet" href="../../static/css/common/icons.css">
+    <link rel="stylesheet" href="../../static/css/common/static_table.css">
+
+    <!--page css-->
+    <link rel="stylesheet" href="../../static/css/views/sample/sample.css">
+
+    <!--[if lt IE 9]>
+  <!--  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>-->
+    <![endif]-->
+</head>
+
+<body>
+<!--[if lt IE 9]>
+<p class="updateBrowser">您的浏览器太旧了，请更新最新浏览器，以获得最佳效果.</p>
+<![endif]-->
+<!-- Preloader -->
+<div id="preloader">
+    <div id="status"><i class="fa fa-spinner fa-spin"></i></div>
+</div>
+
+<section class="zl-page" id="page-sample" style="padding-top:44px;">
+    <div class="zl-content-header clearfix">
+        <ol class="breadcrumb">
+            <li class="zl-main-system-nav">首页</li>
+            <li class="bread-nav">财务</li>
+            <li class="bread-nav">费用审核</li>
+        </ol>
+
+        <div class="zl-head-function pull-right">
+            <div class="zl-dist-links pull-right ">
+                <a href="javascript:void(0)" id="js-add-doc"><em class="zl-icon zl-icon-add"></em>新增</a>
+                <a href="javascript:void(0)" id="js-merchant-tables"><em class="zl-icon zl-icon-export"></em>批量打印</a>
+            </div><!--end zl-dist-links-->
+        </div><!--end zl-head-function-->
+
+    </div><!--end content-header-->
+    <div class="zl-content">
+        <div class="zl-block" style="padding:20px;">
+
+
+            <div class="zl-section">
+
+                <div class="dropdown zl-dropdown zl-dropdown-search-select">
+                    <button class="btn btn-default zl-btn zl-dropdown-btn dropdown-toggle" type="button" data-toggle="dropdown">
+                        搜索填写
+                    </button>
+                    <div class="dropdown-menu clearfix"  style="width:280px;">
+                        <div class="zl-search-wrapper">
+                            <div class="zl-search zl-search-reverse">
+                                <input type="text" class="form-control js-search" placeholder="">
+                            </div>
+                        </div>
+                    </div>
+                </div><!--zl-dropdown-project-select-->
+            </div><!--zl-section-->
+
+        </div>
+
+    </div><!--end content-panel-->
+</section>
+
+
+<!--<script src="../../static/dist/js/require.js" data-main="../../static/js/views/sample/sample_main"></script>-->
+<script src="../../static/dist/js/jQuery/jquery-2.2.3.min.js"></script>
+<script src="../../static/dist/bootstrap/js/bootstrap.min.js"></script>
+<script src="../../static/dist/js/datetimepicker/bootstrap-datetimepicker.js"></script>
+<script src="../../static/dist/js/datetimepicker/locales/bootstrap-datetimepicker.zh-CN.js"></script>
+<script src="../../static/dist/js/swiper.jquery.min.js"></script>
+
+<script src="../../static/dist/jui/jquery-ui.min.js"></script>
+
+
+<!--可选-->
+<script src="../../static/dist/js/jquery.magnific-popup.min.js"></script>
+<script src="../../static/dist/js/underscore-min.js"></script>
+<script src="../../static/dist/js/handlebars-v4.0.8.js"></script>
+
+<!--fileuploader-->
+<script src="../../static/dist/js/uploader/vendor/jquery.ui.widget.js"></script>
+<script src="../../static/dist/js/uploader/jquery.fileupload.js"></script>
+<script src="../../static/dist/js/uploader/jquery.iframe-transport.js"></script>
+
+<script src="../../static/dist/js/uploader/jquery.fileupload-process.js"></script>
+<script src="../../static/dist/js/uploader/jquery.fileupload-image.js"></script>
+<!--插件-->
+<script src="../../static/js/utils/jq/jq_plugin_dropdown.js"></script>
+<script src="../../static/js/utils/jq/jq_plugin_datepicker.js"></script>
+<script src="../../static/js/utils/ys/ys_print.js"></script>
+<script src="../../static/js/utils/jq/jq_plugin_listTree.js"></script>
+<script src="../../static/js/utils/jq/jq_plugin_project_select.js"></script>
+
+<script src="../../static/js/utils/jq/jq_plugin_search_select.js"></script>
+
+<script src="../../static/js/views/common/alert.js"></script>
+<script src="../../static/js/views/common/selectUnit.js"></script>
+<script src="../../static/js/views/common/selectAccountPeriod.js"></script>
+
+<script src="../../static/js/views/common/selectForm.js"></script>
+<script src="../../static/js/views/common/selectShop.js"></script>
+<!--sample-->
+<script src="../../static/js/views/sample/selectModal.js"></script>
+
+<script>
+    $(document).ready(function(){
+        $("#preloader").fadeOut("fast");
+        var availableTags = [
+            "ActionScript",
+            "AppleScript",
+            "Asp",
+            "BASIC",
+            "C",
+            "C++",
+            "Clojure",
+            "COBOL",
+            "ColdFusion",
+            "Erlang",
+            "Fortran",
+            "Groovy",
+            "Haskell",
+            "Java",
+            "JavaScript",
+            "Lisp",
+            "Perl",
+            "PHP",
+            "Python",
+            "Ruby",
+            "Scala",
+            "Scheme"
+        ];
+
+
+       $(".zl-dropdown-search-select").ysSearchSelect({
+
+           source:function( request, response ) {
+               $.ajax( {
+                   url: "search.json",
+                   data: {
+                       term: request.term
+                   },
+                   success: function( data ) {
+                       console.log(data);
+                       response( data );
+                   }
+               } );
+           },
+            callback:function(value,ui){
+             console.log("==========================")
+              console.log(value);
+              console.log(ui);
+             console.log("==========================")
+         },
+       });
+
+    })
+</script>
+
+
+</body>
+</html>

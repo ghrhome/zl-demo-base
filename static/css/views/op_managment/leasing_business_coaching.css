@@ -1,0 +1,29 @@
+#leasing-business-coaching .zl-toolbar .zl-search-wrapper .zl-search+.zl-search{margin-left:10px;}
+#leasing-business-coaching .zl-toolbar .zl-search-wrapper .zl-search+.zl-search{margin-left:10px;}
+#leasing-business-coaching .zl-toolbar .zl-btn-red{margin-left:10px;}
+#leasing-business-coaching .padding-right{margin-left: 10px}
+#leasing-business-coaching .text-right{text-align: right}
+
+#leasing-business-coaching table tbody tr:hover{cursor:pointer;}
+
+#leasing-business-coaching table th:nth-child(2),
+#leasing-business-coaching table td:nth-child(2),
+#leasing-business-coaching table th:nth-child(3),
+#leasing-business-coaching table td:nth-child(3),
+#leasing-business-coaching table th:nth-child(4),
+#leasing-business-coaching table td:nth-child(4),
+#leasing-business-coaching table th:nth-child(5),
+#leasing-business-coaching table td:nth-child(5),
+#leasing-business-coaching table th:nth-child(6),
+#leasing-business-coaching table td:nth-child(6),
+#leasing-business-coaching table th:nth-child(7),
+#leasing-business-coaching table td:nth-child(7){text-align: right;}
+
+#leasing-business-coaching .zl-btn.active{
+    background-color:#32aaff;
+    border-color:#32aaff;
+}
+
+#leasing-business-coaching .zl-pagination-wrapper {
+    padding-top:20px;
+}

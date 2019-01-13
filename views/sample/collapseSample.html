@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>商业系统</title>
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <link rel="shortcut icon" href="../../static/images/favicon.ico" type="image/x-icon">
+    <!-- Bootstrap 3.3.6 -->
+    <link rel="stylesheet" href="../../static/dist/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../static/css/common/no-response.css">
+    <link rel="stylesheet" href="../../static/dist/css/animate.css">
+    <!--第三方js-->
+
+    <!--common css-->
+    <link rel="stylesheet" href="../../static/css/common/common.css">
+    <link rel="stylesheet" href="../../static/css/common/common_utils.css">
+    <link rel="stylesheet" href="../../static/css/common/icons.css">
+    <!--page css-->
+    <link rel="stylesheet" href="../../static/css/views/sample/sample.css">
+
+
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+<!--[if lt IE 9]>
+<p class="updateBrowser">您的浏览器太旧了，请更新最新浏览器，以获得最佳效果.</p>
+<![endif]-->
+<!-- Preloader -->
+<div id="preloader">
+    <div id="status"><i class="fa fa-spinner fa-spin"></i></div>
+</div>
+
+<section class="zl-page" id="page-sample">
+
+    <div class="zl-content-header clearfix">
+        <ol class="breadcrumb">
+            <li class="zl-main-system-nav"><span>首页</span></li>
+            <li class="bread-nav"><span>样例页面</span></li>
+        </ol>
+
+        <div class="zl-head-function pull-right">
+            <div class="zl-dist-links pull-right ">
+                <a href="javascript:void(0)" id="js-add-doc"><em class="zl-icon zl-icon-add"></em>新增</a>
+                <a href="javascript:void(0)" id="js-merchant-tables"><em class="zl-icon zl-icon-export"></em>批量打印</a>
+            </div><!--end zl-dist-links-->
+        </div><!--end zl-head-function-->
+    </div><!--zl-content-header-->
+
+   <div class="zl-block">
+       <div class="zl-block-title" style="padding:15px;">
+           <h3>Panel-Collapse</h3>
+       </div>
+       <div class="zl-section">
+           <div class="panel-group zl-panel-group" id="accordion">
+               <div class="panel panel-default zl-panel">
+                   <div class="panel-heading" role="tab" id="headingOne">
+                       <h4 class="panel-title">
+                           <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                               Collapsible Group Item #1
+                           </a>
+                       </h4>
+                   </div>
+                   <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                       <div class="panel-body">
+                           Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                       </div>
+                   </div>
+               </div>
+               <div class="panel panel-default zl-panel">
+                   <div class="panel-heading" role="tab" id="headingTwo">
+                       <h4 class="panel-title">
+                           <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                               Collapsible Group Item #2
+                           </a>
+                       </h4>
+                   </div>
+                   <div id="collapseTwo" class="panel-collapse collapse">
+                       <div class="panel-body">
+                           Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                       </div>
+                   </div>
+               </div>
+               <div class="panel panel-default zl-panel">
+                   <div class="panel-heading" role="tab" id="headingThree">
+                       <h4 class="panel-title">
+                           <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                               Collapsible Group Item #3
+                           </a>
+                       </h4>
+                   </div>
+                   <div id="collapseThree" class="panel-collapse collapse">
+                       <div class="panel-body">
+                           Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                       </div>
+                   </div>
+               </div>
+           </div>
+
+       </div>
+   </div><!--zl-block-->
+
+    <div class="zl-block">
+        <div class="zl-block-title" style="padding:15px;">
+            <h3>zl-table-Collapse</h3>
+            <span>zl-table-collapse用于模拟table折叠展开编辑项的实现</span>
+            <span>交互两种实现方式，可以通过data-toggle="collapse"对应id的实现
+                或者 通过js判断实现</span>
+            <span>注意，实现collapse不在元素上添加display:block/none，参考bootstrap实现，加入collapse,in类</span>
+        </div>
+        <div class="zl-block-content">
+
+            <div class="zl-table-collapse">
+                <div class="zl-table-collapse-thead">
+                    <ul class="zl-table-row">
+                        <li class="zl-table-cell">收据号</li>
+                        <li class="zl-table-cell">商家品牌</li>
+                        <li class="zl-table-cell">合同编号</li>
+                        <li class="zl-table-cell">收款项目</li>
+                        <li class="zl-table-cell">权责月</li>
+                        <li class="zl-table-cell">实收金额(元)</li>
+                        <li class="zl-table-cell">收款日期</li>
+                        <li class="zl-table-cell">状态</li>
+                    </ul>
+                </div><!-- zl-thead -->
+                <div class="zl-table-collapse-tbody">
+                    <div class="zl-table-collapse-row">
+                        <ul class="zl-table-row zl-table-row-selected" data-toggle="collapse" href="#js-collapse-row-1">
+                            <li class="zl-table-cell"><span class="zl-cell">600027107</span></li>
+                            <li class="zl-table-cell"><span class="zl-cell">沃尔玛</span></li>
+                            <li class="zl-table-cell"><span class="zl-cell">6-17082410018</span></li>
+                            <li class="zl-table-cell"><span class="zl-cell">租金</span></li>
+                            <li class="zl-table-cell"><span class="zl-cell">2017-09,2017-08</span></li>
+                            <li class="zl-table-cell"><span class="zl-cell zl-cell-num">4,208.45</span></li>
+                            <li class="zl-table-cell"><span class="zl-cell">2017-09-24</span></li>
+                            <li class="zl-table-cell"><span class="zl-cell">已审核</span></li>
+                        </ul>
+                        <div class="zl-row-collapse zl-collapse-wrapper collapse" id="js-collapse-row-1">
+                            <div class="zl-collapse-header clearfix">
+                                <h3 class="pull-left">编辑</h3>
+
+                                <div class="btn-wrapper pull-right">
+                                    <a class="btn btn-default zl-btn zl-btn-red js-btn-print" data-id="js-print">打印收据</a>
+                                    <a class="btn btn-default zl-btn js-slide-up-btn" data-id="js-slide-up" data-toggle="collapse" href="#js-collapse-row-1">收起</a>
+                                </div>
+                            </div><!-- zl-edit-detail-header -->
+                            <div class="zl-collapse-content clearfix">
+                                <div class="form-horizontal">
+                                    <ul class="clearfix">
+                                        <li class="col-xs-6 form-group">
+                                            <label  class="control-label">收据号</label>
+                                            <div>
+                                                <input value="600027107" type="text" class="form-control" readonly="">
+                                            </div>
+                                        </li>
+                                        <li class="col-xs-6 form-group">
+                                            <label  class="control-label">项目名称</label>
+                                            <div>
+                                                <input value="项目D" readonly="" class="form-control">
+                                            </div>
+                                        </li>
+                                        <li class="col-xs-6 form-group">
+                                            <label class="control-label">收款项目</label>
+                                            <div >
+                                                <input value="租金" type="text" class="form-control" readonly="">
+                                            </div>
+                                        </li>
+                                        <li class="col-xs-6 form-group">
+                                            <label  class="control-label">收款方式</label>
+                                            <div>
+                                                <input value="现金" class="form-control" readonly="">
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div><!--table-panel-->
+                            </div><!--zl-edit-detail-content-->
+                        </div><!--zl-row-collapse-->
+                    </div><!-- zl-table-collapse-row -->
+
+
+                    <div class="zl-table-collapse-row">
+                        <ul class="zl-table-row">
+                            <li class="zl-table-cell">600027107</li>
+                            <li class="zl-table-cell">沃尔玛</li>
+                            <li class="zl-table-cell">6-17082410018</li>
+                            <li class="zl-table-cell">租金</li>
+                            <li class="zl-table-cell">2017-09,2017-08</li>
+                            <li class="zl-table-cell">4,208.45</li>
+                            <li class="zl-table-cell">2017-09-24</li>
+                            <li class="zl-table-cell">已审核</li>
+                        </ul>
+                        <div class="zl-row-collapse zl-collapse-wrapper">
+                            <div class="zl-collapse-header clearfix">
+                                <h3 class="pull-left">编辑</h3>
+
+                                <div class="btn-wrapper pull-right">
+                                    <a class="btn btn-default zl-btn zl-btn-red js-btn-print" data-id="js-print">打印收据</a>
+                                    <a class="btn btn-default zl-btn js-slide-up-btn" data-id="js-slide-up" data-toggle="collapse" href="#js-collapse-row-1">收起</a>
+                                </div>
+                            </div><!-- zl-edit-detail-header -->
+                            <div class="zl-collapse-content clearfix">
+                                <div class="form-horizontal">
+                                    <ul class="clearfix">
+                                        <li class="col-xs-6 form-group">
+                                            <label  class="control-label">收据号</label>
+                                            <div>
+                                                <input value="600027107" type="text" class="form-control" readonly="">
+                                            </div>
+                                        </li>
+                                        <li class="col-xs-6 form-group">
+                                            <label  class="control-label">项目名称</label>
+                                            <div>
+                                                <input value="项目D" readonly="" class="form-control">
+                                            </div>
+                                        </li>
+                                        <li class="col-xs-6 form-group">
+                                            <label class="control-label">收款项目</label>
+                                            <div >
+                                                <input value="租金" type="text" class="form-control" readonly="">
+                                            </div>
+                                        </li>
+                                        <li class="col-xs-6 form-group">
+                                            <label  class="control-label">收款方式</label>
+                                            <div>
+                                                <input value="现金" class="form-control" readonly="">
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div><!--table-panel-->
+                            </div><!--zl-edit-detail-content-->
+                        </div><!--zl-row-collapse-->
+                    </div><!-- zl-table-collapse-row -->
+                </div><!--zl-tbody-->
+
+                </div><!-- zl-table-collapse -->
+            </div>
+    </div><!--zl-block-->
+
+    <div class="zl-block ">
+        <div class="zl-block-title zl-contract-title">
+            <h3>Collapse方案</h3>
+            <span class="zl-span-status">zl-block-section zl-separate-block为兼容之前商业系统实现的方案</span>
+            <span>折叠采用collapse实现</span>
+            <span>插件兼容方案为js-collapse-block</span>
+        </div><!--end zl-block-title-->
+
+        <div class="zl-section zl-block-section zl-separate-block">
+            <table class="table table-bordered in">
+                <colgroup>
+                    <col width="15%">
+                    <col width="35%">
+                    <col width="15%">
+                    <col width="35%">
+                </colgroup>
+                <tbody>
+                    <tr>
+                        <th>合同编号</th>
+                        <td>SYCQZZ15017</td>
+                        <th>租户品牌</th>
+                        <td>343正品运动装备</td>
+                    </tr>
+                    <tr>
+                        <th>商铺号</th>
+                        <td>1F-006A</td>
+                        <th>商务条件审批表</th>
+                        <td><a href="#">482613</a></td>
+                    </tr>
+                    <tr>
+                        <th>合同文本</th>
+                        <td><a href="">SYCQZZ15017</a></td>
+                        <th>租赁合同审批表</th>
+                        <td><a href="#">484164</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div><!--end zl-block-section-->
+        <div class="zl-section zl-block-section zl-separate-block">
+            <div class="zl-section-title">
+                <h3>1.基本信息 <a href="#zl-section-collapse-table-1" class="zl-section-collapse-btn" data-toggle="collapse" ><em class="glyphicon glyphicon-menu-down"></em></a></h3>
+            </div>
+            <div class="zl-section-content collapse in" id="zl-section-collapse-table-1">
+                <table class="table table-bordered" >
+                    <colgroup>
+                        <col width="15%"/>
+                        <col width="35%"/>
+                        <col width="15%"/>
+                        <col width="35%"/>
+                    </colgroup>
+                    <tbody>
+                    <tr>
+                        <th>合同类型</th>
+                        <td>已售商铺合同</td>
+                        <th>租户名称(经销商)</th>
+                        <td>343正品运动装备</td>
+                    </tr>
+                    <tr>
+                        <th>物业类型</th>
+                        <td>商业街</td>
+                        <th>签约时间</th>
+                        <td>2015-04-15</td>
+                    </tr>
+                    <tr>
+                        <th>建筑面积m²(图纸)</th>
+                        <td>\</td>
+                        <th>建筑面积m²(测绘)</th>
+                        <td>210.33</td>
+                    </tr>
+
+                    <tr>
+                        <th>套内面积m²(图纸)</th>
+                        <td>\</td>
+                        <th>套内面积m²(测绘)</th>
+                        <td>210.33</td>
+                    </tr>
+                    <tr>
+                        <th>生成租金</th>
+                        <td>
+                            <label><input type="radio" name="zl-rent-gen" checked value="y">是</label>
+                            <label><input type="radio" name="zl-rent-gen" value="n">否</label>
+                        </td>
+                        <th>生成物管费</th>
+                        <td>
+                            <label><input type="radio" name="zl-charge-gen" checked value="y">是</label>
+                            <label><input type="radio" name="zl-charge-gen" value="n">否</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>计租面积m<sup>2</sup></th>
+                        <td>152.85</td>
+                        <th>计费面积m²</th>
+                        <td>152.85</td>
+                    </tr>
+                    <tr>
+                        <th>业态</th>
+                        <td>(NEW3)服装-运动休闲-基础运动</td>
+                        <th>商家性质</th>
+                        <td>小租户</td>
+                    </tr>
+                    <tr>
+                        <th>产权性质</th>
+                        <td>\</td>
+                        <th>约定交付日</th>
+                        <td>2015-04-15</td>
+                    </tr>
+
+                    <tr>
+                        <th>约定最迟开业日</th>
+                        <td>2015-05-15</td>
+                        <th>乙方约定开业日</th>
+                        <td>2015-05-02</td>
+                    </tr>
+
+                    <tr>
+                        <th>合同开始时间</th>
+                        <td>2015-05-02</td>
+                        <th>合同结束时间</th>
+                        <td>2015-05-14</td>
+                    </tr>
+
+                    <tr>
+                        <th>租赁起始规则</th>
+                        <td colspan="3">自本合同约定的最迟开业日或乙方租赁场所实际开业日较早发生之日开始计算</td>
+
+                    </tr>
+
+                    </tbody>
+                </table>
+            </div>
+
+        </div><!--end zl-block-section-->
+
+        <div class="zl-section zl-block-section zl-separate-block js-collapse-block">
+            <div class="zl-section-title">
+                <h3>1.基本信息 <a class="zl-section-collapse-btn"><em class="glyphicon glyphicon-menu-down"></em></a></h3>
+            </div>
+
+            <div class="zl-section-content">
+                <table class="table table-bordered">
+                    <col width="15%"/>
+                    <col width="35%"/>
+                    <col width="15%"/>
+                    <col width="35%"/>
+                    <tbody>
+                    <tr>
+                        <th>合同类型</th>
+                        <td>已售商铺合同</td>
+                        <th>租户名称(经销商)</th>
+                        <td>343正品运动装备</td>
+                    </tr>
+                    <tr>
+                        <th>物业类型</th>
+                        <td>商业街</td>
+                        <th>签约时间</th>
+                        <td>2015-04-15</td>
+                    </tr>
+                    <tr>
+                        <th>建筑面积m²(图纸)</th>
+                        <td>\</td>
+                        <th>建筑面积m²(测绘)</th>
+                        <td>210.33</td>
+                    </tr>
+
+                    <tr>
+                        <th>套内面积m²(图纸)</th>
+                        <td>\</td>
+                        <th>套内面积m²(测绘)</th>
+                        <td>210.33</td>
+                    </tr>
+                    <tr>
+                        <th>生成租金</th>
+                        <td>
+                            <label><input type="radio" name="zl-rent-gen" checked value="y">是</label>
+                            <label><input type="radio" name="zl-rent-gen" value="n">否</label>
+                        </td>
+                        <th>生成物管费</th>
+                        <td>
+                            <label><input type="radio" name="zl-charge-gen" checked value="y">是</label>
+                            <label><input type="radio" name="zl-charge-gen" value="n">否</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>计租面积m<sup>2</sup></th>
+                        <td>152.85</td>
+                        <th>计费面积m²</th>
+                        <td>152.85</td>
+                    </tr>
+                    <tr>
+                        <th>业态</th>
+                        <td>(NEW3)服装-运动休闲-基础运动</td>
+                        <th>商家性质</th>
+                        <td>小租户</td>
+                    </tr>
+                    <tr>
+                        <th>产权性质</th>
+                        <td>\</td>
+                        <th>约定交付日</th>
+                        <td>2015-04-15</td>
+                    </tr>
+
+                    <tr>
+                        <th>约定最迟开业日</th>
+                        <td>2015-05-15</td>
+                        <th>乙方约定开业日</th>
+                        <td>2015-05-02</td>
+                    </tr>
+
+                    <tr>
+                        <th>合同开始时间</th>
+                        <td>2015-05-02</td>
+                        <th>合同结束时间</th>
+                        <td>2015-05-14</td>
+                    </tr>
+
+                    <tr>
+                        <th>租赁起始规则</th>
+                        <td colspan="3">自本合同约定的最迟开业日或乙方租赁场所实际开业日较早发生之日开始计算</td>
+
+                    </tr>
+
+                    </tbody>
+                </table>
+            </div>
+        </div><!--end zl-block-section-->
+    </div>
+</section>
+
+<script src="../../static/dist/js/require.js" data-main="../../static/js/views/sample/collapse_main"></script>
+</body>
+</html>

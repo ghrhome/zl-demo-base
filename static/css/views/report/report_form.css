@@ -1,0 +1,93 @@
+/* .zl-toolbar{
+    overflow: hidder;
+}
+.zl-table-row{
+    background: #fff;
+    color:#808C92
+}*/
+ul.zl-table-row li{
+    display: block;
+    /* padding: 0; */
+    float: left;
+}
+/* .zl-table-row{
+    width: 0;
+} */
+.zl-search-wrapper .zl-search{
+    width:180px;
+}
+/* 省略号 */
+#report_query .Ellipsis{
+    /* display: block; */
+    width: 140px;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap
+}
+.time-link{
+    width: 30px;
+    border: 1px solid #d8e0e7;
+    height: 32px;
+    line-height: 32px;
+    background: #fff;
+    text-align: center;
+  
+}
+.zl-dropdown .section{
+   width: 20px;
+   height: 32px;
+   border: 1px solid #d8e0e7;
+   font-size: 14px;
+   text-align: center;
+   line-height: 32px; 
+}
+.zl-section{
+    padding:0 20px;
+}
+
+/* 2级菜单 */
+.dropdown-submenu {
+     position: relative;
+}
+.zl-dropdown ul.dropdown-menu {
+    max-height: 220px;
+    overflow-y: visible;
+}
+.dropdown-submenu > .dropdown-menu {
+    top: 0;
+    left: 100%;
+     margin-top: -6px;
+     margin-left: -1px;
+    -webkit-border-radius: 0 6px 6px 6px;
+    -moz-border-radius: 0 6px 6px;
+    border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover > .dropdown-menu {
+     display: block;
+}
+.dropdown-submenu > a:after{
+    display: block;
+    content: " ";
+    float: right;
+    width: 0;
+    height: 0;
+    border-color: transparent;
+    border-style: solid;
+    border-width: 5px 0 5px 5px;
+    border-left-color: #ccc;
+    margin-top: 5px;
+    margin-right: -10px;
+}
+.dropdown-submenu:hover > a:after {
+    border-left-color: #fff;
+}
+.dropdown-submenu.pull-left {
+    float: none;
+}
+.dropdown-submenu.pull-left > .dropdown-menu {
+    left: -100%;
+    margin-left: 10px;
+    -webkit-border-radius: 6px 0 6px 6px;
+    -moz-border-radius: 6px 0 6px 6px;
+    border-radius: 6px 0 6px 6px;
+ }

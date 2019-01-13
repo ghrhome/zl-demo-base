@@ -1,0 +1,30 @@
+#contract_change_add .zl-content .contract_change_section {
+	display: none;
+}
+#contract_change_add .zl-content .contract_change_section.show {
+	display: block;
+}
+
+#contract_change_add #rental-table-wrapper table {
+	display: none;
+}
+#contract_change_add #rental-table-wrapper table.show {
+	display: table !important;
+}
+#contract_change_add .point_way_radio_group .input-addon {
+	display: none;
+}
+
+#contract_change_add #property-table-wrapper table {
+	display: none;
+}
+#contract_change_add #property-table-wrapper table.show {
+	display: table !important;
+}
+
+#contract_change_add #promote-table-wrapper table {
+	display: none;
+}
+#contract_change_add #promote-table-wrapper table.show {
+	display: table !important;
+}

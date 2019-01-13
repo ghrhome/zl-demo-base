@@ -1,0 +1,17 @@
+#payment-order-detail{padding:64px 0 0 0;}
+
+#payment-order-detail .zl-linkable{
+    margin-left:10px;
+}
+
+#payment-order-detail .zl-toolbar>a.btn{
+    margin-left:10px;
+}
+
+#payment-order-detail .zl-dropdown-inline{
+    height:100%;
+}
+#payment-order-detail .zl-dropdown-inline .zl-dropdown-btn{
+    height:100%;
+    border:none;
+}

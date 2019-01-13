@@ -1,0 +1,10 @@
+#voucher-template{padding:64px 0 0 0;}
+#voucher-template .zl-content{padding-bottom:20px;}
+#voucher-template .zl-dropdown-inline{
+    height:100%;
+}
+#voucher-template .zl-dropdown-inline .zl-dropdown-btn{
+    border:none;
+    height: 32px;
+}
+.swiper-container-horizontal > .swiper-scrollbar{z-index:-1;}

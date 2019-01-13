@@ -1,0 +1,70 @@
+#cost-account-receivable .zl-toolbar{padding-bottom:10px;}
+#cost-account-receivable .zl-toolbar div{margin:0;}
+#cost-account-receivable .zl-toolbar .zl-search-wrapper{margin-right:10px;}
+#cost-account-receivable .zl-toolbar .zl-date-select{width:160px;margin:0 10px;}
+#cost-account-receivable .zl-toolbar .zl-date-select .form-control{
+    font-size:12px;
+    padding:0;
+    text-align: center;
+    background-color:#fff;
+    cursor:pointer;
+}
+#cost-account-receivable .zl-toolbar .js-adv-search{margin-left:10px;}
+#cost-account-receivable .zl-toolbar .checkbox-wrapper label{height:32px;margin-bottom:0;}
+#cost-account-receivable .zl-toolbar .checkbox-wrapper label>.zl-fake-checkbox{height:32px;top:0;}
+
+#cost-account-receivable #js-arrearage{display: none;}
+#cost-account-receivable #js-print-mod{margin-right:0;}
+#cost-account-receivable .js-print-mod{display: none;}
+/* ======================================== zl-table-block ======================================== */
+#cost-account-receivable .zl-table-block {
+
+}
+#cost-account-receivable .zl-table-row .zl-table-cell{
+    width:10%;
+}
+
+#cost-account-receivable .zl-table-row .zl-table-cell:nth-child(1){
+    width:6%;
+}
+#cost-account-receivable .zl-table-row .zl-table-cell:nth-child(2),
+#cost-account-receivable .zl-table-row .zl-table-cell:nth-child(4){
+    width:21%;
+}
+#cost-account-receivable .zl-table-row .zl-table-cell:nth-child(5),
+#cost-account-receivable .zl-table-row .zl-table-cell:nth-child(6),
+#cost-account-receivable .zl-table-row .zl-table-cell:nth-child(7),
+#cost-account-receivable .zl-table-row .zl-table-cell:nth-child(8){
+    width:8%;
+}
+
+#cost-account-receivable .image-preview{
+    display:block;
+    width:120px;
+    height:100px;
+    border:1px solid #eff1f4;
+    background-color:#f8fafa;
+}
+
+#cost-account-receivable .panel-default:not(.zl-panel-thead) .panel-heading:hover{cursor:pointer;}
+
+
+/* ======================================== zl-switch-account ======================================== */
+#cost-account-receivable #receipt-dialog .modal-dialog{
+    width:360px;
+}
+
+#cost-account-receivable #receipt-dialog .receipt-item-list li{
+    height:36px;
+    line-height: 36px;
+}
+
+#cost-account-receivable #receipt-dialog .receipt-item-list li em.zl-checkbox{
+    vertical-align: -2px;
+    margin-right:6px;
+}
+
+#cost-account-receivable #receipt-dialog .zl-fake-radio{
+    margin-right:5px;
+    top:2px;
+}

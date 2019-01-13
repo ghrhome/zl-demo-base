@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <!-- Bootstrap 3.3.6 -->
+    <link rel="stylesheet" href="../../../static/dist/bootstrap/css/bootstrap.min.css">
+    <style type="text/css">
+
+        .rent-fee-notice{padding:20px 20px;}
+        .rent-fee-notice .rent-fee-notice-title{
+            height:32px;
+            line-height: 32px;
+            font-size:22px;
+            text-align: center;
+        }
+        .rent-fee-notice .rent-fee-notice-btn{
+            height:32px;
+            line-height: 32px;
+            text-align: right;
+        }
+        .rent-fee-notice *{box-sizing:border-box;}
+
+        .rent-fee-notice .font-weight-bold{font-weight: bold;}
+        .rent-fee-notice .border-bottom-box{display:none;min-width:300px;height:32px;border-bottom:1px solid #222;}
+
+        .rent-fee-notice .underline-box-after:after{content:"";display:inline-block;width:150px;height:100%;border-bottom:1px solid #222;vertical-align: text-bottom;}
+        .rent-fee-notice .underline-box-before:before{content:"";display:inline-block;width:30px;height:100%;border-bottom:1px solid #222;vertical-align: text-bottom;}
+        .rent-fee-notice .underline-box-before-long:before{width:50px;}
+
+        .rent-fee-notice .statement-group{padding-top:5px;}
+        .rent-fee-notice .statement-group>div{height:30px;line-height: 30px; font-size:10px;}
+        .rent-fee-notice .statement-group>div:first-child{width:90px;}
+        .rent-fee-notice .statement-group input{display:block;height:100%;width:300px;line-height: initial;border:1px solid #ccc;padding:0 8px; font-size:10px;}
+
+        .rent-fee-notice .statement-group-first>div{line-height:32px;font-size:15px;}
+        .rent-fee-notice .statement-group-first>div:first-child{font-weight: bold;}
+
+        .rent-fee-notice .comment{display:block;height:30px;width:100%;line-height: initial;border:none;padding:4px 8px;resize: none;}
+
+        .rent-fee-notice table{width:100%;}
+        .rent-fee-notice table td{height:30px;border:1px solid #222; font-size:10px;}
+        .rent-fee-notice table thead td{height:30px;text-align: center;color:#757575;background-color:#f3f3f3;}
+        .rent-fee-notice table tbody td:first-child{padding:0 8px;}
+        .rent-fee-notice table td input{display:block;height:100%;width:100%;border:none;padding:0 8px;}
+        .zl-bold-padding{padding-left: 20px;font-weight: bold;}
+        .zl-remarks{overflow: hidden;text-overflow: ellipsis;white-space: normal}
+        .rent-fee-notice table th{    height: 30px;
+            text-align: center;
+            color: #757575;
+            background-color: #f3f3f3;    border: 1px solid #222;
+            font-size: 10px;}
+    </style>
+</head>
+<body>
+<div class="rent-fee-notice">
+    <div class="rent-fee-notice-btn">
+    </div>
+    <div class="rent-fee-notice-title">
+        商户结算通知单
+    </div>
+
+    <div class="clearfix statement-group-first">
+        <div class="pull-left ">商户名称: </div>
+        <div class="pull-left"> (010276)孙静</div>
+        <div class="pull-left zl-bold-padding">商铺:</div>
+        <div class="pull-left"> (02-03A)一点点</div>
+        <div class="pull-left zl-bold-padding">合同号:</div>
+        <div class="pull-left"> (02-03A)一点点</div>
+        <div class="pull-left zl-bold-padding">电话:</div>
+        <div class="pull-left zl-bold-padding">打印日期:</div>
+        <div class="pull-left"> 2018-03-06 17:23:38</div>
+    </div><!-- statement-group -->
+
+
+    <div class="rent-fee-notice-table-block">
+        <table>
+            <!--<colgroup>-->
+                <!--<col width="11.1%">-->
+                <!--<col width="11.1%">-->
+                <!--<col width="11.1%">-->
+                <!--<col width="11.1%">-->
+                <!--<col width="11.1%">-->
+                <!--<col width="11.1%">-->
+                <!--<col width="11.1%">-->
+                <!--<col width="11.1%">-->
+                <!--<col width="11.1%">-->
+            <!--</colgroup>-->
+            <thead>
+                <tr>
+                    <td>收费项目</td>
+                    <td>单据编号</td>
+                    <td>费用期间</td>
+                    <td>应收日期</td>
+                    <td>含税金额</td>
+                    <td>不含税金额</td>
+                    <td>税额</td>
+                    <td>滞纳金</td>
+                    <td>销售额</td>
+                    <td>扣率</td>
+                    <td>备注</td>
+                </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>电费</td>
+                <td><input type="text" value="06047249" readonly></td>
+                <td><input type="text" value="2018-02" readonly></td>
+                <td><input type="text" value="0" readonly></td>
+                <td><input type="text" value="" readonly></td>
+                <td><input type="text" readonly=""></td>
+                <td><input type="text" value="" readonly></td>
+                <td><input type="text" value="" readonly></td>
+                <td><input type="text" value="" readonly></td>
+                <td><input type="text" value="" readonly></td>
+                <td><input type="text" class="zl-remarks" value="表06010634倍率1,上期1414,本期4597" readonly=""></td>
+            </tr>
+            <tr>
+                <td>水费</td>
+                <td><input type="text" value="06047287" readonly></td>
+                <td><input type="text" value="2018-02" readonly></td>
+                <td><input type="text" value="0" readonly></td>
+                <td><input type="text" value="" readonly></td>
+                <td><input type="text" readonly=""></td>
+                <td><input type="text" value="" readonly></td>
+                <td><input type="text" value="" readonly></td>
+                <td><input type="text" value="" readonly></td>
+                <td><input type="text" value="" readonly></td>
+                <td><input type="text" class="zl-remarks" value="表06010628倍率1,上期41,本期117" readonly=""></td>
+            </tr>
+            <tr>
+                <td>固定租金</td>
+                <td><input type="text" value="06047534" readonly></td>
+                <td><input type="text" value="2018-03" readonly></td>
+                <td><input type="text" value="0" readonly></td>
+                <td><input type="text" value="" readonly></td>
+                <td><input type="text" readonly=""></td>
+                <td><input type="text" value="" readonly></td>
+                <td><input type="text" value="" readonly></td>
+                <td><input type="text" value="" readonly></td>
+                <td><input type="text" value="" readonly></td>
+                <td><input type="text" class="zl-remarks" value="" readonly=""></td>
+            </tr>
+            <tr>
+                <td>管理费</td>
+                <td><input type="text" value="06047535" readonly></td>
+                <td><input type="text" value="2018-03" readonly></td>
+                <td><input type="text" value="0" readonly></td>
+                <td><input type="text" value="" readonly></td>
+                <td><input type="text" readonly=""></td>
+                <td><input type="text" value="" readonly></td>
+                <td><input type="text" value="" readonly></td>
+                <td><input type="text" value="" readonly></td>
+                <td><input type="text" value="" readonly></td>
+                <td><input type="text" class="zl-remarks" value="" readonly=""></td>
+            </tr>
+            </tbody>
+        </table>
+    </div><!-- rent-fee-notice-table-block -->
+
+    <div class="clearfix statement-group-first" style="padding-top: 20px">
+        <div class="pull-left ">应收项目合计: </div>
+        <div class="pull-left"> 0</div>
+        <div class="pull-left zl-bold-padding">应返还商户金额合计:</div>
+        <div class="pull-left"> 0</div>
+        <div class="pull-left zl-bold-padding">商场应收合计:</div>
+        <div class="pull-left"> 0</div>
+        <div class="pull-left zl-bold-padding">预收款余额:</div>
+        <div class="pull-left">0</div>
+    </div><!-- statement-group -->
+
+    <div class="rent-fee-notice-table-block">
+        <table>
+            <colgroup>
+                <col width="12.6%">
+                <col width="14.6%">
+                <col width="22.6%">
+                <col width="12.6%">
+                <col width="14.6%">
+                <col width="22.6%">
+            </colgroup>
+            <tbody>
+            <tr>
+                <th rowspan="3">商场信息</th>
+                <th>名称</th>
+                <td><input type="text" value="杭州深国投企业管理有限公司" readonly></td>
+                <th rowspan="3">商户信息</th>
+                <th>名称</th>
+                <td><input type="text" value="(101276)孙静" readonly></td>
+            </tr>
+
+            <tr >
+
+                <th>银行</th>
+                <td><input type="text" value="中国工商银行杭州工行古墩路支行" readonly></td>
+
+                <th>银行</th>
+                <td><input type="text" value="" readonly></td>
+
+            </tr>
+            <tr>
+
+                <th>账号</th>
+                <td><input type="text" value="1202224919900147813" readonly></td>
+
+                <th>账号</th>
+                <td><input type="text" readonly=""></td>
+            </tr>
+            </tbody>
+        </table>
+    </div><!-- rent-fee-notice-table-block -->
+    <div class="clearfix" style="padding:20px 0 20px 0;">
+        <div class="pull-left font-weight-bold">财务主管：<br></div>
+        <div class="pull-right font-weight-bold underline-box-after">用户确认:</div>
+    </div>
+    <div class="clearfix">
+        <div class="pull-right">
+            <span>日期:</span>
+            <span class="underline-box-before underline-box-before-long">年</span>
+            <span class="underline-box-before">月</span>
+            <span class="underline-box-before">日</span>
+        </div>
+    </div>
+
+
+</div>
+</body>
+</html>

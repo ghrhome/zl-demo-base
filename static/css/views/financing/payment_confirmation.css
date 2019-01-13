@@ -1,0 +1,14 @@
+#payment-confirmation{padding:0 0 0 0;}
+
+#payment-confirmation .zl-linkable{
+    margin-left:10px;
+}
+
+#payment-confirmation .zl-toolbar>a.zl-btn{margin-left:10px;}
+#payment-confirmation table.zl-table tr>th, table.zl-table tr>td{text-overflow: ellipsis;overflow: hidden;white-space: nowrap}
+
+#payment-confirmation .text-right{text-align: right}
+
+#payment-confirmation table thead th{border-bottom-width: 1px;}
+
+#payment-confirmation .swiper-slide{min-width: 100%;width:auto;}

@@ -1,0 +1,33 @@
+#dynamic-funds-detail {
+	padding-top:116px;
+}
+#dynamic-funds-detail .zl-toolbar {
+	top:44px;
+}
+#dynamic-funds-detail .zl-toolbar em {
+	vertical-align:-2px;
+}
+#dynamic-funds-detail .zl-toolbar .checkbox-wrapper label {
+	margin-right:0;
+}
+#dynamic-funds-detail th,#dynamic-funds-detail td {
+	text-align:right;
+}
+#dynamic-funds-detail .text-left {
+	text-align: left;
+}
+#dynamic-funds-detail .text-center {
+	text-align: center;
+}
+#dynamic-funds-detail .font-red {
+	color:red;
+}
+#dynamic-funds-detail .vertical-bottom {
+	vertical-align: bottom;
+}
+#dynamic-funds-detail table {
+	border:none !important;
+}
+#dynamic-funds-detail td {
+	border:none !important;
+}

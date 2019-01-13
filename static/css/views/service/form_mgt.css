@@ -1,0 +1,13 @@
+/*#form-mgt .zl-toolbar>*{margin-right:10px;}*/
+
+/* ======================================== zl-table-block ======================================== */
+#form-mgt .zl-table-block {
+
+}
+#form-mgt .zl-table-block table.table{}
+#form-mgt .zl-table-block table.table th,
+#form-mgt .zl-table-block table.table td{text-align: right;}
+
+#form-mgt .zl-table-block table.table th:first-child,
+#form-mgt .zl-table-block table.table td:first-child{text-align: left;}
+

@@ -1,0 +1,37 @@
+{
+  "preload":"preload data",
+  "list_tree":[
+    {
+      "nodeId":0,
+      "nodeName":"租赁合同",
+      "expanded":true,
+
+      "children":[
+        {
+          "nodeId":1,
+          "nodeName":"租赁合同"
+        },
+        {
+          "nodeId":2,
+          "nodeName":"租赁合同(三方)"
+        }
+      ]
+    },
+    {
+      "nodeId":1,
+      "nodeName":"变更合同",
+      "children":[
+        {
+          "nodeId":11,
+          "nodeName":"主体变更"
+        },{
+          "nodeId":12,
+          "nodeName":"品牌变更"
+        },{
+          "nodeId":13,
+          "nodeName":"租户更名变更"
+        }
+      ]
+    }
+  ]
+}

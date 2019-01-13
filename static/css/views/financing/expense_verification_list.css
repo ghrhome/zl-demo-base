@@ -1,0 +1,12 @@
+#expense-verification-list .zl-toolbar>a.zl-btn{margin-left:10px;}
+#expense-verification-list .zl-toolbar>div{margin-left:0;margin-right:10px;}
+#expense-verification-list .zl-toolbar>.zl-search-wrapper{margin:0;}
+/* ======================================== zl-table-block ======================================== */
+#expense-verification-list .zl-table-block {
+}
+#expense-verification-list .zl-table-block table.table{}
+
+#expense-verification-list .zl-pagination-wrapper{padding-top:15px;}
+
+#expense-verification-list table tbody tr:hover{cursor:pointer;}
+

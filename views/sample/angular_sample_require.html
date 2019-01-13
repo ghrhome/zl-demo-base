@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>宝龙成本系统</title>
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+
+    <title>Title</title>
+
+    <link rel="stylesheet" href="../../static/dist/bootstrap/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="../../static/dist/css/swiper.css"/>
+    <link rel="stylesheet" href="../../static/css/common/common.css">
+    <link rel="stylesheet" href="../../static/css/common/common_utils.css">
+    <link rel="stylesheet" href="../../static/css/common/icons.css">
+    <link rel="stylesheet" href="../../static/css/common/static_table.css">
+    <link rel="stylesheet" href="../../static/angular_sample/css/budget.css">
+
+</head>
+<body ng-controller="budgetCtrl as bCtrl">
+    <!-- Preloader -->
+    <div id="preloader">
+        <div id="status"><i class="fa fa-spinner fa-spin"></i></div>
+    </div>
+
+    <div class="zl-page"  >
+        <div class="zl-content-header clearfix">
+            <ol class="breadcrumb">
+                <li class="zl-main-system-nav">首页</li>
+                <li class="bread-nav">招商</li>
+                <li class="bread-nav">单元全周期管理</li>
+            </ol>
+
+        </div><!--end content-header-->
+        <div class="block">
+            <div class="block-title clearfix">
+                <div class="pull-right btn-wrapper">
+                    <a class="btn btn-default zl-btn zl-btn-red" ng-click="bCtrl.edit($event)" ng-show="!bCtrl.editMod">编辑</a>
+                    <a class="btn btn-default zl-btn" ng-click="bCtrl.cancel($event)" ng-show="bCtrl.editMod">取消</a>
+                    <a class="btn btn-default zl-btn zl-btn-red" ng-click="bCtrl.save($event)" ng-show="bCtrl.editMod">保存</a>
+                </div>
+            </div>
+        </div>
+        <div class="block">
+            <div class="zl-section zl-section-table-wrapper">
+                <div class="zl-table-wrapper-swiper" zl-left-top-fixed-table="">
+                    <!-- zl-table-fixed-top -->
+                    <div class="zl-table-fixed-top" style="padding-left:350px;">
+                        <div class="zl-table-static zl-table-static-left" style="width:350px;">
+                            <table class="table table-no-bordered zl-table" style="width:100%;">
+                                <thead>
+                                <tr>
+                                    <th class="text-center">铺位号</th>
+                                    <th class="text-center">商铺类型</th>
+                                    <th class="text-center">规划业态</th>
+                                </tr>
+                                <tr>
+                                    <th>合计</th>
+                                    <th></th>
+                                    <th></th>
+                                </tr>
+                                </thead>
+                            </table>
+                        </div>
+
+                        <div class="swiper-container" style="width:100%;" id="noi-main-table-head">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide" style="min-height: 75px;">
+                                    <table class="table table-no-bordered zl-table table-hover table-header-fixed" style="width:2233px;" >
+                                        <colgroup>
+                                            <col ng-repeat="month in bCtrl.monthArr" width="186px">
+                                        </colgroup>
+                                        <thead>
+                                        <tr>
+                                            <th ng-repeat="month in bCtrl.monthArr track by $index" class="text-center">{{month}}</th>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-right" ng-repeat="month in bCtrl.monthArr track by $index"><span>{{bCtrl.getMonthlyCount($index)|default:0|number:2}}</span></td>
+                                        </tr>
+                                        </thead>
+                                    </table>
+                                </div><!--swiper-slide-->
+                            </div><!--swiper-wrapper-->
+                        </div><!--swiper container-->
+                    </div>
+                    <!--end zl-table-fixed-top -->
+                    <!--zl-table-main-->
+                    <div class="zl-table-main" style="padding-left:350px;">
+                        <!--zl-table-static-left-->
+                        <div class="zl-table-static zl-table-static-left" style="width:350px;">
+                            <table class="table table-no-bordered zl-table" style="width:100%;">
+                                <tbody>
+                                <tr ng-repeat="shop in bCtrl.tableData track by $index">
+                                    <th><span>{{shop.shop}}</span></th>
+                                    <th class="text-center"><span>{{shop.type}}</span></th>
+                                    <th class="text-center"><span>{{shop.form}}</span></th>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div><!--end zl-table-static-left-->
+
+                        <!--swiper-container-->
+                        <div class="swiper-container" style="width:100%;padding-bottom:80px;" >
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div style="width:2233px;">
+                                        <table class="table table-no-bordered zl-table table-hover table-header-fixed"  >
+                                            <colgroup>
+                                                <col ng-repeat="month in bCtrl.monthArr" width="186px">
+                                            </colgroup>
+                                            <tbody>
+                                            <tr ng-repeat="shop in bCtrl.tableData track by $index">
+                                                <td ng-repeat="monthData in shop.data track by $index">
+                                                    <div class="cell-wrapper cell-edit-wrapper clearfix" ng-show="bCtrl.editMod==true">
+                                                        <div class="dropdown cell-left" menu-dropdown ng-model="monthData.budgetType" item-select="bCtrl.setBidMode(monthData,$index)">
+                                                            <button class="zl-text-btn dropdown-toggle" type="button" data-toggle="dropdown">
+                                                                {{bCtrl.dropdownMenu.budgetMod[monthData.budgetType]|default:"请选择"}}
+                                                                <span class="caret"></span>
+                                                            </button>
+                                                            <ul class="dropdown-menu">
+                                                                <li ng-repeat="(btMod,name) in bCtrl.dropdownMenu.budgetMod track by $index" ng-class="{active:(btMod==monthData.budgetType)}">
+                                                                    <a data-item="{{btMod}}">{{name}}</a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="cell-right zl-input-wrapper num-input" >
+                                                            <input type="text" placeholder="/" data-date="" value="" ng-model="monthData.value" ng-change="bCtrl.setModified(monthData,$index)">
+                                                        </div>
+                                                    </div>
+                                                    <div class="cell-wrapper clearfix" ng-show="bCtrl.editMod==false">
+                                                        <span class="cell-left">{{bCtrl.dropdownMenu.budgetMod[monthData.budgetType]|default:"-"}}</span>
+                                                        <span class="cell-right text-right">{{monthData.value|number:2}}</span>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+
+                                </div><!--swiper-slide-->
+                            </div><!--swiper-wrapper-->
+                            <!-- Add Scroll Bar -->
+                            <div class="swiper-scrollbar"></div>
+                        </div><!--swiper container-->
+
+                    </div><!--end zl-table-main-->
+                </div><!--end amp-table-wrapper-swiper-->
+
+            </div><!--zl-section-->
+        </div>
+    </div><!--page-->
+    <div class="zl-loading" ng-show="bCtrl.loadingShow">
+        <div class="loading-wrapper">
+            <div class="loading-ani">
+                <img src="../../static/angular_sample/images/loading.gif">
+              <!--  <h3>加载中...</h3>-->
+            </div>
+            <!-- <span>处理中...</span>-->
+        </div>
+    </div><!-- ys loading -->
+
+    <script data-main="../../static/angular_sample/js/main.js" src="../../static/dist/js/require.js"></script>
+</body>
+</html>

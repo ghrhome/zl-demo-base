@@ -1,0 +1,168 @@
+/*fixed table*/
+.zl-table-wrapper-swiper{overflow: hidden;position: relative;}
+.zl-table-wrapper .table, .zl-table-wrapper-swiper .table {
+    table-layout: fixed;
+    margin-bottom:0;
+}
+.zl-table-wrapper .table{margin-bottom:20px;}
+.zl-table-fixed-top .table{margin-bottom:0;}
+.zl-table-wrapper-swiper .zl-table-main .table, .zl-table-wrapper-swiper .zl-table-main .table{
+    margin-bottom:20px;
+}
+
+table.zl-table thead {
+   /* background-color: #f3f4f8;
+    color: #8592a3;*/
+}
+/*
+.table-no-bordered thead{background-color:transparent;}
+*/
+
+.zl-table thead>tr>th, .zl-table thead>tr>td,
+.zl-table tbody>tr>th, .zl-table tbody>tr>td{
+    height: 39px;
+    line-height:22px;
+    overflow: hidden;
+    vertical-align: middle;
+}
+
+.zl-table>thead>tr>th{
+   /* padding:0;
+    padding-left:15px;padding-right:15px;
+    height:28px;
+    color: #8592a3;
+    font-size: 13px;
+    text-align: center;
+    vertical-align: middle;
+    border-bottom:0;
+    font-weight:normal;
+    border-bottom: 1px solid #d9dde0 ;*/
+    padding:8px;
+}
+
+.zl-table>thead>tr>th.text-left{text-align: left;}
+.zl-table>thead>tr>th.text-right{text-align: right;}
+.zl-table>thead>tr.thead-tr-sub>th{font-size: 12px;}
+.zl-table>thead>tr>th.fake-th:before{display: block;content:"/";opacity: 0;color:#fff;}
+
+.zl-table tr>th.td-fake,.zl-table tr>th.th-fake{ border: 0; padding: 0; width: 0; margin: 0; }
+
+.zl-table>tbody>tr>th,.zl-table>tbody>tr>td,
+.zl-table>tfoot>tr>th,.zl-table>tfoot>tr>td{
+    padding:8px;height:39px;line-height:22px;vertical-align: middle;font-size: 14px;color:#373c42;font-weight:normal;border-bottom:solid 1px #f3f4f8;}
+
+.table-no-bordered>tbody>tr>th, .table-no-bordered>tbody>tr>td,
+.zl-table-wrapper-swiper .table-no-bordered tr>th, .zl-table-wrapper-swiper .table-no-bordered tr>td {
+    border: 0;
+}
+.zl-table-wrapper .table-no-bordered tr>th, .zl-table-wrapper .table-no-bordered tr>td,
+.zl-table-wrapper-swiper .table-no-bordered tr>th, .zl-table-wrapper-swiper .table-no-bordered tr>td {
+    border: 0;
+}
+
+.zl-table-wrapper .table-no-bordered tr>th.t-split, .zl-table-wrapper .table-no-bordered tr>td.t-split,
+.zl-table-wrapper-swiper .table-no-bordered tr>th.t-split, .zl-table-wrapper-swiper .table-no-bordered tr>td.t-split{
+    border-right: solid 1px #dae1e7;
+}
+
+.zl-table-wrapper-swiper table.zl-table thead>tr.thead-tr-sub{background-color:#fff;}
+
+/*.table-hover>tbody>tr:hover,.table-hover>tbody>tr.hover,
+.table-hover>tfoot>tr:hover,.table-hover>tfoot>tr.hover{background-color:#f3f4f8;}*/
+
+/*
+.table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th{
+    font-weight:normal;border-bottom:solid 1px #dae1e7;border-top:0; }
+.table>thead>tr>th{border-bottom:solid 2px #dae1e7;}
+*/
+
+/* table static */
+.zl-table-wrapper-swiper {
+    position: relative;
+    width:100%;
+    padding-bottom:20px;
+    /*padding-left: 160px;*/
+   /* padding-right: 220px;*/
+}
+.zl-table-wrapper-swiper .zl-table-fixed-top{ position: relative;  padding-left: 160px;width:100%;z-index:99;}
+.zl-table-wrapper .zl-table-fixed-top{padding-left:0;}
+.zl-table-wrapper-swiper  .zl-table-main{ position: relative;  padding-left: 160px;width:100%;}
+.zl-table-wrapper .zl-table-main{padding-left:0;}
+.zl-table-main.scroll-wrapper{padding-left:0;}
+.zl-table-main.scroll-wrapper .scroll{padding-left:160px;position: relative;width:100%;}
+.zl-table-wrapper-swiper .swiper-container {
+    width: 100%;
+    height: 100%;
+}
+.zl-table-wrapper-swiper .swiper-slide {
+    font-size: 14px;
+    width: auto;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+.zl-table-wrapper-swiper .zl-table-static {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-right:solid 1px #dae1e7;
+}
+
+/*stick part*/
+.isStuck{margin-top:43px;border-bottom:solid 1px #eee;
+    -webkit-box-shadow:  0 2px 3px rgba(33,33,33,0.1);
+    -moz-box-shadow:  0 2px 3px rgba(33,33,33,0.1);
+    box-shadow:  0 2px 3px rgba(33,33,33,0.1);}
+.pin-wrapper .zl-table-fixed-top{
+    -webkit-box-shadow:  0 1px 3px rgba(33,33,33,0.1);
+    -moz-box-shadow:  0 1px 3px rgba(33,33,33,0.1);
+    box-shadow:  0 1px 3px rgba(33,33,33,0.1);}
+
+/*em element,notify element*/
+.zl-table em{display: inline-block;margin-left:5px;margin-right:5px;}
+.zl-table>tbody>tr>th.notify,.zl-table>tbody>tr>td.notify,
+.zl-table>tfoot>tr>th.notify,.zl-table>tfoot>tr>td.notify{color:#ff0000;}
+
+.zl-table>tbody>tr.tr-main{}
+.zl-table>tbody>tr.tr-main.tr-collapse{}
+.zl-table>tbody>tr.tr-collapsed{display: none;}
+
+.table-bordered>tbody>tr>td, .table-bordered>tbody>tr>th, .table-bordered>tfoot>tr>td, .table-bordered>tfoot>tr>th, .table-bordered>thead>tr>td, .table-bordered>thead>tr>th{
+    border:solid 1px #dfe5e9;
+}
+.table-bordered>thead>tr>td, .table-bordered>thead>tr>th{border-bottom-width: 1px;}
+
+/*right-bordered*/
+.zl-table.table-right-bordered{margin-bottom: 0;}
+.zl-table.table-right-bordered thead{background-color:#fff;}
+.zl-table.table-right-bordered thead>tr>th{padding:0 30px; padding-right:15px;font-size: 14px;text-align: left; vertical-align: top; border:0;border-right:solid 1px #dfe5e9;border-top:0;border-bottom:0;}
+.zl-table.table-right-bordered tbody>tr>th,
+.zl-table.table-right-bordered tbody>tr>td{padding-left:30px;padding-right:15px;padding-bottom:0;text-align:left;vertical-align: top;border:0; border-right:solid 1px #dfe5e9;border-top:0;border-bottom:0; }
+.zl-table.table-right-bordered thead>tr>th:first-child,
+.zl-table.table-right-bordered tbody>tr>td:first-child{padding-left:15px;}
+.zl-table.table-right-bordered thead>tr>th:nth-last-child(1),
+.zl-table.table-right-bordered tbody>tr>td:nth-last-child(1){border-right:0;}
+
+
+/*td active reset*/
+.table>tbody>tr.active>td, .table>tbody>tr.active>th, .table>tbody>tr>td.active, .table>tbody>tr>th.active, .table>tfoot>tr.active>td, .table>tfoot>tr.active>th, .table>tfoot>tr>td.active, .table>tfoot>tr>th.active, .table>thead>tr.active>td, .table>thead>tr.active>th, .table>thead>tr>td.active, .table>thead>tr>th.active {
+    background-color: inherit;
+}
+.zl-table tr>td.required{border-left:solid 2px #ff3030;}
+.ystable tr>td.edit{}
+
+.table.zl-border-reset>thead>tr>th {
+    border-bottom: 1px #ddd solid;
+}
+
+
+/*update by guoyuan 2017-09-08 规范样式*/
+.zl-table-wrapper-swiper .zl-table-static{
+	border: 0;
+}
+.zl-table-wrapper-swiper .zl-table-static table{
+	border-right: 1px solid #dae1e7;
+}
+
+

@@ -1,0 +1,8 @@
+#brand_dist #brand-tree {
+	/*padding-top: 20px;*/
+    margin: 0 -15px;
+    border-right: 1px solid #cccccc;
+    overflow-y: auto;
+    padding-left:30px;
+    overflow-x: hidden;
+}

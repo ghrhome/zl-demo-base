@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>树样例</title>
+    <link rel="shortcut icon" href="../../static/images/favicon.ico" type="image/x-icon">
+    <!-- Bootstrap 3.3.6 -->
+    <link rel="stylesheet" href="../../static/dist/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../static/css/common/no-response.css">
+    <link rel="stylesheet" href="../../static/dist/css/animate.css">
+    <!--第三方js-->
+
+    <!--common css-->
+    <link rel="stylesheet" href="../../static/css/common/common.css">
+    <link rel="stylesheet" href="../../static/css/common/common_utils.css">
+    <link rel="stylesheet" href="../../static/css/common/icons.css">
+    <link rel="stylesheet" href="../../static/css/common/static_table.css">
+    <link rel="stylesheet" href="../../static/css/common/ys_tree.css">
+
+
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+<!--[if lt IE 9]>
+<p class="updateBrowser">您的浏览器太旧了，请更新最新浏览器，以获得最佳效果.</p>
+<![endif]-->
+<!-- Preloader -->
+
+
+<div class="zl-page">
+
+
+
+    <div class="zl-content" style="padding-top:20px;">
+
+        <div class="tree-sample"></div>
+
+    </div><!-- zl-content -->
+
+
+
+
+</div><!-- zl-page -->
+
+<script src="../../static/dist/js/jQuery/jquery-2.2.3.min.js"></script>
+<script src="../../static/dist/bootstrap/js/bootstrap.min.js"></script>
+
+<script src="../../static/js/common/ys_tree.js"></script>
+<script>
+    $("#preloader").fadeOut("fast");
+
+    var data = {
+        nodeId: "0",
+        nodeName: "全部",
+        expanded:true,
+        hasChildren:true,
+        children: [
+            {
+                nodeId:"01",
+                nodeName: "上海区",
+                children:[
+                    {
+                        nodeName: "上海七宝",
+                        nodeId:"001",
+                    },
+                    {
+                        nodeName: "上海虹桥",
+                        nodeId:"002",
+                    },
+                ]
+            },
+            {
+                nodeId:"02",
+                nodeName: "深圳",
+                children:[
+                    {
+                        nodeName: "深圳福田",
+                        nodeId:"001",
+                    }
+                ]
+            }
+
+        ]
+    };
+
+
+    var opts = {
+        data:data,
+        multiple:false,
+        hasCheck:true,
+        callback: {
+            onClick: function (nodeId, nodeName,nodePath) {
+                console.log("onclick ..."+nodeId+nodeName+nodePath);
+            },
+            checkboxChecked:function(nodeId,nodeName,nodePath){
+                console.log("checked ..."+nodeId+nodeName+nodePath);
+            },
+            checkboxUnchecked:function(nodeId,nodeName,nodePath){
+                console.log("unchecked ..."+nodeId+nodeName+nodePath);
+            }
+        }
+    };
+
+    $(".tree-sample").ysTree(opts);
+
+
+</script>
+</body>
+</html>

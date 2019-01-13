@@ -1,0 +1,313 @@
+body{background-color:#f3f3f3;}
+
+#business-situation{position:relative;}
+#business-situation .separator-line{
+    border-bottom:1px dashed #ccc;
+    margin:10px 0 10px 20px;
+}
+#business-situation .zl-icon-arrow-up,
+#business-situation .zl-icon-arrow-down{vertical-align: middle;}
+
+#business-situation .zl-clickable:hover{
+    background-color:#eaeaea;
+    cursor:pointer;
+}
+
+#business-situation .date-month-btn{
+    position:absolute;
+    right:20px;
+    top:26px;
+    height:20px;
+    line-height: 20px;
+    color:#757575;
+    font-size:14px;
+    padding-left:20px;
+    background:url(../../../images/common/clock-blue-icon.png) no-repeat left center;
+    background-size:16px 16px;
+    text-decoration: none;
+    cursor:default;
+    z-index: 999;
+}
+#business-situation .date-month-btn.changed{
+    color:#2696dd;
+}
+/* ======================================== situation-basic-info ======================================== */
+#business-situation .situation-basic-info{
+    position:relative;
+    height:100px;
+    padding:28px 44px 28px 120px;
+    background-color:#fff;
+}
+
+#business-situation .situation-basic-info .zl-dropdown-group{
+    position:absolute;
+    left:30px;
+    top:0;
+    bottom:0;
+    height:32px;
+    margin:auto;
+}
+
+#business-situation .situation-basic-info .info-item-list li{
+    height:44px;
+    float:left;
+    padding:0 32px;
+    border-right:1px solid #ccc;
+}
+#business-situation .situation-basic-info .info-item-list li:first-child{padding-left:0;}
+#business-situation .situation-basic-info .info-item-list li:last-child{border-right:none;}
+
+#business-situation .situation-basic-info .info-item-list li .item-title{
+    height:18px;
+    line-height: 18px;
+    font-size:12px;
+    color:#757575;
+}
+
+#business-situation .situation-basic-info .info-item-list li .item-content{
+    height:26px;
+    line-height: 26px;
+    font-size:20px;
+    color:#222;
+}
+#business-situation .situation-basic-info .info-item-list li .item-content em{
+    font-size:12px;
+    color:#757575;
+    margin-left:8px;
+}
+
+/* ======================================== summary-container ======================================== */
+#business-situation .summary-container{
+    padding:10px 10px;
+}
+
+/* ---------------------------------------- summary-head ---------------------------------------- */
+#business-situation .summary-head{
+    height:37px;
+    background-color:#fff;
+    border-bottom:1px solid #ccc;
+}
+
+#business-situation .summary-head ul li{float:left;}
+
+#business-situation .summary-head ul li a {
+    display: block;
+    height: 36px;
+    line-height: 36px;
+    padding: 0 20px;
+    text-decoration: none;
+    cursor: pointer;
+    color:#757575;
+}
+#business-situation .summary-head ul li a.active{color:#2696dd;}
+#business-situation .summary-head ul li a:hover{color:#2696dd;}
+
+
+
+/* ######################################## summary-section ######################################## */
+#business-situation .summary-section ul li{
+    width:50%;
+    height:32px;
+    line-height: 32px;
+    float:left;
+    padding-left:20px;
+}
+
+#business-situation .summary-section ul li.oneThird{
+    width:33.3333333333333333%;
+}
+
+#business-situation .summary-section ul li.quarter{
+    width:25%;
+}
+
+#business-situation .summary-section ul li.whole-column{width:100%;}
+
+#business-situation .summary-section .inline-block{
+    display:inline-block;
+    height:100%;
+    width:85px;
+    color:#757575;
+}
+
+/* ---------------------------------------- summary-content ---------------------------------------- */
+#business-situation .summary-content{
+    background-color:#fff;
+}
+
+/* ---------------------------------------- shopping-mall ---------------------------------------- */
+#business-situation .shopping-mall{
+    position:relative;
+    min-height:300px;
+    padding-left:50%;
+}
+/* ---------------------------------------- shopping-mall-left ---------------------------------------- */
+#business-situation .shopping-mall-left{
+    position:absolute;
+    left:0;
+    top:20px;
+    bottom:20px;
+    padding:0 0 0 0;
+    width:50%;
+    border-right:1px solid #ccc;
+}
+
+#business-situation .shopping-mall-left .summary-section ul li{
+    width:30%;
+}
+#business-situation .shopping-mall-left .summary-section ul li:nth-child(even){
+    width:70%;
+}
+/* ---------------------------------------- shopping-mall-right ---------------------------------------- */
+#business-situation .shopping-mall-right{
+    padding:20px 20px 20px 0;
+}
+
+#business-situation .title-highlight{
+    font-weight: bold;
+    font-size:16px;
+}
+
+/* ======================================== project-category-container ======================================== */
+#business-situation .project-category-container{
+    padding:0 10px 20px 10px;
+}
+#business-situation .project-category-container .project-category{background-color:#fff;padding-bottom:10px;}
+/* ---------------------------------------- project-category-head ---------------------------------------- */
+#business-situation .project-category-container .project-category-head{
+    position:relative;
+    height:64px;
+    line-height: 64px;
+    padding-left:28px;
+    font-size:18px;
+}
+
+#business-situation .project-category-container .project-category-head:before{
+    content: "";
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:20px;
+    width:4px;
+    height:18px;
+    background-color:#4fadff;
+    margin:auto;
+}
+
+#business-situation .project-category-container .project-category-prepare .project-category-head:before{
+    background-color:#4fadff;
+}
+
+
+#business-situation .project-category-container .project-category-head a.view-more-btn{
+    position:absolute;
+    top:0;
+    bottom:0;
+    right:20px;
+    padding-right:20px;
+    color:#757575;
+    font-size:14px;
+    background:url(../../../images/zl-more-icon.png) no-repeat right center;
+    background-size:16px 16px;
+    cursor:pointer;
+    text-decoration: none;
+}
+#business-situation .project-category-container .project-category-head a.view-more-btn:hover{
+    color:#e64e4d;
+    background-image:url(../../../images/zl-more-hover-icon.png);
+}
+
+
+/* ---------------------------------------- project-category-content ---------------------------------------- */
+#business-situation .project-category-container .project-category-content{
+    padding:0 10px 0 20px;
+}
+
+#business-situation .project-category-content .project-item-wrapper{
+    width:50%;
+    float:left;
+    padding:0 10px 10px 0;
+}
+#business-situation .project-category-content .project-item{
+    position:relative;
+    padding-left:100px;
+    padding-bottom:36px;
+    background-color:#f3f3f3;
+}
+#business-situation .project-category-content .project-item:hover{
+    cursor:pointer;
+    background-color:#eaeaea;
+}
+#business-situation .project-category-content .project-item .project-logo{
+    position:absolute;
+    left:30px;
+    top:18px;
+    width:50px;
+    height:50px;
+    border-radius:50px;
+   /* background:no-repeat center center;*/
+    background-image:url(../../../images/project_bg.png);
+    background-color:#21acff;
+    background-size:contain;
+    background-position: center center;
+}
+#business-situation .project-category-content .project-item .project-logo h3{font-size:20px;color:#fff;margin:0;height:50px;width:50px;text-align: center;line-height: 50px;}
+
+#business-situation .project-category-content .project-item .project-logo img{
+    /*display:block;*/
+    display: none;
+    width:64px;
+    height:64px;
+
+}
+/*#business-situation .project-category-content .project-item .project-logo-blue{background-image:url(../../images/color_blue.png);}
+#business-situation .project-category-content .project-item .project-logo-yellow{background-image:url(../../images/color_yellow.png);}
+#business-situation .project-category-content .project-item .project-logo-orange{background-image:url(../../images/color_orange.png);}
+#business-situation .project-category-content .project-item .project-logo-green{background-image:url(../../images/color_green.png);}
+#business-situation .project-category-content .project-item .project-logo-red{background-image:url(../../images/color_red.png);}
+#business-situation .project-category-content .project-item .project-logo-grey{background-image:url(../../images/color_gray.png);}*/
+
+
+
+
+
+#business-situation .project-category-content .project-item .project-name{
+    height:60px;
+    line-height: 24px;
+    font-size:24px;
+    padding-top:20px;
+    padding-bottom:16px;
+}
+
+#business-situation .project-category-content .project-item .project-detail-list li{
+    width:50%;
+    height:20px;
+    line-height: 20px;
+    float:left;
+}
+#business-situation .project-category-content .project-item .project-detail-list li span{
+    font-size:14px;
+    color:#757575;
+}
+
+#business-situation .project-category-content .project-item .project-detail-pair{padding-top:30px;}
+#business-situation .project-category-content .project-item .project-detail-pair li{
+    height:20px;
+    line-height: 20px;
+}
+#business-situation .project-category-content .project-item .project-detail-pair li em{
+    color:#757575;
+    margin-right:6px;
+}
+#business-situation .zl-font-size-12 {
+    font-size:12px !important;
+}
+#business-situation .zl-font-color-75 {
+    color: #757575!important;
+}
+#business-situation .zl-font-size-18 {
+    font-size:18px !important;
+}
+#business-situation .zl-display-none {
+    display: none!important;
+}

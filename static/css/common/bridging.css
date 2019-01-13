@@ -1,0 +1,142 @@
+/* 新样式兼容老页面 */
+/*==========zl-search-wrapper==========*/
+.zl-search-wrapper{}
+.zl-search-wrapper:after{content:"";display:block;height:0;clear:both;visibility:hidden;}
+.zl-search-wrapper .zl-search{
+    width:180px;
+    float:left;
+}
+.zl-search-wrapper .zl-search>input.form-control{
+    display:block;
+    width:100%;
+    height:32px;
+    border-radius: 0;
+    background:url(../../../scp_demo/static/images/common/search-icon.png) no-repeat 6px center;
+    background-size:17px 16px;
+    padding-left:30px;
+}
+
+table.zl-table-default-2 th,
+table.zl-table-default-2 td{
+    height:36px;
+}
+table.zl-table-default-2 tr:first-child td{
+    color:#7e8c9e;
+}
+table.zl-table-default-2 tr:nth-child(odd){
+    background-color:#f8fafa;
+}
+
+table.zl-table-default tr th,
+table.zl-table-default tr td{
+    height:36px;
+}
+table.zl-table-default tr th{background-color:#f8fafa;}
+
+.zl-checkbox {
+    display:inline-block;
+    width: 14px;
+    height: 14px;
+    background: url(../../../scp_demo/static/images/common/checkbox_blue.png) no-repeat -202px -1px;
+}
+
+.zl-checkbox:hover{
+    cursor:pointer;
+    background-position: -262px -1px;
+}
+
+.zl-checkbox.checked{
+    background-position: -242px -1px!important;
+}
+
+
+.zl-dialog .modal-footer .zl-dialog-btn-ok{background-color:#32aaff;}
+.zl-dialog .modal-footer .zl-dialog-btn-close{border-color:#32aaff;color:#32aaff;}
+
+/*
+   ======================================== zl-linkable start
+    默认的可点击样式
+*/
+.zl-linkable{
+    color:#2696dd;
+}
+.zl-linkable:active,
+.zl-linkable:focus,
+.zl-linkable:hover{
+    color:#32aaff;
+    text-decoration: underline;
+    cursor:pointer;
+}
+/* zl-linkable end ======================================== */
+
+/*==========zl-datetimepicker zl-datepicker==========*/
+/*zl-datetimepicker表现为后面带日历图标的
+    zl-datepicker一般表现为带左右操作箭头，或者选择日期范围的表现*/
+/*zl-datetimepicker*/
+.form-control {
+    padding: 5px 12px;
+    height: 32px;
+    border-radius: 0;
+}
+.zl-datetimepicker {
+    position: relative;
+    height:32px;
+    border: 1px solid #ccc;
+    /*width: 280px;*/
+    cursor: pointer;
+    overflow:hidden;
+}
+.zl-datetimepicker>input.form-control {
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    border-radius: 0;
+    cursor: pointer;
+    border:none;
+    padding-left: 10px;
+    box-shadow:none;
+}
+.zl-datetimepicker:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom:0;
+    display: block;
+    width: 32px;
+    background: url(../../images/common/zl-datetime-icon.png) no-repeat center center;
+    background-size: 20px 20px;
+    border:none;
+    border-left: 1px solid #ccc;
+}
+
+/*zl-datepicker*/
+.zl-datepicker{
+    /*width:200px;*/
+}
+.zl-datepicker .form-control{
+    height:32px;
+    padding:5px 12px;
+}
+.zl-datepicker .input-group-addon{
+    padding:3px 7px;
+    padding-top:5px;
+    background: none;
+}
+
+.zl-datetime-range .input-group-addon{
+    padding:4px 7px;
+    background: none;
+    border-left: 0;
+    border-right: 0;
+}
+
+.zl-date-select>label{
+    height:32px;
+    line-height: 32px;
+    font-weight: normal;
+    margin:0;
+    padding-right:10px;
+
+}
+

@@ -1,0 +1,301 @@
+/* td active reset 覆盖bootstrap默认样式 */
+.table > tbody > tr.active > td,
+.table > tbody > tr.active > th,
+.table > tbody > tr > td.active,
+.table > tbody > tr > th.active,
+.table > tfoot > tr.active > td,
+.table > tfoot > tr.active > th,
+.table > tfoot > tr > td.active,
+.table > tfoot > tr > th.active,
+.table > thead > tr.active > td,
+.table > thead > tr.active > th,
+.table > thead > tr > td.active,
+.table > thead > tr > th.active {
+    background-color: inherit;
+}
+
+.table-bordered>tbody>tr>td,
+.table-bordered>tbody>tr>th,
+.table-bordered>tfoot>tr>td,
+.table-bordered>tfoot>tr>th,
+.table-bordered>thead>tr>td,
+.table-bordered>thead>tr>th{
+    border:solid 1px #eff1f4;
+}
+table.zl-table-fixed{table-layout: fixed;}
+
+.table{margin-bottom:0;}
+.table-bordered{border:solid 1px #eff1f4;}
+.table>tbody+tbody{border-top:solid 2px #eff1f4;}
+/* ======================================== zl-table
+   默认zl-table样式
+*/
+table.zl-table tr>th,
+table.zl-table tr>td {
+    height: 36px;
+    padding: 4px 15px;
+    line-height: 24px;
+    vertical-align: middle;
+    font-size: 14px;
+    color: #373c42;
+    font-weight: normal;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+table.zl-table thead>tr>th{
+    background-color:#f3f6f9;
+    color:#7e8c9e;
+   /* border-bottom: solid 1px #ddd;*/
+}
+
+table.zl-table tbody>tr>th{
+    background-color: #f8fafa;
+    color: #7e8c9e;
+}
+table.zl-table.table-striped tbody>tr>th{
+    background-color: inherit;
+}
+
+table.zl-table tr>td>span{
+    white-space: nowrap;
+}
+
+table.zl-table tr>td>span.zl-cell{
+    display: inline-block;
+    width:100%;
+
+}
+table.zl-table thead {}
+table.zl-table tr>td.required{
+    position:relative;
+}
+
+
+.zl-table tr>td.fake-td,
+.zl-table tr>th.fake-th { border: 0; padding: 0; width: 0; margin: 0; border:0;
+    background-color:#f8fafa;
+    border-color:#f8fafa;}
+.zl-table tr>td.fake-td{
+    background-color:#fff;
+}
+.zl-table tr>td.fake-td:before,
+.zl-table>thead>tr>th.fake-th:before{display: block;width:0;content:"/";opacity: 0;color:#fff;}
+
+
+table.zl-table tr>td.required:after{
+    content:"";
+    position:absolute;
+    right:-1px;
+    top:-1px;
+    width:6px;
+    height:6px;
+    background:url(../../images/common/icons.png) no-repeat -65px -58px;
+    z-index: 99;
+}
+
+table.zl-table tr>td.zl-edit{padding:0;overflow: visible;}
+
+table.zl-table tr>td.zl-edit>input{display:block;width:100%;
+    height:35px;border:none;padding:0 10px;}
+
+
+table.zl-table tr>td.zl-edit input[readonly],
+table.zl-table tr>td.zl-edit input[disabled]{
+    background-color: rgba(248, 250, 250, 0.68);
+}
+
+table.zl-table tr>td.zl-edit input[disabled]{
+    background-color: #f8fafa;
+    opacity: .68;
+}
+
+
+table.zl-table tr>td.zl-edit .zl-input-wrapper-inline{position: relative;}
+table.zl-table tr>td.zl-edit .zl-input-wrapper-inline>input{border:0;}
+table.zl-table tr>td.zl-edit .zl-input-wrapper-add-on{padding-right:48px;}
+table.zl-table tr>td.zl-edit .zl-input-wrapper-add-on .zl-add-on{
+    position: absolute;
+    height:32px;
+    line-height: 32px;
+    right:6px;
+    top:0;
+
+    color:#7e8c9e;
+    font-size:12px;
+}
+
+table.zl-table .zl-text-btn{float:left;font-size:12.8px;}
+table.zl-table .zl-text-btn+.zl-text-btn{margin-left:15px;}
+
+
+.zl-edit .zl-search-wrapper{width:100%;}
+.zl-edit .zl-search-wrapper .zl-search{
+    position: relative;
+    width:100%;
+    float:inherit;
+}
+.zl-edit .zl-search-wrapper .zl-search>input.form-control{
+    display:block;
+    width:100%;
+    border:0;
+   background:none;
+    padding-left:20px;
+}
+.zl-edit .zl-search-wrapper .zl-search:after{
+    display: block;
+    position: absolute;
+    right:10px;
+    top:50%;
+    margin-top:-8px;
+    width:17px;
+    height:17px;
+    background-repeat:no-repeat;
+    background-size:contain;
+    background-position:center center;
+    background-image:url(../../images/common/search-icon.png);
+    content:" ";
+
+}
+
+/* zl-table ======================================== */
+
+/* ======================================== zl-table-no-border
+   无边框表格
+*/
+.zl-table-no-border>tbody>tr>td,
+.zl-table-no-border>tbody>tr>th,
+.zl-table-no-border>tfoot>tr>td,
+.zl-table-no-border>tfoot>tr>th,
+.zl-table-no-border>thead>tr>td,
+.zl-table-no-border>thead>tr>th{
+    border:none;
+}
+/* zl-table-no-border ======================================== */
+
+
+/* ======================================== fixed-table 可滑动表格  */
+.zl-table-wrapper-swiper{overflow: hidden;position: relative;}
+.zl-table-wrapper-swiper .zl-table {
+    margin-bottom:0;
+    table-layout: fixed;
+    min-width:100%;
+
+}
+
+.zl-table-wrapper-swiper .zl-table-static {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index:9;
+    /*border-right:solid 1px #dae1e7;*/
+}
+
+.zl-table-wrapper-swiper .zl-table-static .zl-table{
+    border-right:solid 1px #dae1e7;
+}
+
+.zl-table-wrapper-swiper .zl-table-fixed-top{ position: relative;  width:100%;z-index:99;}
+
+.zl-table-wrapper-swiper .zl-table-fixed-top tr:last-child th,
+.zl-table-wrapper-swiper .zl-table-fixed-top tr:last-child td{border-bottom:none;}
+
+.zl-table-wrapper-swiper  .zl-table-main{ position: relative; width:100%;}
+
+.zl-table-wrapper-swiper  .zl-table-main .zl-table thead tr:last-child th,
+.zl-table-wrapper-swiper  .zl-table-main .zl-table thead tr:last-child td { /*border-bottom:none;*/}
+
+.zl-table-wrapper-swiper .swiper-container {
+    width: 100%;
+    height: 100%;
+}
+.zl-table-wrapper-swiper .swiper-slide {
+    min-width:100%;
+    font-size: 14px;
+    width: auto;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+.zl-table-wrapper-swiper .zl-table-main .swiper-slide {padding-bottom:20px;}
+
+/* fixed-table ======================================== */
+
+
+/* zl-table-inline ======================================== */
+.zl-table-inline{
+    padding: 0!important;
+}
+.zl-table-inline>.zl-table {
+    margin-bottom: 0;
+    border-left: none;
+    border-bottom: none;
+    border-right: none;
+}
+.zl-table-inline>.zl-table>tbody>tr:nth-last-child(1)>th,
+.zl-table-inline>.zl-table>tbody>tr:nth-last-child(1)>td{
+    border-bottom:0;
+}
+
+.zl-table-inline>.zl-table>thead>tr>th:nth-child(1),
+.zl-table-inline>.zl-table>tbody>tr>th:nth-child(1),
+.zl-table-inline>.zl-table>thead>tr>td:nth-child(1),
+.zl-table-inline>.zl-table>tbody>tr>th:nth-child(1){border-left:0;}
+
+.zl-table-inline>.zl-table>thead>tr>th:nth-last-child(1),
+.zl-table-inline>.zl-table>thead>tr>td:nth-last-child(1),
+.zl-table-inline>.zl-table>tbody>tr>th:nth-last-child(1),
+.zl-table-inline>.zl-table>tbody>tr>td:nth-last-child(1){
+    border-right:0;
+}
+/* zl-table-inline ======================================== */
+
+
+/*table-hover-extend*/
+.zl-table .zl-edit .zl-datepicker .form-control{
+    height:34px;
+}
+
+.zl-table.table-striped>tbody>tr:nth-of-type(odd){
+    background-color:inherit;
+}
+.zl-table.table-striped>tbody>tr:nth-of-type(even){
+    background-color:#f9f9f9;
+}
+
+.zl-table.table-hover>tbody>tr.hover,
+.zl-table.table-hover>tbody>tr:hover {
+    background-color: #f5f5f5;
+}
+
+
+.zl-table-float tbody>tr{
+    transition: all .3s;
+    outline: solid 1px transparent;
+}
+.zl-table-float tbody>tr:hover{
+    height: 45px !important;
+    outline:solid 1px #2b85e7!important;
+    box-shadow: 0 8px 8px rgba(1,67,163,.24), 0 0 8px rgba(1,67,163,.12), 0 6px 18px rgba(43,133,231,.12);
+    -webkit-transform: translateY(-2px);
+    transform: translateY(-2px);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

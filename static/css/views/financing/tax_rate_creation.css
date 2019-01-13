@@ -1,0 +1,16 @@
+#tax-rate-creation{padding:44px 0 0 0;}
+
+#tax-rate-creation .zl-linkable{
+}
+
+#tax-rate-creation .zl-toolbar>a.btn{
+    margin-left:10px;
+}
+
+#tax-rate-creation .zl-dropdown-inline{
+    height:100%;
+}
+#tax-rate-creation .zl-dropdown-inline .zl-dropdown-btn{
+    height:32px;
+    border:none;
+}

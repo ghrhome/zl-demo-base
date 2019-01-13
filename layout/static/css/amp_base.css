@@ -1,0 +1,11 @@
+body,html{width:100%;height:100%;}
+
+*{box-sizing:border-box;font-family: 'PingFang SC', 'Helvetica Neue',"STHeitiSC-Light","Microsoft YaHei",sans-serif;
+    /* -moz-user-select: none;
+     -webkit-user-select: none;
+     -ms-user-select: none;*/}
+.user-select-none{ user-select:none; -moz-user-select: none; -webkit-user-select: none; -ms-user-select: none; }
+
+/* s-d */
+#preloader { position: fixed; /*display:none;*/ top: 0; left: 0; width: 100%; height: 100%; background-color: #e4e7ea; z-index: 10000; }
+#status { width: 30px; height: 30px; position: absolute; left: 50%; top: 50%; margin: -15px 0 0 -15px; font-size: 32px; }

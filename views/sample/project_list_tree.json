@@ -1,0 +1,34 @@
+{
+  "preload":"Project List Tree",
+  "list_tree":[
+    {
+      "nodeId":"cid-0",
+      "nodeName":"广深",
+
+      "children":[
+        {
+          "nodeId":"pid-0-0",
+          "nodeName":"深圳深国投广场"
+        },
+        {
+          "nodeId":"pid-0-1",
+          "nodeName":"佛山印象城"
+        },
+        {
+          "nodeId":"pid-0-2",
+          "nodeName":"惠阳清泉城市广场"
+        }
+      ]
+    },
+    {
+      "nodeId":"cid-1",
+      "nodeName":"上海",
+      "children":[
+        {
+          "nodeId":"pid-1-0",
+          "nodeName":"上海城市印象城"
+        }
+      ]
+    }
+  ]
+}

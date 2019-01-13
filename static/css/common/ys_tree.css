@@ -1,0 +1,125 @@
+.zl-tree{
+    font-size:0;
+}
+
+.zl-tree:after{content:"";display:block;height:0;clear:both;visibility:hidden;}
+
+.zl-tree ul.zl-tree-children{
+    margin:0;
+    list-style-type: none;
+    padding-left:0;
+}
+
+.zl-tree ul.zl-tree-children li{
+    margin-left:0;
+}
+
+/* zl-tree-node */
+.zl-tree .zl-tree-node-title{
+    height:32px;
+    line-height: 32px;
+    white-space: nowrap;
+    padding-right: 10px;
+}
+
+.zl-tree .zl-tree-node-title span{
+    font-size:14px;
+}
+
+.zl-tree .zl-tree-node-title:hover{
+    cursor:pointer;
+}
+
+.zl-tree:not(.zl-tree-readonly) .zl-tree-node-title:hover>span{
+    color:#32aaff;
+}
+.zl-tree:not(.zl-tree-readonly) .zl-tree-node-title:hover>em.zl-tree-node-checkbox{
+    background-position: -262px -1px;
+}
+
+
+
+.zl-tree .zl-tree-node{
+    min-width: 100%;
+}
+.zl-tree .zl-tree-node.zl-tree-node-root{
+    float:left;
+}
+.zl-tree .zl-tree-node.zl-tree-node-root>.zl-tree-node-title{
+
+}
+
+
+.zl-tree .zl-tree-node.zl-tree-node-parent.zl-tree-node-open>.zl-tree-node-title>em.zl-tree-toggle-btn{
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background: url(../../images/common/checkbox_blue.png) no-repeat -298px 0;
+    margin-right:4px;
+    vertical-align: -3px;
+}
+
+.zl-tree .zl-tree-node.zl-tree-node-parent.zl-tree-node-close>.zl-tree-node-title>em.zl-tree-toggle-btn{
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background: url(../../images/common/checkbox_blue.png) no-repeat -311px 0;
+    margin-right:4px;
+    vertical-align: -3px;
+}
+
+
+
+.zl-tree .zl-tree-node.zl-tree-node-leaf.zl-tree-node-leaf-checkbox>.zl-tree-node-title:before{
+    background-color:transparent;
+}
+
+.zl-tree .zl-tree-node.zl-tree-node-selected>.zl-tree-node-title>span{
+    color:#32aaff;
+}
+.zl-tree .zl-tree-node.zl-tree-node-selected>.zl-tree-node-title a{
+    font-size:14px;
+    float:right;
+    color:#2696dd;
+}
+
+.zl-tree .zl-tree-node-shrink{
+    display:none;
+}
+
+/* ======================================== checkbox ======================================== */
+
+.zl-tree .zl-tree-node-checkbox{
+    display: inline-block;
+    *display: inline;
+    margin: 0 4px 0 0;
+    padding: 0;
+    width: 14px;
+    height: 14px;
+    background: url(../../images/common/checkbox_blue.png) no-repeat -202px -1px;
+    border: none;
+    cursor: pointer;
+    vertical-align: -2px;
+}
+
+
+.zl-tree .zl-tree-node-checkbox.checked {
+    background-position: -242px -1px!important;
+}
+.zl-tree .zl-tree-node-checkbox.disabled {
+    background-position: -282px -1px!important;
+    cursor: default;
+}
+.zl-tree .zl-tree-node-checkbox.checked.disabled {
+    background-position: -282px -1px!important;
+}
+.zl-tree .zl-tree-node-checkbox.half-checked{
+    background-position: -222px -1px!important;
+}
+
+
+
+
+
+
+

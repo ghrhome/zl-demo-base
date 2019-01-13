@@ -1,0 +1,11 @@
+#payee-unit-list{
+    width:700px;
+}
+#payee-unit-list .zl-toolbar>.zl-search-wrapper{margin-right:10px;}
+
+/* ======================================== zl-table-block ======================================== */
+#payee-unite-list .zl-table-block {
+
+}
+
+#payee-unit-list .zl-pagination-wrapper{padding-top:20px;}

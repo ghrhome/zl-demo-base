@@ -1,0 +1,12 @@
+#tenant-library-list .zl-toolbar>.zl-search-wrapper{margin:0 10px;}
+
+/* ======================================== zl-table-block ======================================== */
+#tenant-library-list .zl-table-block {
+}
+
+#tenant-library-list .zl-table-block tbody tr:hover{
+    cursor:pointer;
+}
+
+#tenant-library-list .zl-pagination-wrapper{padding:20px 0 0 0;}
+

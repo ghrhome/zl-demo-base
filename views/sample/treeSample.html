@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>树样例</title>
+    <link rel="shortcut icon" href="../../static/images/favicon.ico" type="image/x-icon">
+    <!-- Bootstrap 3.3.6 -->
+    <link rel="stylesheet" href="../../static/dist/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../static/css/common/no-response.css">
+    <link rel="stylesheet" href="../../static/dist/css/animate.css">
+    <!--第三方js-->
+
+    <!--common css-->
+    <link rel="stylesheet" href="../../static/css/common/common.css">
+    <link rel="stylesheet" href="../../static/css/common/common_utils.css">
+    <link rel="stylesheet" href="../../static/css/common/icons.css">
+    <link rel="stylesheet" href="../../static/css/common/static_table.css">
+    <link rel="stylesheet" href="../../static/css/common/ys_tree.css">
+
+
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+<!--[if lt IE 9]>
+<p class="updateBrowser">您的浏览器太旧了，请更新最新浏览器，以获得最佳效果.</p>
+<![endif]-->
+<!-- Preloader -->
+
+
+<div class="zl-page">
+
+
+
+    <div class="zl-content" style="padding-top:20px;">
+
+        <div class="tree-sample clearfix">
+
+            <div class="js-list-tree col-xs-4">
+
+            </div>
+
+            <div class="contract-list-tree col-xs-4">
+
+            </div>
+        </div>
+
+    </div><!-- zl-content -->
+
+
+
+
+</div><!-- zl-page -->
+
+<script src="../../static/dist/js/jQuery/jquery-2.2.3.min.js"></script>
+<script src="../../static/dist/bootstrap/js/bootstrap.min.js"></script>
+
+<script src="../../static/js/utils/jq/jq_plugin_listTree.js"></script>
+<script>
+$(document).ready(function(){
+    $.get("list_tree.json",function(data,status){
+        console.log(data);
+        var treeData=data.list_tree;
+        var _cb=function(data){
+            console.log(data);
+        }
+        $(".js-list-tree").ysListTree({
+            callback:_cb,
+            nodeNameSpace:"nodeId",
+            data:treeData,
+            multiple:true
+        })
+    })
+
+    $.get("contract_list_tree.json",function(data,status){
+        console.log(data);
+        var treeData=data.list_tree;
+        var _cb=function(data){
+            console.log(data);
+        }
+        $(".contract-list-tree").ysListTree({
+            callback:_cb,
+            nodeNameSpace:"nodeId",
+            data:treeData,
+            wrapperClass:"zl-contract-list-tree"
+        })
+    })
+
+})
+
+</script>
+</body>
+</html>

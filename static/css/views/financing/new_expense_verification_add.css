@@ -1,0 +1,121 @@
+#new_expense_verification_add .expense_statement {
+	/*border:2px solid #808C92;*/
+	/*border:1px solid #eff1f4;*/
+}
+#new_expense_verification_add .expense_statement>.expense_statement_left {
+    position: relative;
+	width:45%;
+	/*border-right:1px solid #eff1f4;*/
+	padding-right:22px;
+}
+#new_expense_verification_add .expense_statement>.expense_statement_left .expense_statement_info {
+	position: absolute;
+	top:-40px;
+	left:180px;
+	padding: 10px;
+    background-color: #ccdada;
+	width:100%;
+    border: 1px solid #ddd;
+    color: #999;
+    border-radius: 2px;
+    display: none;
+}
+#new_expense_verification_add .expense_statement>.expense_statement_left .expense_statement_info:before {
+	content: "";
+    position: absolute;
+    bottom: -6px;
+    left: 20px;
+    width: 10px;
+    height: 10px;
+    background-color: #ccdada;
+    transform: rotateZ(45deg);
+    -ms-transform:rotate(45deg); 	/* IE 9 */
+	-moz-transform:rotate(45deg); 	/* Firefox */
+	-webkit-transform:rotate(45deg); /* Safari 和 Chrome */
+	-o-transform:rotate(45deg);      /* Opera */
+    border-left:1px solid #ddd;
+    border-top:1px solid #ddd;
+}
+#new_expense_verification_add .expense_statement>.expense_statement_left .expense_statement_info li {
+	float:left;
+	line-height:32px;
+	width:50%;
+}
+
+#new_expense_verification_add .expense_statement>.expense_statement_right {
+	width:55%;
+    border:solid 2px #eff1f4;
+    border-top:0;
+}
+
+#new_expense_verification_add .expense_statement .expense_statement_left tr:focus {
+	background-color: red;
+}
+#new_expense_verification_add .expense_statement .table-title {
+	line-height: 32px;
+    padding-left: 15px;
+    font-size: 15px;
+    font-weight: 700;
+    background: #f8fafa;
+}
+#new_expense_verification_add .expense_statement .special-input {
+	border: 1px solid #d8e0e7;
+    height: 26px;
+    font-size: 12px;
+    padding:0 8px;
+}
+/*.glyphicon-minus-sign:before {
+    background-image: url(../../../images/icons/alert_fail.png);
+}*/
+#new_expense_verification_add .receipt_table table th,#new_expense_verification_add .receipt_table table td {
+	padding:0 8px;
+}
+#new_expense_verification_add .receipt_table table .detail {
+	width:60px;
+}
+#new_expense_verification_add .receipt_table table {
+	border-bottom: 1px solid #eff1f4;
+}
+
+#new_expense_verification_add .no-data{
+    text-align: center;
+    line-height: 36px;
+}
+.expense_statement_left table td{position: relative;}
+.expense_statement_left table tr>td:nth-last-child(1){
+    overflow: visible;
+}
+.expense_statement_left table tr>td:nth-last-child(1):after{
+    display: none;
+    content:" ";
+    position: absolute ;
+    width:16px;
+    height:16px;
+    right:-20px;
+    top:50%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+    font-family: 'Glyphicons Halflings';
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    content: "\e258";
+    color:#32aaff;
+}
+.expense_statement_left table tr.active>td:nth-last-child(1):after{
+    display: block;
+}
+.expense_statement_left .table>tbody>tr{
+    cursor:pointer;
+}
+.expense_statement_left .table>tbody>tr>th{
+    background-color: #fff!important;
+}
+.expense_statement_left .table>tbody>tr.active>td{
+    background-color:#f8fafa;
+}

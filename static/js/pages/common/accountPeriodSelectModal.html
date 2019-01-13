@@ -1,0 +1,121 @@
+<!--base Modal -->
+<script id="account-period-template" type="text/x-handlebars-template">
+
+    <div class="modal fade" id="accountPeriodSelectModal" tabindex="-1" data-backdrop="static">
+        <style>
+            #accountPeriodSelectModal{}
+            #accountPeriodSelectModal .modal-body{padding-top:36px;}
+            #accountPeriodSelectModal .col-right{padding-left:15px;}
+            #accountPeriodSelectModal .col-title-info{
+                position:absolute;
+                top:0;
+                left:0;
+                padding-left:15px;
+                width:100%;
+                height:36px;
+                line-height:36px;
+                background-color:#f3f4f8;
+                color:#8592a2;
+            }
+        </style>
+        <div class="modal-dialog" role="document" style="width:860px; ">
+            <div class="modal-content">
+                <div class="modal-header clearfix">
+                    <button type="button" class="close js-cancel" ><span aria-hidden="true">&times;</span>
+                    </button>
+                    <h4 class="modal-title" id="myModalLabel" style="width:100px;float:left;">选择账期</h4>
+                </div>
+                <div class="modal-body"  style="padding-bottom:0;">
+                    <div class="col-title-info">
+                        <span>账期列表:款项/权责年月/应收金额/实收金额</span>
+                    </div>
+                    <div class="col-split-wrapper col-2 clearfix">
+                        <div class="col-left col-panel">
+
+                            <div class="col-panel-title">
+                                <span>账期列表</span>
+                            </div>
+
+                            <!-- zl-select-wrapper -->
+                            <div class="zl-select-wrapper js-multi-select">
+                                <ul  class="js-account-list">
+                                    {{#each accountList}}
+                                    <li data-index="{{@index}}" data-finContId="{{finContId}}"
+                                        data-feeType="{{feeType}}"
+                                        data-chargeItemName="{{chargeItemName}}"
+                                        data-startDate = "{{startDate}}"
+                                        data-endDate = "{{endDate}}"
+                                        data-financePeriod = "{{financePeriod}}"
+                                        data-leftAmount = "{{leftAmount}}"
+                                        data-receAmount = "{{receAmount}}"
+                                        data-deAmount = "{{deAmount}}"
+                                        class="zl-select-item"><span>{{value}}</span>
+                                    </li>
+                                    {{/each}}
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-right col-panel">
+                          <!--  <div class="col-title-info" style="left:300px;">
+                                <span>账期列表:款项/权责年月/应收金额/实收金额</span>
+                            </div>-->
+                            <div class="col-panel-title">
+                                <span>已选账期</span>
+                               <!-- <span>已选账期</span>-->
+                            </div>
+                            <div class="col-content">
+                                <!-- zl-select-wrapper -->
+                                <div class="zl-select-wrapper selected" >
+                                    <ul  class="js-account-selected" >
+
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="modal-footer">
+                    <!--<button type="button" class="btn btn-default zl-btn" data-dismiss="modal">Close</button>-->
+                    <button type="button" class="btn btn-default zl-btn zl-btn-blue js-submit">确定</button>
+                    <button type="button" class="btn btn-default zl-btn js-cancel">取消</button>
+                    <button type="button" class="btn btn-default zl-btn js-reset">重置</button>
+                </div>
+            </div>
+        </div>
+    </div><!--baseModal-->
+
+</script>
+<script id="account-item-template" type="text/x-handlebars-template">
+    {{#each accountList}}
+        <li data-index="{{@index}}" data-finContId="{{finContId}}" data-chargeItemName="{{chargeItemName}}"
+            class="zl-select-item"><span>{{value}}</span>
+        </li>
+    {{/each}}
+</script>
+
+<!--账期选择完的列表 -->
+<script id="template-select-Clause" type="text/x-handlebars-template">
+    {{#each dataList}}
+    <tr data-finContId="{{finContId}}">
+            <input type="hidden" value="{{finContId}}" name="finContId">
+            <input type="hidden" value="{{feeType}}" name="feeType">
+            <!-- 款项 -->
+        <td>{{chargeItemName}}</td>
+        <td class="zl-edit">
+            <input class="form-control" type="text" readonly value="{{financePeriod}}" name="financePeriod"/>
+        </td>
+        <td class="zl-edit">
+            <input class="form-control" readonly type="text" value="{{startDate}} ~ {{endDate}}" name="accountPeriod"/>
+            <input name="startDate" value="{{startDate}}" type="hidden" />
+            <input name="endDate" value="{{endDate}}" type="hidden" />
+        </td>
+        <td class="zl-edit">
+            <input class="form-control" data-type="number" readonly value="{{leftAmount}}" name="leftAmount"/>
+        </td>
+        <td class="zl-edit">
+            <input class="costClause" step="0.01" maxlength="15" data-type="number" placeholder="请输入退款金额" value="{{costClause}}" name="costClause"/>
+        </td>
+    </tr>
+    {{/each}}
+</script>

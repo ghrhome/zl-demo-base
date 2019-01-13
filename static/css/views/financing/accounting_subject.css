@@ -1,0 +1,51 @@
+#accounting_subject .zl-toolbar>.zl-search-wrapper{margin-right:10px;}
+
+/* ======================================== zl-table-block ======================================== */
+
+#accounting_subject .zl-pagination-wrapper{padding:20px 0 0 0;}
+
+#accounting_subject{}
+#accounting_subject .zl-table-row{}
+#accounting_subject .zl-tree-table-row-header{
+    background-color: #f3f6f9;
+    color: #7e8c9e;
+}
+#accounting_subject .zl-tree-table-row-header span{
+    color: #7e8c9e!important;
+}
+
+#accounting_subject .zl-table-row .zl-table-cell{
+    width:160px;
+    height: 36px;
+    padding: 4px 15px;
+    line-height: 24px;
+    vertical-align: middle;
+    font-size: 14px;
+    color: #373c42;
+    font-weight: normal;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+#accounting_subject .zl-table-row .zl-table-cell:nth-child(1){
+    width:auto;
+}
+#accounting_subject .zl-list-tree-table .zl-table-row .zl-table-cell:nth-child(1){
+    padding-left:0;
+}
+#accounting_subject .zl-table-row .zl-table-cell:nth-child(5){
+    width:220px;
+}
+
+@media screen and (min-width:1380px){
+    #accounting_subject .zl-table-row .zl-table-cell{
+        width:220px;
+    }
+    #accounting_subject .zl-table-row .zl-table-cell:nth-child(1){
+        width:auto;
+    }
+
+    #accounting_subject .zl-table-row .zl-table-cell:nth-child(5){
+        width:220px;
+    }
+}

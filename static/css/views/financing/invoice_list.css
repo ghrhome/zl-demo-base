@@ -1,0 +1,54 @@
+#invoice-list .zl-toolbar>div{margin:0;}
+#invoice-list .zl-toolbar>.zl-search-wrapper{margin-right:10px;}
+#invoice-list .zl-toolbar>.zl-date-select{width:160px;margin:0 10px;}
+#invoice-list .zl-toolbar>.zl-date-select .form-control{
+    font-size:12px;
+    padding:0;
+    text-align: center;
+    background-color:#fff;
+    cursor:pointer;
+}
+#invoice-list .zl-toolbar>a.super-search-btn{margin-left:10px;}
+
+/* ======================================== zl-table-block ======================================== */
+#invoice-list .zl-table-block {
+}
+#invoice-list .col-index-1 {
+    width:40px;
+}
+#invoice-list .col-index-2 {
+    width:160px;
+}
+#invoice-list .col-index-3 {
+    width:80px;
+}
+#invoice-list .image-preview{
+    display:block;
+    width:120px;
+    height:100px;
+    border:1px solid #eff1f4;
+    background-color:#f8fafa;
+}
+
+#invoice-list .panel-default:not(.zl-panel-thead) .panel-heading:hover{cursor:pointer;}
+
+
+/* ======================================== zl-switch-account ======================================== */
+#invoice-list #receipt-dialog .modal-dialog{
+    width:360px;
+}
+
+#invoice-list #receipt-dialog .receipt-item-list li{
+    height:36px;
+    line-height: 36px;
+}
+
+#invoice-list #receipt-dialog .receipt-item-list li em.zl-checkbox{
+    vertical-align: -2px;
+    margin-right:6px;
+}
+
+#invoice-list #receipt-dialog .zl-fake-radio{
+    margin-right:5px;
+    top:2px;
+}

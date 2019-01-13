@@ -1,0 +1,37 @@
+#tax-rate-detail{padding:44px 0 0 0;}
+
+#tax-rate-detail .zl-linkable{
+}
+
+#tax-rate-detail .zl-toolbar>a.btn{
+    margin-left:10px;
+}
+
+/* ======================================== mall-select-dialog ======================================== */
+#tax-rate-detail #mall-select-dialog .modal-dialog{width:300px;}
+#tax-rate-detail #mall-select-dialog .zl-search-wrapper .zl-search{width:230px;}
+#tax-rate-detail #mall-select-dialog .letter-item-list{width:200px;padding:10px 0 0 0;}
+#tax-rate-detail #mall-select-dialog .letter-item-list li{
+    float:left;
+    padding-right:5px;
+}
+
+#tax-rate-detail #mall-select-dialog .letter-item-list li a{
+    color:#757575;
+    font-size:12px;
+}
+
+#tax-rate-detail #mall-select-dialog .mall-item-list{
+    max-height:360px;
+    padding-top:6px;
+    overflow: auto;
+}
+#tax-rate-detail #mall-select-dialog .mall-item-list li{
+    height:36px;
+    line-height: 36px;
+}
+
+#tax-rate-detail #mall-select-dialog .mall-item-list li em.zl-checkbox{
+    vertical-align: -2px;
+    margin-right:6px;
+}

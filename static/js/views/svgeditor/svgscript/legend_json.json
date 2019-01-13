@@ -1,0 +1,12 @@
+{
+    "name":"legend",
+    "labels":[
+        {"name":"全部", "class":"all",  "color":"#a4b5bd"},
+        {"name":"未签署", "class":"default",  "color":"#a4b5bd"},
+        {"name":"超市", "class":"super-market",  "color":"#f1dcbd"},
+        {"name":"服饰", "class":"suit",  "color":"#ffabd4"},
+        {"name":"配套", "class":"mating",  "color":"#b56d00"},
+        {"name":"餐饮", "class":"food",  "color":"#ffe700"},
+        {"name":"当前选择", "class":"cur-select",  "color":"#f00","stroke":"#000","stroke-width":3,"stroke-dasharray":5,"fill-opacity":0.3}
+        ]
+}

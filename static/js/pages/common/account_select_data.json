@@ -1,0 +1,26 @@
+{
+  "accountPeriodList":[
+    {
+      "finContId": "b01",
+      "financePeriod": "2016-01",
+      "startDate":"2018-04-24",
+      "endDate":"2018-04-25",
+      "leftAmount": "3,517.45",
+      "chargeItemName": "租金",
+      "receAmount": "3,517.45",
+      "eAmount": "3,517.45",
+      "value": "租金/2016-01/3,517.45元/3,517.45元"
+    },{
+      "finContId": "b02",
+      "financePeriod": "2016-01",
+      "startDate":"2018-04-24",
+      "endDate":"2018-04-25",
+      "leftAmount": "3,517.45",
+      "chargeItemName": "租金",
+      "receAmount": "3,517.45",
+      "eAmount": "3,517.45",
+      "value": "租金/2016-01/3,517.45元/3,517.45元",
+    }
+  ]
+
+}

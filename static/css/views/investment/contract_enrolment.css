@@ -1,0 +1,18 @@
+#contract-enrolment{}
+#contract-enrolment #js-tree-wrapper{
+    position: fixed;
+   height:100%;
+    width:16.666666%;
+    min-width:180px;
+    top:0;left:0;
+    padding:20px;
+    padding-right:0;
+    overflow: hidden;
+}
+#js-tree-wrapper>.contract-list-tree{
+    height:100%;
+    width:100%;
+    border-right:solid 1px #ddd;
+    overflow: hidden;
+    overflow-y:auto;
+}

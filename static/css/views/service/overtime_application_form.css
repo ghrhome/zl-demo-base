@@ -1,0 +1,81 @@
+#overtime-application-form{
+    padding: 40px 0 0 0;}
+
+#overtime-application-form .zl-linkable{
+    margin-left:10px;
+}
+
+
+/* ======================================== mall-select-dialog ======================================== */
+#overtime-application-form #mall-select-dialog .modal-dialog{width:300px;}
+#overtime-application-form #mall-select-dialog .zl-search-wrapper .zl-search{width:230px;}
+#overtime-application-form #mall-select-dialog .letter-item-list{width:200px;padding:10px 0 0 0;}
+#overtime-application-form #mall-select-dialog .letter-item-list li{
+    float:left;
+    padding-right:5px;
+}
+
+#overtime-application-form #mall-select-dialog .letter-item-list li a{
+    color:#757575;
+    font-size:12px;
+}
+
+#overtime-application-form #mall-select-dialog .mall-item-list{
+    max-height:360px;
+    padding-top:6px;
+    overflow: auto;
+}
+#overtime-application-form #mall-select-dialog .mall-item-list li{
+    height:36px;
+    line-height: 36px;
+}
+
+#overtime-application-form #mall-select-dialog .mall-item-list li em.zl-checkbox{
+    vertical-align: -2px;
+    margin-right:6px;
+}
+
+.zl-section-title .sub-info{
+    float:left;
+    margin-left:15px;
+}
+
+.zl-section-title .sub-info span{
+    color:#7e8c9e;
+    font-size:12.8px;
+}
+
+.zl-inform-info{
+    padding:0;
+}
+.zl-inform-info span{
+    color:#e64e4d;
+    font-size:12.8px;
+}
+.zl-card-panel{
+    border:1px solid #eff1f4;
+    padding:15px;
+    max-height:500px;
+    overflow: hidden;
+    overflow-y:auto;
+}
+
+.zl-card-list{padding: 12px 0;}
+.zl-card-list li{
+    padding:7px 15px;
+
+    line-height: 20px;
+    border:solid 1px #eff1f4;
+    background-color:#f8faf9;
+    font-size:14px;
+    color:#7e8c9e;
+    cursor:move;
+}
+.zl-card-list li:hover{
+    background-color: #eef0ef;
+}
+.zl-card-list li+li{
+    margin-top:10px;
+}
+
+.zl-card-list li>span{display: block;margin-bottom:5px;}

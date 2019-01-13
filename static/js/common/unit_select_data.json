@@ -1,0 +1,79 @@
+{
+  "projectId": "pid001",
+  "buildingList":[
+    {
+      "name":"B01",
+      "id":"b01"
+    },{
+      "name":"B02",
+      "id":"b02"
+    }
+
+  ],
+  "buildings":{
+
+    "b01":{
+      "name":"B01",
+      "id":"b01",
+      "floors":[
+        {
+          "name":"F1",
+          "id":"b01-f1",
+          "shops":[
+            {
+              "name":"001-101",
+              "id":"s001-001",
+              "issuingLayout":0,
+              "structureSquare":0,
+              "propertySquare":0
+            },
+
+            {
+              "name":"001-102",
+              "id":"s001-002",
+              "issuingLayout":0,
+              "structureSquare":0,
+              "propertySquare":0
+            },
+            {
+              "name":"001-103",
+              "id":"s001-003",
+              "issuingLayout":0,
+              "structureSquare":0,
+              "propertySquare":0
+            }
+          ]
+        }
+      ]
+    },
+
+    "b02":{
+      "name":"B02",
+      "id":"b02",
+      "floors":[
+        {
+          "name":"F1",
+          "id":"b02-f1",
+          "shops":[
+            {
+              "name":"002-101",
+              "id":"s002-001",
+              "issuingLayout":0,
+              "structureSquare":0,
+              "propertySquare":0
+            },
+            {
+              "name":"002-102",
+              "id":"s002-002",
+              "issuingLayout":0,
+              "structureSquare":0,
+              "propertySquare":0
+            }
+          ]
+        }
+      ]
+    }
+
+  }
+
+}

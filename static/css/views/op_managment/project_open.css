@@ -1,0 +1,254 @@
+body{background-color:#f3f3f3;}
+
+#project-open{position:relative;padding-top:44px;}
+
+#project-open .summary-section ul li.quarter{
+    width:25%;
+}
+
+#project-open .title-highlight{
+    font-weight: bold;
+    font-size:16px;
+}
+#project-open .separator-line{
+    border-bottom:1px dashed #ccc;
+    margin:10px 0 10px 20px;
+}
+
+.project-name{
+    height:44px;
+    line-height: 44px;
+    padding-right:20px;
+    font-size:20px;
+}
+#project-open .zl-icon-arrow-up,
+#project-open .zl-icon-arrow-down{vertical-align: middle;}
+
+#project-open .zl-clickable:hover{
+    background-color:#eaeaea;
+    cursor:pointer;
+}
+
+#project-open .date-month-btn{
+    position:absolute;
+    right:20px;
+    top:71px;
+    height:20px;
+    line-height: 20px;
+    color:#757575;
+    font-size:14px;
+    padding-left:20px;
+    background:url(../../../images/common/clock-blue-icon.png) no-repeat left center;
+    background-size:16px 16px;
+    text-decoration: none;
+    cursor:pointer;
+}
+#project-open .date-month-btn.changed{
+    color:#2696dd;
+}
+/* ======================================== situation-basic-info ======================================== */
+#project-open .situation-basic-info{
+    height:100px;
+    padding:28px 44px;
+    background-color:#fff;
+}
+
+#project-open .situation-basic-info .info-item-list li{
+    height:44px;
+    float:left;
+    padding:0 32px;
+    border-right:1px solid #ccc;
+}
+#project-open .situation-basic-info .info-item-list li:first-child{padding-left:0;}
+#project-open .situation-basic-info .info-item-list li:last-child{border-right:none;}
+
+#project-open .situation-basic-info .info-item-list li .item-title{
+    height:18px;
+    line-height: 18px;
+    font-size:12px;
+    color:#757575;
+}
+
+#project-open .situation-basic-info .info-item-list li .item-content{
+    height:26px;
+    line-height: 26px;
+    font-size:20px;
+    color:#222;
+}
+#project-open .situation-basic-info .info-item-list li .item-content em{
+    font-size:12px;
+    color:#757575;
+    margin-left:8px;
+}
+
+/* ======================================== summary-container ======================================== */
+#project-open .summary-container{
+    padding:10px 24px;
+}
+
+/* ---------------------------------------- summary-head ---------------------------------------- */
+#project-open .summary-head{
+    height:37px;
+    background-color:#fff;
+    border-bottom:1px solid #ccc;
+}
+
+#project-open .summary-head ul li{float:left;}
+
+#project-open .summary-head ul li a {
+    display: block;
+    height: 36px;
+    line-height: 36px;
+    padding: 0 20px;
+    text-decoration: none;
+    cursor: pointer;
+    color:#757575;
+}
+#project-open .summary-head ul li a.active{color:#2696dd;}
+#project-open .summary-head ul li a:hover{color:#2696dd;}
+
+
+
+/* ######################################## summary-section ######################################## */
+#project-open .summary-section ul li{
+    width:50%;
+    height:32px;
+    line-height: 32px;
+    float:left;
+    padding-left:20px;
+}
+#project-open .summary-section ul li.whole-column{width:100%!important;}
+
+#project-open .summary-section .inline-block{
+    display:inline-block;
+    height:100%;
+    width:100px;
+    color:#757575;
+}
+
+/* ---------------------------------------- summary-content ---------------------------------------- */
+#project-open .summary-content{
+    background-color:#fff;
+}
+
+/* ---------------------------------------- shopping-mall ---------------------------------------- */
+#project-open .shopping-mall{
+    position:relative;
+    min-height:380px;
+    padding-left:50%;
+}
+/* ---------------------------------------- shopping-mall-left ---------------------------------------- */
+#project-open .shopping-mall-left{
+    position:absolute;
+    left:0;
+    top:20px;
+    bottom:20px;
+    padding:0 0 0 0;
+    width:50%;
+    border-right:1px solid #ccc;
+}
+
+#project-open .shopping-mall-left .summary-section ul li{
+    width:30%;
+}
+#project-open .shopping-mall-left .summary-section ul li:nth-child(even){
+    width:70%;
+}
+/* ---------------------------------------- shopping-mall-right ---------------------------------------- */
+#project-open .shopping-mall-right{
+    padding:20px 20px 20px 0;
+}
+
+
+#project-open .go-to-arrears-btn:hover{cursor:pointer;}
+
+/* ======================================== project-info-container ======================================== */
+#project-open .project-info-container{padding:0 20px 40px 20px;}
+
+/* ---------------------------------------- project-info-head ---------------------------------------- */
+#project-open .project-info-container .project-info-head{
+    position:relative;
+    height:64px;
+    line-height: 64px;
+    padding-left:28px;
+    font-size:18px;
+    background-color:#fff;
+}
+#project-open .project-info-container .project-info-head:before{
+    content: "";
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:20px;
+    width:4px;
+    height:18px;
+    background-color:#e64e4d;
+    margin:auto;
+}
+
+/* ---------------------------------------- project-section-list ---------------------------------------- */
+#project-open .project-info-container .project-info-section-list{
+    background-color:#fff;
+    padding:0 10px 10px 20px;
+}
+#project-open .project-info-container .project-info-section-wrapper{width:50%;float:left;padding:0 10px 10px 0;}
+#project-open .project-info-container .project-info-section-wrapper-full{width:100%;}
+#project-open .project-info-container .project-info-section{
+    background-color:#f3f3f3;
+}
+
+
+#project-open .project-info-container .project-info-section .project-info-section-head{
+    position:relative;
+    height:40px;
+    line-height: 40px;
+    font-size:18px;
+    color:#fff;
+    padding:0 20px;
+}
+
+#project-open .project-info-container .project-info-section .project-info-section-head:after{
+    content:"";
+    position:absolute;
+    top:0;
+    right:0;
+    border-top:20px solid #fff;
+    border-left:20px solid transparent;
+
+}
+
+#project-open .project-info-container .project-info-section .project-info-section-head em{
+    position:absolute;
+    top:0;
+    right:20px;
+    height:40px;
+    line-height: 40px;
+    font-size:18px;
+    color:#fff;
+}
+
+#project-open .project-info-container .project-info-section .project-info-section-head-red{background-color:#e64e4d;}
+#project-open .project-info-container .project-info-section .project-info-section-head-blue{background-color:#17b1e2;}
+
+#project-open .project-info-container .project-info-section .project-info-section-table{width:100%;}
+#project-open .project-info-container .project-info-section .project-info-section-table tr:hover{background-color:#eaeaea;}
+#project-open .project-info-container .project-info-section .project-info-section-table tr td{height:40px;padding-left:20px;}
+#project-open .project-info-container .project-info-section .project-info-section-table tr:first-child td{color:#757575;}
+
+
+#project-open .zl-clickable:hover{
+    background-color:#eaeaea;
+    cursor:pointer;
+}
+#project-open .zl-font-size-12 {
+    font-size:12px !important;
+}
+#project-open .zl-font-color-75 {
+    color: #757575!important;
+}
+#project-open .zl-font-size-18 {
+    font-size:18px !important;
+}
+#project-open .zl-display-none {
+    display: none!important;
+} 

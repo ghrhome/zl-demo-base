@@ -1,0 +1,9 @@
+#sale-project {
+	padding-top:44px;
+}
+#sale-project .chart-block .chart-content {
+    position: relative;
+    height: 300px;
+    width: 600px;
+    padding-bottom:20px;
+}

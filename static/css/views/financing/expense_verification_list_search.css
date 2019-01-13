@@ -1,0 +1,14 @@
+#expense-verification-list-search .zl-toolbar>a.zl-btn{margin-left:10px;}
+#expense-verification-list-search .zl-toolbar>div{margin-left:0;margin-right:10px;}
+#expense-verification-list-search .zl-toolbar>.zl-search-wrapper{margin:0;}
+/* ======================================== zl-table-block ======================================== */
+#expense-verification-list-search .zl-table-block {
+}
+#expense-verification-list-search .zl-table-block table.table{}
+
+
+#expense-verification-list-search .zl-table-wrapper-swiper .zl-table-static{border-right:none;}
+#expense-verification-list-search .zl-pagination-wrapper{padding-top:15px;}
+
+#expense-verification-list-search table tbody tr:hover{cursor:pointer;}
+

@@ -1,0 +1,48 @@
+html, body{
+    min-width: inherit;
+}
+.zl-page-mobi{}
+.zl-page-mobi .zl-content{padding:0 15px;}
+.zl-page-mobi .zl-separate-block > .zl-section-title>h3{
+    height: 32px;
+    line-height: 32px;
+    border:0;
+    border-left: 2px solid #32aaff;
+    font-size:14px;
+
+    background-color:#f3f6f9;
+}
+
+
+
+.zl-page-mobi .zl-separate-block .table tr>td{
+    height:32px;
+    line-height: 32px;
+
+}
+.zl-page-mobi .zl-separate-block .table tr>td label{color:#7e8c9e;font-weight: normal;}
+
+.zl-page-mobi .zl-separate-block .table tr>th{
+    height:32px;
+    line-height: 32px;
+    background-color:rgba(243,246,249,.60);
+}
+
+.zl-page-mobi .zl-separate-block .table tr>td.zl-td-indent{padding-left:32px;}
+/*.zl-section-title-inline*/
+
+.zl-section-title-inline{
+    text-align: right;
+}
+.zl-section-title-inline>h3{
+    padding-right:42px;
+    font-size: 12.8px !important;
+    font-weight:normal;
+    border-left:0;
+    color:#32aaff;
+
+}
+.zl-page-mobi .zl-separate-block > .zl-section-title-inline>h3{
+    border-left:0;
+    background-color:rgba(243,246,249,.60);
+}

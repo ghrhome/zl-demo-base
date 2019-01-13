@@ -1,0 +1,55 @@
+#brand_detail {
+	padding-top:44px;
+}
+#brand_detail .zl-merchant-status dl {
+    font-size: 14px;
+    color: rgb(34, 34, 34);
+    margin: 0px;
+}
+#brand_detail .zl-merchant-status dt {
+    float: left;
+    color: #757575;
+    line-height: 32px;
+    height: 32px;
+}
+#brand_detail .zl-merchant-status dd {
+    float: left;
+    line-height: 32px;
+    height: 32px;
+}
+#brand_detail .zl-merchant-status dt:after {
+    content: " ";
+    display: inline-block;
+    width: 10px;
+}
+#brand_detail .zl-merchant-status dd em:before {
+    content: " ";
+    display: inline-block;
+    width: 10px;
+}
+#brand_detail .zl-merchant-status dd em:after {
+    content: " ";
+    display: inline-block;
+    width: 10px;
+}
+#brand_detail .zl-dropdown-inline {
+    height: 100%;
+}
+#brand_detail .zl-dropdown-inline .zl-dropdown-btn {
+    border: none;
+    height: 32px;
+}
+#brand_detail td textarea{
+	border-color: transparent;
+    height: 80px;
+    width: 100%;
+    resize: none;
+    padding: 0 6px;
+}
+#brand_detail .td_file {
+	padding-top:10px;
+	padding-bottom:10px;
+}
+#brand_detail .zl-edit>span {
+	padding-left:8px;
+}

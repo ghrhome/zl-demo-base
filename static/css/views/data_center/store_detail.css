@@ -1,0 +1,9 @@
+#store-detail{padding:44px 0 0 0;}
+
+#store-detail .zl-dropdown-inline{
+    height:100%;
+}
+#store-detail .zl-dropdown-inline .zl-dropdown-btn{
+    border:none;
+    height: 35px;
+}

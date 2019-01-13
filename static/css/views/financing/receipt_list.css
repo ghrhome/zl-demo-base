@@ -1,0 +1,11 @@
+#receipt-list .zl-toolbar>a.zl-btn{margin-left:10px;}
+#receipt-list .zl-toolbar>div{margin-left:0;margin-right:10px;}
+#receipt-list .zl-toolbar>.zl-search-wrapper{margin:0;}
+/* ======================================== zl-table-block ======================================== */
+#receipt-list .zl-table-block {
+}
+#receipt-list .zl-table-block table.table{}
+#receipt-list .zl-table-block table.table th:nth-child(7),
+#receipt-list .zl-table-block table.table td:nth-child(7){text-align: right;padding-right:30px;}
+
+

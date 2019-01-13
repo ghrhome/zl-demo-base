@@ -1,0 +1,19 @@
+.collection-schedule tbody td {
+	padding:10px 15px !important;
+}
+.collection-schedule .raido-wrapper {
+	height:32px;
+	padding-top:6px;
+}
+.collection-schedule .special-input label {
+	width:40%;
+}
+.collection-schedule .special-input input {
+	width:60%;
+	height:26px;
+	font-size: 12px;
+	display: inline-block;
+}
+.collection-schedule tr {
+	border:1px solid  #eff1f4;
+}

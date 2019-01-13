@@ -1,0 +1,7 @@
+#floor-manager-arrange{padding-top:20px;padding-bottom:20px;}
+.js-btn-wrapper>a.zl-text-btn{display: inline-block;margin-left:12px;}
+.zl-input-wrapper input{padding:0 10px;width:100%;border:solid 1px #ddd;/*border-left:solid 2px #e64e4d;*/}
+.zl-input-wrapper input[disabled]{}
+#floor-manager-arrange .padding-left-30{
+    padding-left:30px!important;
+}

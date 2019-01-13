@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>商业系统</title>
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <link rel="shortcut icon" href="../../static/images/favicon.ico" type="image/x-icon">
+    <!-- Bootstrap 3.3.6 -->
+    <link rel="stylesheet" href="../../static/dist/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../static/css/common/no-response.css">
+    <link rel="stylesheet" href="../../static/dist/css/animate.css">
+    <!--第三方js-->
+    <link rel="stylesheet" href="../../static/dist/css/swiper.min.css">
+    <link rel="stylesheet" href="../../static/dist/css/swiper.min.css">
+    <!--common css-->
+    <link rel="stylesheet" href="../../static/css/common/common.css">
+    <link rel="stylesheet" href="../../static/css/common/common_utils.css">
+    <link rel="stylesheet" href="../../static/css/common/icons.css">
+    <link rel="stylesheet" href="../../static/css/common/static_table.css">
+    <!--page css-->
+    <link rel="stylesheet" href="../../static/css/views/sample/sample.css">
+
+
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+<!--[if lt IE 9]>
+<p class="updateBrowser">您的浏览器太旧了，请更新最新浏览器，以获得最佳效果.</p>
+<![endif]-->
+<!-- Preloader -->
+<div id="preloader">
+    <div id="status"><i class="fa fa-spinner fa-spin"></i></div>
+</div>
+
+<section class="zl-page" id="page-sample">
+    <div class="zl-content-header clearfix">
+        <ol class="breadcrumb">
+            <li class="zl-main-system-nav">首页</li>
+            <li class="bread-nav">财务</li>
+            <li class="bread-nav">费用审核</li>
+        </ol>
+        <div class="zl-head-function pull-right">
+            <div class="zl-dist-links pull-right ">
+                <a href="javascript:void(0)" id="js-add-doc"><em class="zl-icon zl-icon-add"></em>新增</a>
+                <a href="javascript:void(0)" id="js-merchant-tables"><em class="zl-icon zl-icon-export"></em>批量打印</a>
+            </div><!--end zl-dist-links-->
+        </div><!--end zl-head-function-->
+
+    </div><!--end content-header-->
+    <div class="zl-content">
+        <div class="zl-block">
+            <div class="zl-block-title">
+                <h3>Swiper Table: Left Top Fixed</h3>
+            </div>
+            <div class="zl-block-content">
+                <div class="zl-table-wrapper-swiper" id="js-main-table-wrapper">
+
+                <!-- zl-table-fixed-top -->
+                <div class="zl-table-fixed-top" style="padding-left:160px;">
+                    <div class="zl-table-static zl-table-static-left" style="width:160px;">
+                        <table class="table table-no-bordered zl-table table-hover table-header-fixed" style="width:100%;">
+                            <thead>
+                            <tr>
+                                <th class="text-left">项目名称</th>
+                            </tr>
+                            </thead>
+                        </table>
+                    </div>
+
+                    <div class="swiper-container" style="width:100%;" id="js-main-table-head">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <table class="table table-no-bordered zl-table table-hover table-header-fixed" style="width:1500px;" >
+                                    <thead>
+                                    <tr>
+                                        <th class="text-right">项目数</th>
+                                        <th class="text-right">商业面积(m&sup2)</th>
+                                        <th class="text-right">租金收入(万元)</th>
+                                        <th class="text-right">营业收入(万元)</th>
+                                        <th class="text-right">成本费用(万元)</th>
+                                        <th class="text-right">营业利润(万元)</th>
+                                        <th class="text-center">状态</th>
+                                    </tr>
+                                    </thead>
+                                </table>
+                            </div><!--swiper-slide-->
+                        </div><!--swiper-wrapper-->
+                    </div><!--swiper container-->
+                </div>
+                <!--end zl-table-fixed-top -->
+                <!--zl-table-main-->
+                <div class="zl-table-main" style="padding-left:160px;">
+                    <!--zl-table-static-left-->
+                    <div class="zl-table-static zl-table-static-left" style="width:160px;">
+                        <table class="table table-no-bordered zl-table table-hover" style="width:100%;">
+                            <tbody>
+                            <tr>
+                                <th><span class="zl-cell text-left">万科产城</span></th>
+                            </tr>
+
+                            <tr>
+                                <th><span class="zl-cell text-left">万科产城</span></th>
+                            </tr>
+                            <tr>
+                                <th><span class="zl-cell text-left">万科产城</span></th>
+                            </tr>
+                            <tr>
+                                <th><span class="zl-cell text-left">万科产城</span></th>
+                            </tr>
+                            <tr>
+                                <th><span class="zl-cell text-left">万科产城</span></th>
+                            </tr>
+                            <tr>
+                                <th><span class="zl-cell text-left">万科产城</span></th>
+                            </tr>
+                            <tr>
+                                <th><span class="zl-cell text-left">万科产城</span></th>
+                            </tr>
+                            <tr>
+                                <th><span class="zl-cell text-left">万科产城</span></th>
+                            </tr>
+                            <tr>
+                                <th><span class="zl-cell text-left">万科产城</span></th>
+                            </tr>
+                            <tr>
+                                <th><span class="zl-cell text-left">万科产城</span></th>
+                            </tr>
+                            <tr>
+                                <th><span class="zl-cell text-left">万科产城</span></th>
+                            </tr>
+
+                            </tbody>
+                        </table>
+                    </div><!--end zl-table-static-left-->
+
+                    <!--swiper-container-->
+                    <div class="swiper-container" style="width:100%;" id="js-main-table">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <table class="table table-no-bordered zl-table table-hover" style="width:1500px;">
+                                    <tbody>
+                                    <tr>
+                                        <td><span class="zl-cell zl-cell-num">12</span></td>
+                                        <td><span class="zl-cell zl-cell-num js-fin-num">30000</span></td>
+                                        <td><span class="zl-cell zl-cell-num">2000.00</span></td>
+                                        <td><span class="zl-cell zl-cell-num">2000.00</span></td>
+                                        <td><span class="zl-cell zl-cell-num">2000.00</span></td>
+                                        <td><span class="zl-cell zl-cell-num">2000.00</span></td>
+                                        <td><span class="zl-cell text-center">筹备</span></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td><span class="zl-cell zl-cell-num">12</span></td>
+                                        <td><span class="zl-cell zl-cell-num js-fin-num">30000</span></td>
+                                        <td><span class="zl-cell zl-cell-num">2000.00</span></td>
+                                        <td><span class="zl-cell zl-cell-num">2000.00</span></td>
+                                        <td><span class="zl-cell zl-cell-num">2000.00</span></td>
+                                        <td><span class="zl-cell zl-cell-num">2000.00</span></td>
+                                        <td><span class="zl-cell text-center">筹备</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="zl-cell zl-cell-num">12</span></td>
+                                        <td><span class="zl-cell zl-cell-num js-fin-num">30000</span></td>
+                                        <td><span class="zl-cell zl-cell-num">2000.00</span></td>
+                                        <td><span class="zl-cell zl-cell-num">2000.00</span></td>
+                                        <td><span class="zl-cell zl-cell-num">2000.00</span></td>
+                                        <td><span class="zl-cell zl-cell-num">2000.00</span></td>
+                                        <td><span class="zl-cell text-center">筹备</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="zl-cell zl-cell-num">12</span></td>
+                                        <td><span class="zl-cell zl-cell-num js-fin-num">30000</span></td>
+                                        <td><span class="zl-cell zl-cell-num">2000.00</span></td>
+                                        <td><span class="zl-cell zl-cell-num">2000.00</span></td>
+                                        <td><span class="zl-cell zl-cell-num">2000.00</span></td>
+                                        <td><span class="zl-cell zl-cell-num">2000.00</span></td>
+                                        <td><span class="zl-cell text-center">筹备</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="zl-cell zl-cell-num">12</span></td>
+                                        <td><span class="zl-cell zl-cell-num js-fin-num">30000</span></td>
+                                        <td><span class="zl-cell zl-cell-num">2000.00</span></td>
+                                        <td><span class="zl-cell zl-cell-num">2000.00</span></td>
+                                        <td><span class="zl-cell zl-cell-num">2000.00</span></td>
+                                        <td><span class="zl-cell zl-cell-num">2000.00</span></td>
+                                        <td><span class="zl-cell text-center">筹备</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="zl-cell zl-cell-num">12</span></td>
+                                        <td><span class="zl-cell zl-cell-num js-fin-num">30000</span></td>
+                                        <td><span class="zl-cell zl-cell-num">2000.00</span></td>
+                                        <td><span class="zl-cell zl-cell-num">2000.00</span></td>
+                                        <td><span class="zl-cell zl-cell-num">2000.00</span></td>
+                                        <td><span class="zl-cell zl-cell-num">2000.00</span></td>
+                                        <td><span class="zl-cell text-center">筹备</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="zl-cell zl-cell-num">12</span></td>
+                                        <td><span class="zl-cell zl-cell-num js-fin-num">30000</span></td>
+                                        <td><span class="zl-cell zl-cell-num">2000.00</span></td>
+                                        <td><span class="zl-cell zl-cell-num">2000.00</span></td>
+                                        <td><span class="zl-cell zl-cell-num">2000.00</span></td>
+                                        <td><span class="zl-cell zl-cell-num">2000.00</span></td>
+                                        <td><span class="zl-cell text-center">筹备</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="zl-cell zl-cell-num">12</span></td>
+                                        <td><span class="zl-cell zl-cell-num js-fin-num">30000</span></td>
+                                        <td><span class="zl-cell zl-cell-num">2000.00</span></td>
+                                        <td><span class="zl-cell zl-cell-num">2000.00</span></td>
+                                        <td><span class="zl-cell zl-cell-num">2000.00</span></td>
+                                        <td><span class="zl-cell zl-cell-num">2000.00</span></td>
+                                        <td><span class="zl-cell text-center">筹备</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="zl-cell zl-cell-num">12</span></td>
+                                        <td><span class="zl-cell zl-cell-num js-fin-num">30000</span></td>
+                                        <td><span class="zl-cell zl-cell-num">2000.00</span></td>
+                                        <td><span class="zl-cell zl-cell-num">2000.00</span></td>
+                                        <td><span class="zl-cell zl-cell-num">2000.00</span></td>
+                                        <td><span class="zl-cell zl-cell-num">2000.00</span></td>
+                                        <td><span class="zl-cell text-center">筹备</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="zl-cell zl-cell-num">12</span></td>
+                                        <td><span class="zl-cell zl-cell-num js-fin-num">30000</span></td>
+                                        <td><span class="zl-cell zl-cell-num">2000.00</span></td>
+                                        <td><span class="zl-cell zl-cell-num">2000.00</span></td>
+                                        <td><span class="zl-cell zl-cell-num">2000.00</span></td>
+                                        <td><span class="zl-cell zl-cell-num">2000.00</span></td>
+                                        <td><span class="zl-cell text-center">筹备</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="zl-cell zl-cell-num">12</span></td>
+                                        <td><span class="zl-cell zl-cell-num js-fin-num">30000</span></td>
+                                        <td><span class="zl-cell zl-cell-num">2000.00</span></td>
+                                        <td><span class="zl-cell zl-cell-num">2000.00</span></td>
+                                        <td><span class="zl-cell zl-cell-num">2000.00</span></td>
+                                        <td><span class="zl-cell zl-cell-num">2000.00</span></td>
+                                        <td><span class="zl-cell text-center">筹备</span></td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div><!--swiper-slide-->
+                        </div><!--swiper-wrapper-->
+                        <!-- Add Scroll Bar -->
+                        <div class="swiper-scrollbar"></div>
+                    </div><!--swiper container-->
+
+                </div><!--end zl-table-main-->
+            </div><!--end zl-table-wrapper-swiper-->
+            </div>
+        </div>
+    </div><!--end content-panel-->
+</section>
+<script id="entry-template" type="text/x-handlebars-template">
+    <div class="entry">
+        <h1>{{title}}</h1>
+        <div class="body">
+            {{body}}
+        </div>
+    </div>
+</script>
+<script src="../../static/dist/js/require.js" data-main="../../static/js/views/sample/swiper_tl_main"></script>
+</body>
+</html>

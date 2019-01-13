@@ -1,0 +1,9 @@
+#lessee-detail{padding:64px 0 0 0;}
+
+#lessee-detail .zl-dropdown-inline{
+    height:100%;
+}
+#lessee-detail .zl-dropdown-inline .zl-dropdown-btn{
+    height:100%;
+    border:none;
+}

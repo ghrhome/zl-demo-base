@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!-- Bootstrap 3.3.6 -->
+    <link rel="stylesheet" href="../../static/dist/bootstrap/css/bootstrap.min.css">
+</head>
+<body>
+
+<button class="btn btn-default" id="show">show</button>
+<div class="modal fade" tabindex="-1" role="dialog" id="alert-modal">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                <h4 class="modal-title">Modal title</h4>
+            </div>
+            <div class="modal-body">
+                <p>One fine body…</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default btn-cancel" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary btn-confirm">Save changes</button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+
+<script src="../../static/dist/js/jQuery/jquery-2.2.3.min.js"></script>
+<script src="../../static/dist/bootstrap/js/bootstrap.min.js"></script>
+<script>
+
+    var alert=(function($,alert){
+        var alert=alert;
+
+        var _confirmMsg,_alertMsg,_cb;
+
+        alert.promise=function(){
+            var alertPromise=new Promise(function(resolve,reject){
+                $("#alert-modal").off().one("click",".btn-cancel",function(e){
+                    e.preventDefault();
+                    reject(_alertMsg);
+                })
+
+                $("#alert-modal").one("click",".btn-confirm",function(e){
+                    e.preventDefault();
+                    resolve(_confirmMsg);
+                })
+            });
+
+            return alertPromise;
+        }
+
+        alert.show=function(){
+
+            $("#alert-modal").modal("show");
+            alert.promise().then(function(data){
+                console.log(data);
+                _cb(data);
+
+            },function(err){
+                console.log(err);
+
+            }).finally(function(){
+                console.log("-------------final")
+                $("#alert-modal").modal("hide");
+            })
+        }
+
+        alert.init=function(cb,confirmMsg,alertMsg){
+            _cb=cb;
+            _confirmMsg=confirmMsg;
+            _alertMsg=alertMsg;
+
+
+            //window.alert=alert.show;
+
+        };
+
+        return alert;
+    })(jQuery,{})
+
+
+    $(document).ready(function(){
+        alert.init(function(data){
+            console.log("-----------------------")
+            console.log(data)
+        },"confirm","cancel");
+
+        console.log(alert)
+
+        $("#show").on("click",function(e){
+            e.preventDefault();
+            console.log("show------------")
+            alert.show();
+        })
+    })
+
+</script>
+</body>
+</html>

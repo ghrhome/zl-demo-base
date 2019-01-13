@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<script src="../../static/dist/js/angular/angular.min.js"></script>
+
+
+<body>
+
+<div ng-app="myApp" ng-controller="myCtrl">
+
+    名:  <input type="text" ng-model="firstName"><br>
+    姓:  <input type="text" ng-model="lastName"><br>
+    <br>
+    姓名: {{firstName + " " + lastName}}
+
+    <ul>
+        <li ng-repeat="item in list track by $index">
+            {{$index}}--{{item.name}}
+            <button ng-click="add($index)">+</button>
+            <button ng-click="remove($index)">-</button>
+        </li>
+    </ul>
+    <button  ng-click="reset()">shuffer</button>
+
+</div>
+
+<script>
+    var app = angular.module('myApp', []);
+    app.controller('myCtrl', function($scope) {
+        $scope.firstName = "John";
+        $scope.lastName = "Doe";
+
+        $scope.listTemp=[
+            {name:"c"},
+            {name:"v"}
+        ]
+
+        $scope.list=[
+            {name:"a"},
+            {name:"b"},
+            {name:"c"},
+            {name:"v"}
+        ]
+
+      $scope.reset=function(){
+            console.log("------------")
+          $scope.list=[
+              {name:"a"},
+              {name:"v"},
+              {name:"c"},
+              {name:"b"},
+              {name:"x"},
+          ]
+      }
+        $scope.add=function($index){
+            console.log($index);
+            $scope.list.splice(($index+1),0,{"name":"x"});
+            console.log($scope.list);
+        }
+        $scope.remove=function($index){
+            console.log($index);
+            $scope.list.splice($index,1);
+            console.log($scope.list);
+        }
+    });
+</script>
+
+</body>
+</html>

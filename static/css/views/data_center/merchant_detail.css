@@ -1,0 +1,80 @@
+/*============================== #zl-merchant-detail common  ============================== */
+#zl-merchant-detail{
+    min-height: 100%;
+    position: relative;
+    padding-bottom: 100px;
+}
+
+#zl-merchant-detail .zl-merchant-title{
+    padding-top:20px;
+}
+
+/* zl-merchant-status */
+#zl-merchant-detail .zl-merchant-title .zl-merchant-status dl{
+    font-size:14px;
+    color:#222222;
+
+    margin:0;
+}
+
+#zl-merchant-detail .zl-merchant-title .zl-merchant-status dt{
+    float:left;
+    color:#757575;
+    line-height:32px;
+    height:32px;
+}
+
+#zl-merchant-detail .zl-merchant-title .zl-merchant-status dt:after{
+    content: " ";
+    display:inline-block;
+    width:10px;
+}
+
+#zl-merchant-detail .zl-merchant-title .zl-merchant-status dd{
+    float:left;
+    line-height:32px;
+    height:32px;
+}
+#zl-merchant-detail .zl-merchant-title .zl-merchant-status dd em:before{
+    content: " ";
+    display:inline-block;
+    width:10px;
+}
+#zl-merchant-detail .zl-merchant-title .zl-merchant-status dd em:after{
+    content: " ";
+    display:inline-block;
+    width:10px;
+}
+#zl-merchant-detail a.zl-add-store,#zl-merchant-detail a.zl-add-contact{
+    line-height: 36px;
+    float: right;
+    margin-right: 10px;
+    cursor: pointer;
+    color: #18B0E2;
+}
+
+#zl-merchant-detail a.zl-delete-store,#zl-merchant-detail a.zl-delete-contact{
+    line-height: 36px;
+    float: right;
+    margin-right: 10px;
+    cursor: pointer;
+    color: #E64E4D;
+}
+
+#zl-merchant-detail a.zl-view{
+    line-height: 36px;
+    float: right;
+    margin-right: 10px;
+    cursor: pointer;
+    color: #18B0E2;
+}
+
+
+
+
+
+
+
+
+
+

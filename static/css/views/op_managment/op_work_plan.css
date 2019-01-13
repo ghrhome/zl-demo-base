@@ -1,0 +1,23 @@
+#op-work-plan{
+
+}
+#op-work-plan .table{}
+#op-work-plan .table>tbody>tr>td{padding:20px;text-align:right;}
+#op-work-plan .table>tbody>tr>td.editable{
+    cursor:pointer;
+}
+#op-work-plan .table>tbody>tr>td>span{color:#7e8c9e;}
+
+#op-work-plan .table>tbody>tr>td.editable:hover{outline:solid 1px #3aabf3;}
+
+#op-work-plan .page-employee{margin-top:8px;}
+#op-work-plan .page-employee h6{color:#333;font-size:14px; font-weight:normal;}
+
+#userSelectModal{
+
+}
+#userSelectModal .zl-search-wrapper .zl-search{
+   /* margin-bottom:10px;*/
+    width:100%;
+}
+#userSelectModal ul>li{margin-bottom:10px;}

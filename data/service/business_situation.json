@@ -1,0 +1,81 @@
+{
+	"moreOpenProjectList":[
+		{
+			"projectName":"项目E",
+			"openingRate":"99.36%",
+			"budgetRate":"94.14%",
+			"rentRate":"100.00%",
+			"propertyRate":"100.00%"
+		},
+
+		{
+			"projectName":"项目F",
+			"openingRate":"99.36%",
+			"budgetRate":"94.14%",
+			"rentRate":"100.00%",
+			"propertyRate":"100.00%"
+		},
+
+		{
+			"projectName":"项目G",
+			"openingRate":"97.64%",
+			"budgetRate":"100.85%",
+			"rentRate":"100.00%",
+			"propertyRate":"100.00%"
+		},
+
+		{
+			"projectName":"项目H",
+			"openingRate":"96.89%",
+			"budgetRate":"100.87%",
+			"rentRate":"100.00%",
+			"propertyRate":"100.00%"
+		},
+
+		{
+			"projectName":"项目I",
+			"openingRate":"76.56%",
+			"budgetRate":"40.37%",
+			"rentRate":"40.97%",
+			"propertyRate":"57.34%"
+		},
+
+		{
+			"projectName":"项目J",
+			"openingRate":"90.50%",
+			"budgetRate":"100.99%",
+			"rentRate":"99.93%",
+			"propertyRate":"99.92%"
+		},
+
+		{
+			"projectName":"K项目",
+			"openingRate":"55.86%",
+			"budgetRate":"109.16%",
+			"rentRate":"100.00%",
+			"propertyRate":"100.00%"
+		}
+	],
+
+	"moreUnopenProjectList":[
+		{
+			"projectName":"项目Q",
+			"openingDate":"2016-06-22",
+			"investmentProgress":"33.22%",
+			"squareBudget":"63,256",
+			"squareBudgetRate":"36.67%",
+			"rentBudget":"32,245.22",
+			"rentBudgetRate":"96.22%"
+		},
+		
+		{
+			"projectName":"项目R",
+			"openingDate":"2016-06-13",
+			"investmentProgress":"30.22%",
+			"squareBudget":"62,256",
+			"squareBudgetRate":"32.67%",
+			"rentBudget":"28,897.22",
+			"rentBudgetRate":"94.22%"
+		}
+	]
+}

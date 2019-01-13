@@ -1,0 +1,196 @@
+#zl-contract-detail{
+
+}
+
+#zl-contract-detail .zl-contract-block{
+
+}
+
+
+/* zl-contract-block-content */
+#zl-contract-detail .zl-contract-block-content{
+    padding:20px 0;
+}
+#zl-contract-detail .zl-search-bar-grey input{
+    border-color:#eff1f4;
+    box-shadow: none;
+}
+/* ======================================== zl-contract-template-dialog start ======================================== */
+.zl-contract-template-dialog{
+
+}
+
+
+.zl-contract-template-dialog .modal-dialog{
+    width:1000px;
+}
+.zl-contract-template-dialog .modal-content{
+    overflow: hidden;
+}
+.zl-contract-template-dialog .modal-body{
+    height:450px;
+    overflow: hidden;
+}
+#contract-template {
+    padding-top:40px;
+}
+
+/*template-container*/
+.template-container{
+    position:relative;
+    height:100%;
+    min-height: 500px;
+    padding-left:300px;
+}
+
+ .template-container .template-container-left{
+    position:absolute;
+    top:0;
+    left:0;
+    display:block;
+    width:300px;
+    height:100%;
+    overflow-y:auto;
+    padding-bottom:20px;
+     z-index: 999;
+}
+
+.template-container .template-container-right{
+    height:100%;
+    padding-left:30px;
+}
+
+.template-container .template-container-right .template-bar{
+    position:relative;
+    height: 64px;
+    line-height: 64px;
+    background-color: #fdeadf;
+    padding-left: 60px;
+}
+
+.template-container .template-container-right .template-bar a{
+    position:absolute;
+    top:0;
+    left:0;
+    bottom:0;
+    display:none;
+    width:36px;
+    height:36px;
+    margin:auto;
+    cursor:pointer;
+    background:url(../images/contract/collapse-btn.png) no-repeat;
+    background-size:contain;
+}
+
+
+
+
+/* static-tree */
+.static-tree{
+    /*border-bottom:1px solid #ccc;*/
+    /*border-right: 1px solid #ccc;*/
+    margin: 0 30px;
+}
+.static-tree>div{
+    position:relative;
+    height:32px;
+    line-height: 32px;
+    cursor:pointer;
+    padding-left:32px;
+
+}
+
+.static-tree>div:hover{
+    background-color:#eaeaea;
+}
+
+.static-tree>div:before{
+    content:"";
+    position:absolute;
+    left:10px;
+    top:0;
+    bottom:0;
+    display:block;
+    width:16px;
+    height:16px;
+    background:url(../images/ys_tree_close.png) no-repeat;
+    background-size:contain;
+    margin:auto;
+}
+.static-tree.open>div{
+    background-color:#f3f3f3;
+}
+.static-tree.open>div:before{
+    background-image:url(../images/ys_tree_open.png);
+}
+
+.static-tree>ul{
+    display:none;
+    padding:0 0 0 0;
+    margin:0;
+    list-style-type: none;
+    background-color:#fff;
+}
+
+.static-tree.open>ul{
+    display:block;
+}
+.static-tree>ul>li{
+    position:relative;
+    padding-left:40px;
+    height:32px;
+    line-height: 32px;
+    cursor:pointer;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.static-tree>ul>li.checked{
+    background-color:#f3f3f3;
+    border-left:4px solid #18B0E2;
+    padding-left:36px;
+}
+
+.static-tree>ul>li:hover{
+    background-color:#eaeaea;
+}
+
+.static-tree>ul>li:before{
+    content:"";
+    position:absolute;
+    left:30px;
+    top:0;
+    bottom:0;
+    display:block;
+    width:4px;
+    height:4px;
+    border-radius: 2px;
+    margin:auto;
+    background-color:#ccc;
+}
+
+.static-tree>ul>li.checked:before{
+    left:26px;
+}
+
+.zl-list-tree>li.zl-tree-item {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+/*.zl-search-wrapper .zl-search {
+    width: 240px;
+    float: left;
+}
+.zl-search-wrapper .zl-search>input.form-control {
+    display: block;
+    width: 100%;
+    background: url(../../scp_demo/static/images/common/search-icon.png) no-repeat 6px center;
+    height: 32px;
+    border-radius: 0;
+    background-size: 17px 16px;
+    padding-left: 30px;
+}*/
+/* ======================================== zl-contract-template-dialog end ======================================== */

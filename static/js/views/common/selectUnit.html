@@ -1,0 +1,35 @@
+<script id="select-unit-template" type="text/x-handlebars-template">
+    <div class="modal fade" tabindex="-1" role="dialog" id="modal-select-unit">
+        <div class="modal-dialog modal-sm" role="document" >
+            <div class="modal-content">
+                <div class="modal-header clearfix">
+                    <button type="button" class="close" data-dismiss="modal"><span>&times;</span></button>
+                    <h4 class="modal-title pull-left">消息提示</h4>
+                </div>modal-head
+
+                <div class="modal-body">
+                    <div class="modal-warn-logo">
+                        <img src="../../static/images/icons/{{icon}}.png">
+                    </div>
+                    <h5 style="text-align: center;font-size:16px;">{{alertMsg}}</h5>
+                    <p ng-show="mCtrl.warnText.length>0">{{warnText}}</p>
+                </div><!--modal body-->
+
+                <div class="modal-footer ">
+                    {{#if alertMsgType}}
+                    {{#compare alertMsgType}}
+                    <div class="zl-btn-wrapper clearfix">
+                        <button type="button" class="btn btn-default zl-btn zl-btn-blue js-btn-confirm" data-btn="confirm">确定</button>
+                        <button type="button" class="btn btn-default zl-btn js-btn-dismiss" data-btn="dismiss">取消</button>
+                    </div>
+                    {{else}}
+                    <div class="zl-btn-wrapper clearfix">
+                        <button type="button" class="btn btn-default zl-btn zl-btn-red js-btn-dismiss" data-btn="dismiss">确定</button>
+                    </div>
+                    {{/compare}}
+                    {{/if}}
+                </div>
+            </div>
+        </div>
+    </div>
+</script>

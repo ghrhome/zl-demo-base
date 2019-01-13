@@ -1,0 +1,27 @@
+#dynamic-funds-form .zl-toolbar em {
+	vertical-align:-2px;
+}
+#dynamic-funds-form .zl-toolbar .checkbox-wrapper label {
+	margin-right:0;
+}
+#dynamic-funds-form th,#dynamic-funds-form td {
+	text-align:right;
+}
+#dynamic-funds-form .text-left {
+	text-align: left;
+}
+#dynamic-funds-form .text-center {
+	text-align: center;
+}
+#dynamic-funds-form .font-red {
+	color:red;
+}
+#dynamic-funds-form .vertical-bottom {
+	vertical-align: bottom;
+}
+#dynamic-funds-form table {
+	border:none !important;
+}
+#dynamic-funds-form td {
+	border:none !important;
+}

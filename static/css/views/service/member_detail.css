@@ -1,0 +1,66 @@
+#member-detail{padding:44px 0 20px 0;}
+
+#member-detail em.zl-checkbox{
+    vertical-align: -2px;
+}
+/* ======================================== zl-authorization-panel ======================================== */
+#member-detail .zl-authorization-panel{padding-top:20px;}
+#member-detail .my-authorization-panel{
+    border:1px solid #ccc;
+    width:230px;
+    float:left;
+}
+
+#member-detail .my-authorization-panel ul li{
+    position:relative;
+
+    height:36px;
+    line-height: 36px;
+    padding-left:60px;
+}
+
+#member-detail .my-authorization-panel ul li:before{
+    content:"";
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:40px;
+    width:14px;
+    height:14px;
+    background: url(../../../images/common/checkbox_blue.png) no-repeat -242px -1px;
+    margin:auto;
+
+}
+
+#member-detail .my-authorization-panel .my-authorization-title{
+    position:relative;
+    height:36px;
+    line-height: 36px;
+    background-color:#f3f3f3;
+    padding-left:40px;
+}
+
+
+#member-detail .my-authorization-panel .my-authorization-title>a{
+    position:absolute;
+    left:16px;
+    top:0;
+    bottom:0;
+    width:16px;
+    height:16px;
+    background: url(../../../images/common/checkbox_blue.png) no-repeat -298px 0;
+    margin:auto;
+}
+
+#member-detail .my-authorization-panel .my-authorization-title>a.collapsed{
+    background-position: -311px 0;
+}
+
+/* ======================================== other-authorization-panel ======================================== */
+#member-detail .other-authorization-panel{
+    float:left;
+    padding-left:20px;
+
+}
+#member-detail .other-authorization-panel .zl-tree{width:230px;border:1px solid #ccc;}
+#member-detail .other-authorization-panel .zl-tree-node-parent>.zl-tree-node-title {background-color:#f3f3f3;}

@@ -1,0 +1,6 @@
+#sale_rank_all tbody td {
+	text-align:right;
+}
+#sale_rank_all tbody td:first-child,#sale_rank_all tbody td:nth-child(2) {
+	text-align: left;
+}

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <link rel="shortcut icon" href="static/images/favicon-20151019091835834.ico" type="image/x-icon">
+
+    <!-- 导入CSS -->
+    <link href="static/css/animate.css" rel="stylesheet">
+    <link href="static/css/bootstrap.css" rel="stylesheet">
+
+    <!-- 自有CSS -->
+    <link href="static/css/amp_base.css" rel="stylesheet">
+    <link href="static/css/amp_main.css" rel="stylesheet">
+</head>
+<body>
+<!-- Preloader -->
+<div id="preloader">
+    <div id="status"><i class="fa fa-spinner fa-spin"></i></div>
+</div>
+<section class="page page-main" id="page-main">
+
+<div class="leftpanel">
+    <div class="logopanel">
+    </div><!-- logopanel -->
+    <div class="leftpanelinner">
+        <h5 class="sidebartitle">
+            <a href="#" class="menutoggle"><em class="zl-icon-spirit zl-icon-togglebar"></em></a>
+        </h5>
+        <ul class="nav nav-pills nav-stacked nav-bracket">
+
+        </ul>
+        <div class="system-toggle">
+            <ul>
+                <li class="active"><a href="main_busi.html" class="system-item"><em class="zl-icon-spirit zl-icon-systoggle"></em>商业系统</a></li>
+                <li ><a href="main.html" class="system-item"><em class="zl-icon-spirit zl-icon-systoggle"></em>AMP资管平台</a></li>
+            </ul>
+        </div>
+    </div><!-- leftpanelinner -->
+</div><!-- leftpanel -->
+
+<div class="mainpanel">
+
+    <div class="headerbar">
+<!--
+        <a class="menutoggle"><i class="fa fa-bars"></i></a>-->
+        <div class="head-main-menu">
+            <!-- Nav tabs -->
+
+        </div>
+
+        <div class="header-right">
+            <span class="zl-figure zl-useer-figure"></span>
+        </div><!-- header-right -->
+
+    </div><!-- headerbar -->
+
+    <div class="pageheader clearfix">
+        <!-- Tab panes-->
+    </div>
+
+    <div class="contentpanel">
+        <iframe src="" id="page-frame"></iframe>
+    </div><!-- contentpanel -->
+
+</div><!-- mainpanel -->
+
+<!-- rightpanel -->
+
+
+</section>
+<script src="static/js/jquery-1.11.3.min.js"></script>
+<script src="static/js/bootstrap.min.js"></script>
+<script src="static/js/menu_list.js"></script>
+<script src="static/js/amp_main.js"></script>
+<script>
+    $(window).load(function() {
+        amp_main.placeholder_init();
+    });
+    $(document).ready(function(){
+        amp_main.init();
+    });
+</script>
+</body>
+</html>

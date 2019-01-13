@@ -1,0 +1,8 @@
+#layout_configure #brand-tree {
+	padding-top: 22px;
+    margin: 0 -15px;
+    border-right: 1px solid #cccccc;
+    overflow-y: auto;
+    padding-left:30px;
+    overflow-x: hidden;
+}

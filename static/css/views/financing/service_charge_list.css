@@ -1,0 +1,13 @@
+#service-charge-list{
+    width:700px;
+}
+#service-charge-list .zl-toolbar>.zl-search-wrapper{margin-right:10px;}
+
+/* ======================================== zl-table-block ======================================== */
+#service-charge-list .zl-table-block {
+
+}
+
+#service-charge-list .zl-pagination-wrapper{padding-top:20px;}
+
+

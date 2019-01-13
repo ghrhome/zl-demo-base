@@ -1,0 +1,90 @@
+<!--base Modal -->
+<script id="unit-select-template" type="text/x-handlebars-template">
+<div class="modal fade" id="unitSelectModal" tabindex="-1" data-backdrop="static">
+    <div class="modal-dialog" role="document" style="width:600px; ">
+        <div class="modal-content">
+            <div class="modal-header clearfix">
+                <button type="button" class="close js-cancel" ><span aria-hidden="true">&times;</span>
+                </button>
+                <h4 class="modal-title" id="myModalLabel" style="float:left;line-height:30px;">选择商铺</h4>
+            </div>
+            <div class="modal-body" style="padding:0 15px;">
+                <div class="col-split-wrapper col-3 clearfix">
+                    <div class="col-left col-panel">
+                        <div class="col-panel-title">
+                            <span>楼层</span>
+                        </div>
+                        <div class="zl-dropdown-group clearfix">
+                            <div class="btn-group zl-dropdown js-dropdown-buildings"  data-id="js-dropdown-buildings" >
+                                <button type="button" class="btn btn-default dropdown-toggle zl-dropdown-btn" data-toggle="dropdown" aria-expanded="true">
+                                    楼栋
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li class="dropdown-header">选择楼栋</li>
+                                  <!--  <li clas=""><a data-value="0">全部</a></li>
+-->
+                                    {{#each buildingList}}
+                                        <li><a data-value="{{id}}">{{name}}</a></li>
+                                    {{/each}}
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- zl-select-wrapper -->
+                        <div class="zl-select-wrapper js-single-select">
+                            <ul  class="js-floor-list">
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-center col-panel">
+                        <div class="col-panel-title">
+                            <span>租户</span>
+                        </div>
+                        <!--<div class="zl-search-wrapper">
+                            <div class="zl-search">
+                                <input class="form-control" placeholder="搜索商铺号">
+                            </div>
+                        </div>-->
+                        <!-- zl-select-wrapper -->
+                        <div class="zl-select-wrapper js-multi-select">
+                            <ul  class="js-shop-list" style="padding-left:15px;">
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-right col-panel">
+                        <div class="col-panel-title">
+                            <span>已选租户</span>
+                        </div>
+                        <div class="col-content">
+                            <!-- zl-select-wrapper -->
+                            <div class="zl-select-wrapper selected" >
+                                <ul  class="js-shop-selected" style="padding-left:15px;">
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="modal-footer">
+                <!--<button type="button" class="btn btn-default zl-btn" data-dismiss="modal">Close</button>-->
+                <button type="button" class="btn btn-default zl-btn zl-btn-blue js-submit">确定</button>
+                <button type="button" class="btn btn-default zl-btn js-cancel">取消</button>
+                <button type="button" class="btn btn-default zl-btn js-reset">重置</button>
+            </div>
+        </div>
+    </div>
+</div><!--baseModal-->
+
+</script>
+<script id="unit-item-template" type="text/x-handlebars-template">
+
+    {{#each dataList}}
+        <li data-index="{{@index}}" data-id="{{id}}" data-issuingLayout="{{issuingLayout}}" data-structureSquare="{{structureSquare}}" data-propertySquare="{{propertySquare}}"
+            data-storeType="{{storeType}}"
+            class="zl-select-item"><span>{{name}}</span>
+        </li>
+    {{/each}}
+
+</script>

@@ -1,0 +1,23 @@
+#reconstruct-store-form{padding:64px 0 0 0;}
+
+#reconstruct-store-form .zl-dropdown-inline{
+    height:100%;
+}
+#reconstruct-store-form .zl-dropdown-inline .zl-dropdown-btn{
+    height:100%;
+    border:none;
+}
+
+#reconstruct-store-form .zl-operation-bar{
+    padding:0 0 20px 0;
+
+}
+#reconstruct-store-form .zl-operation-bar .zl-btn{
+    margin-right:10px;
+}
+
+#reconstruct-store-form .zl-form-title{
+    height:32px;
+    line-height: 32px;
+    font-size:24px;
+}

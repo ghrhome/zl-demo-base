@@ -1,0 +1,16 @@
+#service-charge-creation{padding:44px 0 0 0;}
+
+
+
+#service-charge-creation .zl-toolbar>a.btn{
+    margin-left:10px;
+}
+
+#service-charge-creation .zl-dropdown-inline{
+    height:100%;
+}
+#service-charge-creation .zl-dropdown-inline .zl-dropdown-btn{
+    height:32px;
+    border:none;
+}
+#service-charge-creation .zl-datetimepicker{border:none;}

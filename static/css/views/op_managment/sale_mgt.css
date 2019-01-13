@@ -1,0 +1,57 @@
+/* ======================================== zl-table-block ======================================== */
+#sale-mgt .zl-table-block {
+
+}
+#sale-mgt .zl-block-title{}
+#sale-mgt .zl-block-title .zl-title-info{
+    display: block;
+    margin-left:20px;
+    color:#7e8c9e;
+    line-height: 20px;
+}
+#sale-mgt .zl-block-title em.glyphicon{float:right;margin-left:3px;line-height: 20px;}
+#sale-mgt .zl-table>thead th em.glyphicon{float:right;margin-left:3px;line-height: 24px;}
+
+#sale-mgt .zl-table-block table tbody tr:hover{cursor:pointer;}
+
+#sale-mgt .sale-dialog .sale-title{
+    height:32px;
+    line-height: 32px;
+    font-size:14px;
+}
+
+#sale-mgt .sale-dialog .modal-dialog{
+    width:300px;
+}
+#sale-mgt .sale-dialog .sale-info-list li{
+    height:24px;
+    line-height: 24px;
+    padding-left:28px;
+    font-size:14px;
+}
+
+#sale-mgt .sale-dialog .sale-info-list li:first-child{
+    padding-left:0;
+}
+
+#sale-mgt .sale-dialog .sale-info-list li em{
+    margin-right:10px;
+    min-width: 60px;
+    display: inline-block;
+}
+
+
+#sale-mgt .text-red{color:#E64E4D;}
+#sale-mgt .text-blue{color:#3aabf3;}
+#sale-mgt .text-light-blue{color:#3aabf3;cursor:default;}
+#modal-record .raido-wrapper .input-addon {
+    height:32px;
+}
+#modal-record .raido-wrapper .input-addon label{
+    height:32px;
+    line-height: 32px;
+}
+
+#sale-mgt table.zl-table tr>th,#sale-mgt table.zl-table tr>td{
+    padding:4px 10px;
+}

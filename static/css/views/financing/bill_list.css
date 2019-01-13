@@ -1,0 +1,17 @@
+#bill-list .zl-toolbar>a.zl-btn{margin-left:10px;}
+#bill-list .zl-toolbar>div{margin-left:0;margin-right:10px;}
+#bill-list .zl-toolbar>.zl-search-wrapper{margin:0;}
+/* ======================================== zl-table-block ======================================== */
+#bill-list .zl-table-block {
+}
+#bill-list .zl-table-block table.table{}
+#bill-list .zl-table-block table.table th:nth-child(8),
+#bill-list .zl-table-block table.table td:nth-child(8),
+#bill-list .zl-table-block table.table th:nth-child(9),
+#bill-list .zl-table-block table.table td:nth-child(9),
+#bill-list .zl-table-block table.table th:nth-child(10),
+#bill-list .zl-table-block table.table td:nth-child(10) {text-align: right;}
+
+#bill-list .zl-table-wrapper-swiper .zl-table-static{border-right:none;}
+#bill-list .zl-pagination-wrapper{padding-top:15px;}
+

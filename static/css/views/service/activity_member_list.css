@@ -1,0 +1,15 @@
+#activity-member-list{padding-top:44px;}
+#activity-member-list .zl-toolbar>.zl-search-wrapper{margin-right:10px;}
+
+/* ======================================== zl-table-block ======================================== */
+#activity-member-list .zl-table-block {
+}
+
+#activity-member-list .image-preview{
+    display:block;
+    width:120px;
+    height:100px;
+    border:1px solid #eff1f4;
+    background-color:#f8fafa;
+}
+

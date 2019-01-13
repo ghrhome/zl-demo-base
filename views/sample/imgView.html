@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>购物中心</title>
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <link rel="shortcut icon" href="../../static/images/favicon.ico" type="image/x-icon">
+    <!-- Bootstrap 3.3.6 -->
+    <link rel="stylesheet" href="../../static/dist/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../static/css/common/no-response.css">
+    <link rel="stylesheet" href="../../static/dist/css/font-awesome/font-awesome.min.css">
+    <link rel="stylesheet" href="../../static/css/common/no-response.css">
+    <link rel="stylesheet" href="../../static/dist/css/animate.css">
+
+    <!--第三方js-->
+    <link rel="stylesheet" href="../../static/dist/css/swiper.min.css">
+    <link rel="stylesheet" href="../../static/dist/css/bootstrap-datetimepicker.min.css">
+
+    <link rel="stylesheet" href="../../static/dist/css/magnific-popup.css">
+
+    <!--common css-->
+    <link rel="stylesheet" href="../../static/css/common/common.css">
+    <link rel="stylesheet" href="../../static/css/common/common_utils.css">
+    <link rel="stylesheet" href="../../static/css/common/icons.css">
+    <link rel="stylesheet" href="../../static/css/common/static_table.css">
+
+    <!--page css-->
+    <link rel="stylesheet" href="../../static/css/views/sample/sample.css">
+
+
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+<!--[if lt IE 9]>
+<p class="updateBrowser">您的浏览器太旧了，请更新最新浏览器，以获得最佳效果.</p>
+<![endif]-->
+<!-- Preloader -->
+<div id="preloader">
+    <div id="status"><i class="fa fa-spinner fa-spin"></i></div>
+</div>
+
+<section class="zl-page" id="page-sample" style="padding:40px;">
+
+    <div class="zl-content">
+        <div class="zl-block">
+            <td class="zl-edit" colspan="3" style="padding:20px;">
+                           <!-- <button class="btn btn-default zl-btn zl-btn-blue fileinput-button">
+
+                                <span> <i class="glyphicon glyphicon-cloud-upload"></i>上传图片</span>
+                                <input id="fileupload" type="file" name="files[]" multiple="">
+                            </button>-->
+
+                            <button class="btn btn-default zl-btn zl-btn-blue zl-btn-load fileinput-button">
+                                <i class="fa fa-spinner fa-spin"></i>
+                                <span><i class="glyphicon glyphicon-cloud-upload"></i>上传图片</span>
+                                <input id="fileupload" type="file" name="files[]" multiple="">
+                            </button>
+
+                <h6 class="zl-notice zl-notice-grey">最多上传四张</h6>
+                <div class="zl-img-wrapper">
+                    <ul class="clearfix">
+                        <li>
+                            <div class="zl-thumbnail-wrapper">
+                                <em class="zl-thumbnail" data-mfp-src="../../static/images/main/icon_a.png" ></em>
+                                <a class="zl-icon-btn zl-icon-btn-del"></a>
+                            </div>
+
+                        </li>
+                        <li>
+                            <div class="zl-thumbnail-wrapper">
+                                <em class="zl-thumbnail"></em>
+                                <a class="zl-icon-btn zl-icon-btn-del"></a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </td>
+        </div>
+
+    </div><!--end content-panel-->
+</section>
+
+<!--<script src="../../static/dist/js/require.js" data-main="../../static/js/views/sample/sample_main"></script>-->
+<script src="../../static/dist/js/jQuery/jquery-2.2.3.min.js"></script>
+<script src="../../static/dist/bootstrap/js/bootstrap.min.js"></script>
+<script src="../../static/dist/js/datetimepicker/bootstrap-datetimepicker.js"></script>
+<script src="../../static/dist/js/datetimepicker/locales/bootstrap-datetimepicker.zh-CN.js"></script>
+<script src="../../static/dist/js/swiper.jquery.min.js"></script>
+
+<!--可选-->
+<script src="../../static/dist/js/jquery.magnific-popup.min.js"></script>
+<script src="../../static/dist/js/underscore-min.js"></script>
+<script src="../../static/dist/js/handlebars-v4.0.8.js"></script>
+
+<!--fileuploader-->
+<script src="../../static/dist/js/uploader/vendor/jquery.ui.widget.js"></script>
+<script src="../../static/dist/js/uploader/jquery.iframe-transport.js"></script>
+<script src="../../static/dist/js/uploader/jquery.fileupload.js"></script>
+
+<script src="../../static/dist/js/uploader/jquery.fileupload-process.js"></script>
+<script src="../../static/dist/js/uploader/jquery.fileupload-image.js"></script>
+
+<!--插件-->
+<script src="../../static/js/utils/jq/jq_plugin_dropdown.js"></script>
+<!--
+<script src="../../static/js/views/common/alert.js"></script>
+<script src="../../static/js/views/sample/base.js"></script>-->
+
+<script>
+    $(document).ready(function(){
+        $("#preloader").fadeOut();
+        /*$('.zl-thumbnail').magnificPopup({
+            type: 'image'
+            // other options
+        });*/
+        $('.zl-img-wrapper').magnificPopup({
+            delegate: '.zl-thumbnail',
+            type: 'image',
+          /*  gallery: {
+                enabled: true
+            },*/
+        });
+
+
+        $('.zl-img-wrapper').on("click",".zl-icon-btn-del",function(e){
+            e.preventDefault();
+
+            //ajax and warning callback
+            $(this).closest("li").remove();
+
+        })
+
+        var url="http://localhost:3000/";
+
+
+        function _getObjectURL(file) {
+            var url = null;
+            if (window.createObjectURL != undefined) { // basic
+                url = window.createObjectURL(file);
+            } else if (window.URL != undefined) { // mozilla(firefox)
+                url = window.URL.createObjectURL(file);
+            } else if (window.webkitURL != undefined) { // webkit or chrome
+                url = window.webkitURL.createObjectURL(file);
+            }
+            return url;
+        }
+
+        function _preview(that) {
+            //接受files数组列表
+            var _file = that,
+                str = _getObjectURL(_file);
+            var _tmp=
+                " <li>" +
+                "   <div class=\"zl-thumbnail-wrapper\">" +
+                "       <em class='zl-thumbnail' data-mfp-src='"+str+"' style='background-image:url( "+str+ ")'"+
+                "        ></em>" +
+                "       <a class=\"zl-icon-btn zl-icon-btn-del\"></a>" +
+                "   </div>" +
+                "</li>";
+
+
+            //将图片动态添加到图片展示区
+            $(".zl-img-wrapper>ul").append(_tmp);
+        }
+        $('#fileupload').fileupload({
+            url: url,
+            dataType: 'json',
+            formData:[
+                {
+                    name:"test",
+                    value:2
+                }
+            ],
+            add:function(e,data){
+                console.log(data);
+                console.log(e);
+                $.each(data.files, function (index, file) {
+                    console.log(file)
+                   console.log(_getObjectURL(file))
+                    _preview(file)
+
+                });
+                data.submit();
+            },
+            done: function (e, data) {
+                $.each(data.result.files, function (index, file) {
+                    $('<p/>').text(file.name).appendTo('#files');
+                });
+
+            },
+            progressall: function (e, data) {
+                var progress = parseInt(data.loaded / data.total * 100, 10);
+                $('#progress .progress-bar').css(
+                    'width',
+                    progress + '%'
+                );
+            }
+        });
+    });
+
+
+</script>
+</body>
+</html>

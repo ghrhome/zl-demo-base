@@ -1,0 +1,17 @@
+#budget-preview{}
+
+#budget-preview .table td>span,
+#budget-preview .table th>span{
+    display: block;
+    width:100%;
+}
+
+#budget-preview .table td>span.zl-cell-num,
+#budget-preview .table th>span.zl-cell-num{text-align: right;}
+
+.zl-table-wrapper-swiper .zl-table-main .zl-table thead tr:last-child th,
+.zl-table-wrapper-swiper .zl-table-main .zl-table thead tr:last-child td{
+    /*
+    border-bottom: solid 1px #ddd;
+    */
+}

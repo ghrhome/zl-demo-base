@@ -1,0 +1,116 @@
+<!--base Modal -->
+<script id="unit-select-template" type="text/x-handlebars-template">
+    <div class="modal fade" id="unitSelectModal" tabindex="-1" data-backdrop="static">
+        <div class="modal-dialog" role="document" style="width:600px; ">
+            <div class="modal-content">
+                <div class="modal-header clearfix">
+                    <button type="button" class="close js-cancel" ><span aria-hidden="true">&times;</span>
+                    </button>
+                    <h4 class="modal-title" id="myModalLabel" style="width:120px;float:left;">推广点位选择</h4>
+                    <input type="text" class="form-control zl-shop-filter" style="width:300px;display: inline-block;padding:5px;margin-left:10px;height:30px;" placeholder="输入搜索推广点位">
+                </div>
+                <div class="modal-body" style="padding:0 15px;">
+                    <div class="col-split-wrapper col-3 clearfix">
+                        <div class="col-left col-panel">
+                            <div class="col-panel-title">
+                                <span>楼层</span>
+                            </div>
+                            <div class="zl-dropdown-group clearfix">
+                                <div class="btn-group zl-dropdown js-dropdown-buildings"
+                                     data-id="js-dropdown-buildings">
+                                    <button type="button" class="btn btn-default dropdown-toggle zl-dropdown-btn"
+                                            data-toggle="dropdown" aria-expanded="true">
+                                        楼栋
+                                    </button>
+
+                                    <ul class="dropdown-menu">
+                                        <li class="dropdown-header">选择楼栋</li>
+                                        <!--  <li clas=""><a data-value="0">全部</a></li>
+      -->
+                                        {{#each buildingList}}
+                                        <li><a data-value="{{id}}">{{name}}</a></li>
+                                        {{/each}}
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <!-- zl-select-wrapper -->
+                            <div class="zl-select-wrapper js-single-select">
+                                <ul  class="js-floor-list">
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-center col-panel">
+                            <div class="col-panel-title">
+                                <span>多经点位</span>
+                            </div>
+                            <input type="hidden" id="diversetype" value="-1">
+                            <!--<div class="zl-dropdown-group clearfix">-->
+
+                                <!--<div class="btn-group zl-dropdown js-dropdown-buildings-diverse"-->
+                                     <!--style="padding-left: 14px"-->
+                                     <!--data-id="js-dropdown-buildings_diversetype">-->
+
+                                    <!--&lt;!&ndash;<button type="button" class="btn btn-default dropdown-toggle zl-dropdown-btn"&ndash;&gt;-->
+                                            <!--&lt;!&ndash;data-toggle="dropdown" aria-expanded="true" style="">&ndash;&gt;-->
+                                        <!--&lt;!&ndash;点位类型&ndash;&gt;-->
+                                    <!--&lt;!&ndash;</button>&ndash;&gt;-->
+
+                                    <!--&lt;!&ndash;<ul class="dropdown-menu">&ndash;&gt;-->
+                                        <!--&lt;!&ndash;<li class="dropdown-header">选择点位类型</li>&ndash;&gt;-->
+                                        <!--&lt;!&ndash;<li><a data-value="-1">所有类型</a></li>&ndash;&gt;-->
+                                        <!--&lt;!&ndash;<li><a data-value="2006">广告位</a></li>&ndash;&gt;-->
+                                        <!--&lt;!&ndash;<li><a data-value="2001">花车</a></li>&ndash;&gt;-->
+                                        <!--&lt;!&ndash;<li><a data-value="2002">临时场地</a></li>&ndash;&gt;-->
+                                    <!--&lt;!&ndash;</ul>&ndash;&gt;-->
+                                <!--</div>-->
+                            <!--</div>-->
+                            <!--<div class="zl-search-wrapper">
+                                <div class="zl-search">
+                                    <input class="form-control" placeholder="搜索商铺号">
+                                </div>
+                            </div>-->
+                            <!-- zl-select-wrapper -->
+                            <div class="zl-select-wrapper js-multi-select">
+                                <ul  class="js-shop-list" style="padding-left:15px;">
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-right col-panel">
+                            <div class="col-panel-title">
+                                <span>已选点位</span>
+                            </div>
+                            <div class="col-content">
+                                <!-- zl-select-wrapper -->
+                                <div class="zl-select-wrapper selected" >
+                                    <ul  class="js-shop-selected" style="padding-left:15px;">
+
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="modal-footer">
+                    <!--<button type="button" class="btn btn-default zl-btn" data-dismiss="modal">Close</button>-->
+                    <button type="button" class="btn btn-default zl-btn zl-btn-blue js-submit">确定</button>
+                    <button type="button" class="btn btn-default zl-btn js-cancel">取消</button>
+                    <button type="button" class="btn btn-default zl-btn js-reset">重置</button>
+                </div>
+            </div>
+        </div>
+    </div><!--baseModal-->
+
+</script>
+<script id="unit-item-template" type="text/x-handlebars-template">
+
+    {{#each dataList}}
+    <li data-index="{{@index}}" data-id="{{id}}" data-issuingLayout="{{issuingLayout}}"
+        data-diverseType="{{diverseType}}"
+        data-structureSquare="{{structureSquare}}" data-propertySquare="{{propertySquare}}"
+        class="zl-select-item"><span>{{name}}</span>
+    </li>
+    {{/each}}
+
+</script>

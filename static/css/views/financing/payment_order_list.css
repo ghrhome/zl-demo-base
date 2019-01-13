@@ -1,0 +1,9 @@
+#payment-order-list .zl-toolbar>.zl-btn{margin-left:10px;}
+
+/* ======================================== zl-table-block ======================================== */
+#payment-order-list .zl-table-block {
+}
+
+#payment-order-list .zl-table-block  table tbody tr:hover{cursor:pointer;}
+
+

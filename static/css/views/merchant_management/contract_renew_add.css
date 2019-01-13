@@ -1,0 +1,6 @@
+#contract_renew_add #rental-table-wrapper table{
+	display: none;
+}	
+#contract_renew_add #rental-table-wrapper table.show{
+	display: table !important;
+}
